@@ -18,4 +18,12 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MaiHienCoreApp.Application\MaiHienCoreApp.Application.csproj" />
+    <ProjectReference Include="..\MaiHienCoreApp.Data.EF\MaiHienCoreApp.Data.EF.csproj" />
+    <ProjectReference Include="..\MaiHienCoreApp.Data\MaiHienCoreApp.Data.csproj" />
+    <ProjectReference Include="..\MaiHienCoreApp.Infrastructure\MaiHienCoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\MaiHienCoreApp.Utilities\MaiHienCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
