@@ -1,10 +1,12 @@
-﻿using MaiHienCoreApp.Data.Entities;
-using MaiHienCoreApp.Data.Enums;
-using MaiHienCoreApp.Utilities.Constants;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using MaiHienCoreApp.Data.Entities;
+using MaiHienCoreApp.Data.Enums;
+using MaiHienCoreApp.Utilities.Constants;
 
 namespace MaiHienCoreApp.Data.EF
 {
@@ -13,7 +15,6 @@ namespace MaiHienCoreApp.Data.EF
         private readonly AppDbContext _context;
         private UserManager<AppUser> _userManager;
         private RoleManager<AppRole> _roleManager;
-
         public DbInitializer(AppDbContext context, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager)
         {
             _context = context;
@@ -52,7 +53,10 @@ namespace MaiHienCoreApp.Data.EF
                     FullName = "Administrator",
                     Email = "admin@gmail.com",
                     Balance = 0,
-                }, "123456$");
+                    DateCreated = DateTime.Now,
+                    DateModified = DateTime.Now,
+                    Status = Status.Active
+                }, "123654$");
                 var user = await _userManager.FindByNameAsync("admin");
                 await _userManager.AddToRoleAsync(user, "Admin");
             }
@@ -125,9 +129,11 @@ namespace MaiHienCoreApp.Data.EF
                         AdvertistmentPositions = new List<AdvertistmentPosition>(){
                         new AdvertistmentPosition(){Id="product-detail-left",Name="Bên trái"}
                     } },
+
                 };
                 _context.AdvertistmentPages.AddRange(pages);
             }
+
 
             if (_context.Slides.Count() == 0)
             {
@@ -151,6 +157,7 @@ namespace MaiHienCoreApp.Data.EF
                 };
                 _context.Slides.AddRange(slides);
             }
+
 
             if (_context.Sizes.Count() == 0)
             {

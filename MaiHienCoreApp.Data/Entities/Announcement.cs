@@ -11,6 +11,10 @@ namespace MaiHienCoreApp.Data.Entities
     [Table("Announcements")]
     public class Announcement : DomainEntity<string>, ISwitchable, IDateTracking
     {
+        [StringLength(128)]
+        [Required]
+        public new string Id { get; set; }
+
         public Announcement()
         {
             AnnouncementUsers = new List<AnnouncementUser>();
@@ -23,8 +27,7 @@ namespace MaiHienCoreApp.Data.Entities
         [StringLength(250)]
         public string Content { set; get; }
 
-        [StringLength(450)]
-        public string UserId { set; get; }
+        public Guid UserId { set; get; }
 
         [ForeignKey("UserId")]
         public virtual AppUser AppUser { get; set; }

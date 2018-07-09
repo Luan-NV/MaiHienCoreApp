@@ -9,6 +9,10 @@ namespace MaiHienCoreApp.Data.Entities
     [Table("Functions")]
     public class Function : DomainEntity<string>, ISwitchable, ISortable
     {
+        [StringLength(128)]
+        [Required]
+        public new string Id { get; set; }
+
         public Function()
         {
         }

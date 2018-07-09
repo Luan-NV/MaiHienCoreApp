@@ -1,6 +1,8 @@
-﻿using MaiHienCoreApp.Infrastructure.SharedKernel;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text;
+using MaiHienCoreApp.Infrastructure.SharedKernel;
 
 namespace MaiHienCoreApp.Data.Entities
 {
