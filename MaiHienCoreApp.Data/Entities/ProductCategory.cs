@@ -1,11 +1,14 @@
-﻿using MaiHienCoreApp.Data.Enums;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using MaiHienCoreApp.Data.Enums;
 using MaiHienCoreApp.Data.Interfaces;
 using MaiHienCoreApp.Infrastructure.SharedKernel;
-using System;
-using System.Collections.Generic;
 
 namespace MaiHienCoreApp.Data.Entities
 {
+    [Table("ProductCategories")]
     public class ProductCategory : DomainEntity<int>,
         IHasSeoMetaData, ISwitchable, ISortable, IDateTracking
     {
@@ -14,6 +17,23 @@ namespace MaiHienCoreApp.Data.Entities
             Products = new List<Product>();
         }
 
+        public ProductCategory(string name, string description, int? parentId, int? homeOrder,
+            string image, bool? homeFlag, int sortOrder, Status status, string seoPageTitle, string seoAlias,
+            string seoKeywords, string seoDescription)
+        {
+            Name = name;
+            Description = description;
+            ParentId = parentId;
+            HomeOrder = homeOrder;
+            Image = image;
+            HomeFlag = homeFlag;
+            SortOrder = sortOrder;
+            Status = status;
+            SeoPageTitle = seoPageTitle;
+            SeoAlias = seoAlias;
+            SeoKeywords = seoKeywords;
+            SeoDescription = seoDescription;
+        }
         public string Name { get; set; }
 
         public string Description { get; set; }
