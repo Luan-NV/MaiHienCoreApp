@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MaiHienCoreApp.Data.Enums;
 using MaiHienCoreApp.Data.Interfaces;
-using MaiHienCoreApp.Data.Enums;
+using Microsoft.AspNetCore.Identity;
+using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MaiHienCoreApp.Data.Entities

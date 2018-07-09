@@ -3,7 +3,7 @@ using MaiHienCoreApp.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace TeduCoreApp.Data.EF.Configurations
+namespace MaiHienCoreApp.Data.EF.Configurations
 {
     public class TagConfiguration : DbEntityConfiguration<Tag>
     {
