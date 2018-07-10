@@ -1,0 +1,1287 @@
+2018-07-10T22:26:15.4630203+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T22:26:17.5431567+07:00  [INF] Executed DbCommand ("64"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:26:17.6093515+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:26:17.6645872+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T22:26:17.7143946+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T22:26:17.7285399+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T22:26:17.8093423+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T22:26:17.8533620+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T22:26:17.8783346+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T22:26:17.9182803+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T22:26:17.9889965+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:26:18.0069370+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:26:18.0179524+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:26:18.7140586+07:00 0HLF6F5TQLKEL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T22:26:19.1061190+07:00 0HLF6F5TQLKEL:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:26:26.9211882+07:00 0HLF6F5TQLKEL:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T22:26:29.2817783+07:00 0HLF6F5TQLKEL:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 10026.2503ms (afa2e885)
+2018-07-10T22:26:29.3693029+07:00 0HLF6F5TQLKEM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/robots.txt   (ca22a1cb)
+2018-07-10T22:26:29.5120570+07:00 0HLF6F5TQLKEL:00000001 [INF] Request finished in 10635.3658ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:26:29.5387495+07:00 0HLF6F5TQLKEM:00000001 [INF] Request finished in 197.9979ms 404  (791a596a)
+2018-07-10T22:26:43.4993256+07:00 0HLF6F5TQLKEL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin   (ca22a1cb)
+2018-07-10T22:26:43.5113635+07:00 0HLF6F5TQLKEL:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:26:43.9671102+07:00 0HLF6F5TQLKEL:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T22:26:45.0378712+07:00 0HLF6F5TQLKEO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-10T22:26:45.0664855+07:00 0HLF6F5TQLKEN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-10T22:26:45.1175830+07:00 0HLF6F5TQLKEM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-10T22:26:45.1239822+07:00 0HLF6F5TQLKEL:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 1363.5719ms (afa2e885)
+2018-07-10T22:26:45.1797871+07:00 0HLF6F5TQLKEO:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-10T22:26:45.2725713+07:00 0HLF6F5TQLKEN:00000001 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-07-10T22:26:45.2778817+07:00 0HLF6F5TQLKEM:00000002 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-07-10T22:26:45.3485952+07:00 0HLF6F5TQLKEN:00000001 [INF] Request finished in 301.1997ms 304 text/css (791a596a)
+2018-07-10T22:26:45.3596076+07:00 0HLF6F5TQLKEM:00000002 [INF] Request finished in 303.9028ms 304 text/css (791a596a)
+2018-07-10T22:26:45.3634423+07:00 0HLF6F5TQLKEL:00000002 [INF] Request finished in 1630.9287ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:26:45.4169025+07:00 0HLF6F5TQLKEP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-10T22:26:45.4409881+07:00 0HLF6F5TQLKEO:00000001 [INF] Request finished in 384.9754ms 200 text/css (791a596a)
+2018-07-10T22:26:45.4773635+07:00 0HLF6F5TQLKER:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-10T22:26:45.4875528+07:00 0HLF6F5TQLKEQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/css/custom.css   (ca22a1cb)
+2018-07-10T22:26:45.5066373+07:00 0HLF6F5TQLKEP:00000001 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-07-10T22:26:45.5215103+07:00 0HLF6F5TQLKES:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-07-10T22:26:45.5445816+07:00 0HLF6F5TQLKER:00000001 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-07-10T22:26:45.5505770+07:00 0HLF6F5TQLKEQ:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2018-07-10T22:26:45.5669426+07:00 0HLF6F5TQLKES:00000001 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2018-07-10T22:26:45.6029627+07:00 0HLF6F5TQLKEQ:00000001 [INF] Request finished in 151.5321ms 304 text/css (791a596a)
+2018-07-10T22:26:45.6150403+07:00 0HLF6F5TQLKEP:00000001 [INF] Request finished in 134.6966ms 200 image/jpeg (791a596a)
+2018-07-10T22:26:45.6264512+07:00 0HLF6F5TQLKES:00000001 [INF] Request finished in 127.4571ms 304 application/javascript (791a596a)
+2018-07-10T22:26:45.6299370+07:00 0HLF6F5TQLKER:00000001 [INF] Request finished in 115.8918ms 304 text/css (791a596a)
+2018-07-10T22:26:45.6506845+07:00 0HLF6F5TQLKEV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-07-10T22:26:45.7033998+07:00 0HLF6F5TQLKEV:00000001 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2018-07-10T22:26:45.7075855+07:00 0HLF6F5TQLKF1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/moment/moment.js   (ca22a1cb)
+2018-07-10T22:26:45.7258523+07:00 0HLF6F5TQLKET:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-07-10T22:26:45.7555249+07:00 0HLF6F5TQLKEV:00000001 [INF] Request finished in 65.4818ms 304 application/javascript (791a596a)
+2018-07-10T22:26:45.7674795+07:00 0HLF6F5TQLKET:00000001 [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2018-07-10T22:26:45.8052981+07:00 0HLF6F5TQLKF1:00000001 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2018-07-10T22:26:45.8342567+07:00 0HLF6F5TQLKF3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-07-10T22:26:45.8444651+07:00 0HLF6F5TQLKF3:00000001 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2018-07-10T22:26:45.8722447+07:00 0HLF6F5TQLKEU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-07-10T22:26:45.8741211+07:00 0HLF6F5TQLKET:00000001 [INF] Request finished in 134.0209ms 304 application/javascript (791a596a)
+2018-07-10T22:26:45.8877220+07:00 0HLF6F5TQLKEU:00000001 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-07-10T22:26:45.9309990+07:00 0HLF6F5TQLKEU:00000001 [INF] Request finished in 127.7672ms 304 application/javascript (791a596a)
+2018-07-10T22:26:45.9332390+07:00 0HLF6F5TQLKF2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-10T22:26:45.9510696+07:00 0HLF6F5TQLKF1:00000001 [INF] Request finished in 118.5303ms 304 application/javascript (791a596a)
+2018-07-10T22:26:45.9511615+07:00 0HLF6F5TQLKF0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-10T22:26:45.9662202+07:00 0HLF6F5TQLKF2:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2018-07-10T22:26:45.9727947+07:00 0HLF6F5TQLKF0:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-07-10T22:26:45.9739596+07:00 0HLF6F5TQLKF5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/js/custom.js   (ca22a1cb)
+2018-07-10T22:26:45.9897645+07:00 0HLF6F5TQLKF4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/shared/maihien.js   (ca22a1cb)
+2018-07-10T22:26:46.0062635+07:00 0HLF6F5TQLKF0:00000001 [INF] Request finished in 113.1023ms 200 application/javascript (791a596a)
+2018-07-10T22:26:46.0190027+07:00 0HLF6F5TQLKF2:00000001 [INF] Request finished in 97.7905ms 200 application/javascript (791a596a)
+2018-07-10T22:26:46.0300575+07:00 0HLF6F5TQLKF6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-07-10T22:26:46.0666334+07:00 0HLF6F5TQLKF6:00000001 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-07-10T22:26:46.0758947+07:00 0HLF6F5TQLKF4:00000001 [INF] Sending file. Request path: '"/app/shared/maihien.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\app\shared\maihien.js"' (27b0a520)
+2018-07-10T22:26:46.1390609+07:00 0HLF6F5TQLKF5:00000001 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2018-07-10T22:26:46.1654237+07:00 0HLF6F5TQLKEL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-10T22:26:46.1811085+07:00 0HLF6F5TQLKF5:00000001 [INF] Request finished in 181.8646ms 304 application/javascript (791a596a)
+2018-07-10T22:26:46.1909317+07:00 0HLF6F5TQLKEL:00000003 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-10T22:26:46.2037979+07:00 0HLF6F5TQLKF6:00000001 [INF] Request finished in 49.1171ms 304 application/javascript (791a596a)
+2018-07-10T22:26:46.2572415+07:00 0HLF6F5TQLKF3:00000001 [INF] Request finished in 434.9474ms 200 application/javascript (791a596a)
+2018-07-10T22:26:46.8285832+07:00 0HLF6F5TQLKEL:00000003 [INF] Request finished in 222.7477ms 200 font/woff2 (791a596a)
+2018-07-10T22:26:47.2703583+07:00 0HLF6F5TQLKF4:00000001 [INF] Request finished in 264.5404ms 200 application/javascript (791a596a)
+2018-07-10T22:26:53.5010108+07:00 0HLF6F5TQLKEN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-10T22:26:53.5328182+07:00 0HLF6F5TQLKEN:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:26:53.8178428+07:00 0HLF6F5TQLKEN:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-10T22:26:53.9325201+07:00 0HLF6F5TQLKEN:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 408.6146ms (afa2e885)
+2018-07-10T22:26:54.1421707+07:00 0HLF6F5TQLKEN:00000002 [INF] Request finished in 443.2332ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:26:54.1771892+07:00 0HLF6F5TQLKEO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/login/index.js   (ca22a1cb)
+2018-07-10T22:26:54.1896240+07:00 0HLF6F5TQLKEM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/animate.css/animate.css   (ca22a1cb)
+2018-07-10T22:26:54.4639110+07:00 0HLF6F5TQLKEM:00000003 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2018-07-10T22:26:54.5121349+07:00 0HLF6F5TQLKEO:00000002 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-07-10T22:26:54.6563121+07:00 0HLF6F5TQLKEM:00000003 [INF] Request finished in 468.7878ms 200 text/css (791a596a)
+2018-07-10T22:26:54.6940730+07:00 0HLF6F5TQLKEO:00000002 [INF] Request finished in 505.2325ms 200 application/javascript (791a596a)
+2018-07-10T22:28:45.6566072+07:00 0HLF6F5TQLKF7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-07-10T22:28:45.7567291+07:00 0HLF6F5TQLKF7:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2018-07-10T22:28:45.8230889+07:00 0HLF6F5TQLKF7:00000001 [INF] Request finished in 165.2395ms 200 text/plain (791a596a)
+2018-07-10T22:31:42.6866027+07:00 0HLF6F5TQLKF8:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-10T22:31:42.8535198+07:00 0HLF6F5TQLKF8:00000001 [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-07-10T22:31:42.8685191+07:00 0HLF6F5TQLKF8:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-07-10T22:31:42.8831964+07:00 0HLF6F5TQLKF8:00000001 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-07-10T22:31:42.8897041+07:00 0HLF6F5TQLKF8:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 120.263ms (afa2e885)
+2018-07-10T22:31:42.9222856+07:00 0HLF6F5TQLKF8:00000001 [INF] Request finished in 211.2841ms 400  (791a596a)
+2018-07-10T22:45:38.9341639+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T22:45:39.5032324+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:45:39.5726408+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:45:39.6255700+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T22:45:39.6977786+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T22:45:39.7359342+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T22:45:40.1621789+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T22:45:40.4173349+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T22:45:40.4642425+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T22:45:40.6181368+07:00  [INF] Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T22:45:40.8413417+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:45:40.9010594+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:45:40.9335973+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:45:41.4816514+07:00 0HLF6FGOD8HAC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T22:45:42.5901482+07:00 0HLF6FGOD8HAC:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:45:49.9675515+07:00 0HLF6FGOD8HAC:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T22:45:51.7638338+07:00 0HLF6FGOD8HAC:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 9273.8226ms (afa2e885)
+2018-07-10T22:45:52.1226547+07:00 0HLF6FGOD8HAC:00000001 [INF] Request finished in 10343.6475ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:45:52.7068816+07:00 0HLF6FGOD8HAC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/robots.txt   (ca22a1cb)
+2018-07-10T22:45:52.7885789+07:00 0HLF6FGOD8HAC:00000002 [INF] Request finished in 35.32ms 404  (791a596a)
+2018-07-10T22:46:00.3980040+07:00 0HLF6FGOD8HAC:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin   (ca22a1cb)
+2018-07-10T22:46:00.4105316+07:00 0HLF6FGOD8HAC:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:46:00.9868505+07:00 0HLF6FGOD8HAC:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T22:46:01.4821958+07:00 0HLF6FGOD8HAC:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 1054.1927ms (afa2e885)
+2018-07-10T22:46:01.5098936+07:00 0HLF6FGOD8HAC:00000003 [INF] Request finished in 1100.3969ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:46:02.2951585+07:00 0HLF6FGOD8HAC:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-10T22:46:02.3252010+07:00 0HLF6FGOD8HAC:00000004 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:46:02.7032685+07:00 0HLF6FGOD8HAC:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-10T22:46:02.9388098+07:00 0HLF6FGOD8HAC:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 508.0968ms (afa2e885)
+2018-07-10T22:46:02.9823147+07:00 0HLF6FGOD8HAC:00000004 [INF] Request finished in 672.6444ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:46:15.3438540+07:00 0HLF6FGOD8HAC:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-10T22:46:15.4691804+07:00 0HLF6FGOD8HAC:00000005 [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-07-10T22:46:15.4802718+07:00 0HLF6FGOD8HAC:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-07-10T22:46:15.4902545+07:00 0HLF6FGOD8HAC:00000005 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-07-10T22:46:15.4949552+07:00 0HLF6FGOD8HAC:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 82.958ms (afa2e885)
+2018-07-10T22:46:15.5056802+07:00 0HLF6FGOD8HAC:00000005 [INF] Request finished in 158.3811ms 400  (791a596a)
+2018-07-10T22:47:43.8653251+07:00 0HLF6FGOD8HAE:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-10T22:47:43.8974144+07:00 0HLF6FGOD8HAE:00000001 [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-07-10T22:47:43.9049540+07:00 0HLF6FGOD8HAE:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-07-10T22:47:43.9121934+07:00 0HLF6FGOD8HAE:00000001 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-07-10T22:47:43.9198630+07:00 0HLF6FGOD8HAE:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 45.7576ms (afa2e885)
+2018-07-10T22:47:43.9363654+07:00 0HLF6FGOD8HAE:00000001 [INF] Request finished in 72.3543ms 400  (791a596a)
+2018-07-10T22:50:43.7930823+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T22:50:44.3020024+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:50:44.5595184+07:00  [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:50:44.7311973+07:00  [INF] Executed DbCommand ("91"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T22:50:44.8516135+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T22:50:44.9470905+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T22:50:45.1088644+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T22:50:45.2179248+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T22:50:45.2536993+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T22:50:45.3189717+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T22:50:45.5015386+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:50:45.5397908+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:50:45.5581098+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:50:46.8326120+07:00 0HLF6FJJ8OMBN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T22:50:47.9472255+07:00 0HLF6FJJ8OMBN:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:50:55.3327437+07:00 0HLF6FJJ8OMBN:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T22:50:57.4456001+07:00 0HLF6FJJ8OMBN:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 9517.1934ms (afa2e885)
+2018-07-10T22:50:57.5498235+07:00 0HLF6FJJ8OMBN:00000001 [INF] Request finished in 11159.0999ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:51:36.4248043+07:00 0HLF6FJJ8OMBN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin   (ca22a1cb)
+2018-07-10T22:51:36.4396898+07:00 0HLF6FJJ8OMBN:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:51:36.8553950+07:00 0HLF6FJJ8OMBN:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T22:51:37.2507239+07:00 0HLF6FJJ8OMBN:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 804.5413ms (afa2e885)
+2018-07-10T22:51:37.2641336+07:00 0HLF6FJJ8OMBN:00000002 [INF] Request finished in 832.408ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:51:38.1760975+07:00 0HLF6FJJ8OMBN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-10T22:51:38.1906507+07:00 0HLF6FJJ8OMBN:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:51:38.7726248+07:00 0HLF6FJJ8OMBN:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-10T22:51:39.0090722+07:00 0HLF6FJJ8OMBN:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 718.4363ms (afa2e885)
+2018-07-10T22:51:39.1474263+07:00 0HLF6FJJ8OMBN:00000003 [INF] Request finished in 838.7045ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:52:27.6711078+07:00 0HLF6FJJ8OMBN:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-10T22:52:27.7876043+07:00 0HLF6FJJ8OMBN:00000004 [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-07-10T22:52:27.7995512+07:00 0HLF6FJJ8OMBN:00000004 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-07-10T22:52:27.8139491+07:00 0HLF6FJJ8OMBN:00000004 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-07-10T22:52:27.8197868+07:00 0HLF6FJJ8OMBN:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 87.6196ms (afa2e885)
+2018-07-10T22:52:27.8335434+07:00 0HLF6FJJ8OMBN:00000004 [INF] Request finished in 157.6519ms 400  (791a596a)
+2018-07-10T22:53:31.9981517+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T22:53:33.3796902+07:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:53:33.4720335+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:53:33.5431178+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T22:53:33.6369083+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T22:53:33.6587231+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T22:53:33.8361382+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T22:53:33.9370564+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T22:53:33.9752232+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T22:53:34.0306493+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T22:53:34.1982139+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:53:34.2366474+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:53:34.2904387+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T22:53:35.4968213+07:00 0HLF6FL5ILHG8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T22:53:36.3242449+07:00 0HLF6FL5ILHG8:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:53:44.5451658+07:00 0HLF6FL5ILHG8:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T22:53:46.4252640+07:00 0HLF6FL5ILHG8:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 10068.3042ms (afa2e885)
+2018-07-10T22:53:46.8681005+07:00 0HLF6FL5ILHG8:00000001 [INF] Request finished in 11062.3528ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:54:08.7327180+07:00 0HLF6FL5ILHG8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-10T22:54:08.7475098+07:00 0HLF6FL5ILHG8:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T22:54:09.3456492+07:00 0HLF6FL5ILHG8:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-10T22:54:09.4636716+07:00 0HLF6FL5ILHG8:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 702.0151ms (afa2e885)
+2018-07-10T22:54:09.7732319+07:00 0HLF6FL5ILHG8:00000002 [INF] Request finished in 737.8406ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T22:54:19.6745421+07:00 0HLF6FL5ILHG8:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-10T22:54:19.8078092+07:00 0HLF6FL5ILHG8:00000003 [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-07-10T22:54:19.8186180+07:00 0HLF6FL5ILHG8:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-07-10T22:54:19.8282548+07:00 0HLF6FL5ILHG8:00000003 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-07-10T22:54:19.8331657+07:00 0HLF6FL5ILHG8:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 80.313ms (afa2e885)
+2018-07-10T22:54:19.8469022+07:00 0HLF6FL5ILHG8:00000003 [INF] Request finished in 166.055ms 400  (791a596a)
+2018-07-10T22:54:23.2514701+07:00 0HLF6FL5ILHG8:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-10T22:54:23.2655260+07:00 0HLF6FL5ILHG8:00000004 [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-07-10T22:54:23.2707594+07:00 0HLF6FL5ILHG8:00000004 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-07-10T22:54:23.2754882+07:00 0HLF6FL5ILHG8:00000004 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-07-10T22:54:23.2818077+07:00 0HLF6FL5ILHG8:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 23.3753ms (afa2e885)
+2018-07-10T22:54:23.2967527+07:00 0HLF6FL5ILHG8:00000004 [INF] Request finished in 35.7134ms 400  (791a596a)
+2018-07-10T22:54:43.9394939+07:00 0HLF6FL5ILHG8:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login/authen   (ca22a1cb)
+2018-07-10T22:54:43.9772557+07:00 0HLF6FL5ILHG8:00000005 [INF] Request finished in 12.619ms 404  (791a596a)
+2018-07-10T23:01:24.5047227+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T23:01:25.0122786+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:01:25.0664611+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:01:25.1067976+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T23:01:25.1552960+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T23:01:25.1670162+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T23:01:25.3277815+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T23:01:25.6069674+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T23:01:25.6852518+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T23:01:25.7458207+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T23:01:25.8734236+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:01:25.9011549+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:01:25.9143384+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:01:26.2330712+07:00 0HLF6FPI02NSL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T23:01:26.5269524+07:00 0HLF6FPI02NSL:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-07-10T23:01:26.5379614+07:00 0HLF6FPI02NSL:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-10T23:01:26.5528546+07:00 0HLF6FPI02NSL:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-10T23:01:26.5727465+07:00 0HLF6FPI02NSL:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-10T23:01:26.5873617+07:00 0HLF6FPI02NSL:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 66.9187ms (afa2e885)
+2018-07-10T23:01:26.6047437+07:00 0HLF6FPI02NSL:00000001 [INF] Request finished in 399.3558ms 302  (791a596a)
+2018-07-10T23:01:26.6637949+07:00 0HLF6FPI02NSL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-10T23:01:26.8044361+07:00 0HLF6FPI02NSL:00000002 [INF] Executing action method "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:01:26.8488214+07:00 0HLF6FPI02NSL:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-10T23:01:31.6145058+07:00 0HLF6FPI02NSL:00000002 [INF] Executed action "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" in 4878.8867ms (afa2e885)
+2018-07-10T23:01:31.8016243+07:00 0HLF6FPI02NSL:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+3m20rhh5.254(604,149): error CS1031: Type expected
+3m20rhh5.254(604,351): error CS1031: Type expected
+3m20rhh5.254(604,553): error CS1031: Type expected
+3m20rhh5.254(604,197): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+3m20rhh5.254(604,399): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+3m20rhh5.254(604,601): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-07-10T23:01:31.9234513+07:00 0HLF6FPI02NSL:00000002 [INF] Request finished in 5249.7451ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:12:22.6928535+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T23:12:23.2734749+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:12:23.3675655+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:12:23.4175820+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T23:12:23.6756647+07:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T23:12:23.8306594+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T23:12:24.1210448+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T23:12:24.2673926+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T23:12:24.3185467+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T23:12:24.3622808+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T23:12:24.4813876+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:12:24.5175547+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:12:24.5363407+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:12:25.0645534+07:00 0HLF6FVMA3M1P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T23:12:26.1575514+07:00 0HLF6FVMA3M1P:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-07-10T23:12:26.1770584+07:00 0HLF6FVMA3M1P:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-10T23:12:26.2074204+07:00 0HLF6FVMA3M1P:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-10T23:12:26.2781045+07:00 0HLF6FVMA3M1P:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-10T23:12:26.3427456+07:00 0HLF6FVMA3M1P:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 162.6258ms (afa2e885)
+2018-07-10T23:12:26.3942695+07:00 0HLF6FVMA3M1P:00000001 [INF] Request finished in 1355.8291ms 302  (791a596a)
+2018-07-10T23:12:26.4980041+07:00 0HLF6FVMA3M1P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-10T23:12:26.6846006+07:00 0HLF6FVMA3M1P:00000002 [INF] Executing action method "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:12:26.7293097+07:00 0HLF6FVMA3M1P:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-10T23:12:32.6387564+07:00 0HLF6FVMA3M1P:00000002 [INF] Executed action "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" in 6060.5217ms (afa2e885)
+2018-07-10T23:12:32.8335989+07:00 0HLF6FVMA3M1P:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+5iboylwq.rlo(604,149): error CS1031: Type expected
+5iboylwq.rlo(604,351): error CS1031: Type expected
+5iboylwq.rlo(604,553): error CS1031: Type expected
+5iboylwq.rlo(604,197): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+5iboylwq.rlo(604,399): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+5iboylwq.rlo(604,601): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-07-10T23:12:32.9584860+07:00 0HLF6FVMA3M1P:00000002 [INF] Request finished in 6521.0212ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:15:18.6189412+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T23:15:19.1869393+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:15:19.4856387+07:00  [INF] Executed DbCommand ("75"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:15:19.6514072+07:00  [INF] Executed DbCommand ("86"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T23:15:19.8111114+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T23:15:19.8992241+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T23:15:20.1237974+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T23:15:20.3154215+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T23:15:20.4045773+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T23:15:20.4465718+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T23:15:20.5979204+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:15:20.6442003+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:15:20.6605380+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:15:21.4938163+07:00 0HLF6G1AP8ADT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T23:15:22.2511498+07:00 0HLF6G1AP8ADT:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-07-10T23:15:22.2685083+07:00 0HLF6G1AP8ADT:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-10T23:15:22.2859767+07:00 0HLF6G1AP8ADT:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-10T23:15:22.3039592+07:00 0HLF6G1AP8ADT:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-10T23:15:22.3202610+07:00 0HLF6G1AP8ADT:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 85.2672ms (afa2e885)
+2018-07-10T23:15:22.3491627+07:00 0HLF6G1AP8ADT:00000001 [INF] Request finished in 1163.472ms 302  (791a596a)
+2018-07-10T23:15:22.3807922+07:00 0HLF6G1AP8ADT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-10T23:15:22.5663666+07:00 0HLF6G1AP8ADT:00000002 [INF] Executing action method "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:15:22.6123792+07:00 0HLF6G1AP8ADT:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-10T23:15:28.6460237+07:00 0HLF6G1AP8ADT:00000002 [INF] Executed action "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" in 6178.4093ms (afa2e885)
+2018-07-10T23:15:28.8515233+07:00 0HLF6G1AP8ADT:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\Views\Account\Login.cshtml(21,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\Views\Account\Login.cshtml(22,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\Views\Account\Login.cshtml(23,147): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-07-10T23:15:29.2427148+07:00 0HLF6G1AP8ADT:00000002 [INF] Request finished in 6593.2652ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:17:43.5377091+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T23:17:44.0523752+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:17:44.0954380+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:17:44.1467430+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T23:17:44.2100165+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T23:17:44.2326507+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T23:17:44.3645485+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T23:17:44.6246629+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T23:17:44.7285061+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T23:17:44.8079097+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T23:17:44.9536007+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:17:45.0011926+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:17:45.0465367+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:17:45.6133200+07:00 0HLF6G2LRA9N6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T23:17:46.0998431+07:00 0HLF6G2LRA9N6:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-07-10T23:17:46.1244358+07:00 0HLF6G2LRA9N6:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-10T23:17:46.1553743+07:00 0HLF6G2LRA9N6:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-10T23:17:46.1850632+07:00 0HLF6G2LRA9N6:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-10T23:17:46.2002644+07:00 0HLF6G2LRA9N6:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 115.4381ms (afa2e885)
+2018-07-10T23:17:46.2472729+07:00 0HLF6G2LRA9N6:00000001 [INF] Request finished in 642.8986ms 302  (791a596a)
+2018-07-10T23:17:46.2904318+07:00 0HLF6G2LRA9N6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-10T23:17:46.8488484+07:00 0HLF6G2LRA9N6:00000002 [INF] Executing action method "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:17:47.0646744+07:00 0HLF6G2LRA9N6:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-10T23:17:54.1636811+07:00 0HLF6G2LRA9N6:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-07-10T23:17:55.8625446+07:00 0HLF6G2LRA9N6:00000002 [INF] Executed action "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" in 9410.2947ms (afa2e885)
+2018-07-10T23:17:56.1868178+07:00 0HLF6G2LRA9N6:00000002 [INF] Request finished in 9616.7783ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:17:56.2029054+07:00 0HLF6G2LRA9N7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-07-10T23:17:56.2066682+07:00 0HLF6G2LRA9N8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-07-10T23:17:56.2327774+07:00 0HLF6G2LRA9N7:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-07-10T23:17:56.2920009+07:00 0HLF6G2LRA9N8:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-07-10T23:17:56.7960283+07:00 0HLF6G2LRA9N8:00000001 [INF] Request finished in 436.8966ms 200 application/javascript (791a596a)
+2018-07-10T23:17:57.0546135+07:00 0HLF6G2LRA9N7:00000001 [INF] Request finished in 408.8532ms 200 application/javascript (791a596a)
+2018-07-10T23:18:05.0218815+07:00 0HLF6G2LRA9N6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Account/   (ca22a1cb)
+2018-07-10T23:18:05.0447094+07:00 0HLF6G2LRA9N6:00000003 [INF] Request finished in 8.8015ms 404  (791a596a)
+2018-07-10T23:18:12.8777504+07:00 0HLF6G2LRA9N8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin   (ca22a1cb)
+2018-07-10T23:18:12.8946326+07:00 0HLF6G2LRA9N8:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:18:13.3290250+07:00 0HLF6G2LRA9N8:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T23:18:13.9023458+07:00 0HLF6G2LRA9N8:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 888.9087ms (afa2e885)
+2018-07-10T23:18:14.0852504+07:00 0HLF6G2LRA9N6:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-10T23:18:14.1074853+07:00 0HLF6G2LRA9N7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-10T23:18:14.1136873+07:00 0HLF6G2LRA9N8:00000002 [INF] Request finished in 1034.2714ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:18:14.1304839+07:00 0HLF6G2LRA9N6:00000004 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-07-10T23:18:14.1416464+07:00 0HLF6G2LRA9N9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-10T23:18:14.1733615+07:00 0HLF6G2LRA9N7:00000002 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-07-10T23:18:14.1854750+07:00 0HLF6G2LRA9N8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-07-10T23:18:14.1932511+07:00 0HLF6G2LRA9N9:00000001 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-07-10T23:18:14.2050098+07:00 0HLF6G2LRA9N6:00000004 [INF] Request finished in 256.057ms 304 text/css (791a596a)
+2018-07-10T23:18:14.2194411+07:00 0HLF6G2LRA9N8:00000003 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2018-07-10T23:18:14.2422494+07:00 0HLF6G2LRA9N9:00000001 [INF] Request finished in 299.4357ms 304 text/css (791a596a)
+2018-07-10T23:18:14.2455230+07:00 0HLF6G2LRA9N7:00000002 [INF] Request finished in 308.7821ms 304 text/css (791a596a)
+2018-07-10T23:18:14.2499704+07:00 0HLF6G2LRA9NA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-10T23:18:14.2681927+07:00 0HLF6G2LRA9N8:00000003 [INF] Request finished in 95.9863ms 304 application/javascript (791a596a)
+2018-07-10T23:18:14.2802623+07:00 0HLF6G2LRA9NC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-10T23:18:14.2856060+07:00 0HLF6G2LRA9NA:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2018-07-10T23:18:14.3355729+07:00 0HLF6G2LRA9ND:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-07-10T23:18:14.3432442+07:00 0HLF6G2LRA9NB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/css/custom.css   (ca22a1cb)
+2018-07-10T23:18:14.3720043+07:00 0HLF6G2LRA9NC:00000001 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2018-07-10T23:18:14.4534670+07:00 0HLF6G2LRA9NA:00000001 [INF] Request finished in 70.5463ms 304 text/css (791a596a)
+2018-07-10T23:18:14.5840005+07:00 0HLF6G2LRA9ND:00000001 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-07-10T23:18:14.6574099+07:00 0HLF6G2LRA9NB:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2018-07-10T23:18:14.8091596+07:00 0HLF6G2LRA9NC:00000001 [INF] Request finished in 121.1085ms 304 image/jpeg (791a596a)
+2018-07-10T23:18:14.9304102+07:00 0HLF6G2LRA9NE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-07-10T23:18:14.9623609+07:00 0HLF6G2LRA9ND:00000001 [INF] Request finished in 307.7754ms 304 application/javascript (791a596a)
+2018-07-10T23:18:14.9897076+07:00 0HLF6G2LRA9NE:00000001 [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2018-07-10T23:18:15.0987723+07:00 0HLF6G2LRA9NE:00000001 [INF] Request finished in 456.4382ms 304 application/javascript (791a596a)
+2018-07-10T23:18:15.1313717+07:00 0HLF6G2LRA9NG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/moment/moment.js   (ca22a1cb)
+2018-07-10T23:18:15.1367953+07:00 0HLF6G2LRA9NB:00000001 [INF] Request finished in 405.0844ms 304 text/css (791a596a)
+2018-07-10T23:18:15.1795601+07:00 0HLF6G2LRA9NG:00000001 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2018-07-10T23:18:15.1903047+07:00 0HLF6G2LRA9NF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-07-10T23:18:15.2083984+07:00 0HLF6G2LRA9NI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-10T23:18:15.2215580+07:00 0HLF6G2LRA9NF:00000001 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-07-10T23:18:15.2385594+07:00 0HLF6G2LRA9NH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-07-10T23:18:15.2585582+07:00 0HLF6G2LRA9NI:00000001 [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2018-07-10T23:18:15.2953983+07:00 0HLF6G2LRA9NF:00000001 [INF] Request finished in 69.8493ms 304 application/javascript (791a596a)
+2018-07-10T23:18:15.2995823+07:00 0HLF6G2LRA9NG:00000001 [INF] Request finished in 218.6368ms 304 application/javascript (791a596a)
+2018-07-10T23:18:15.3131902+07:00 0HLF6G2LRA9NH:00000001 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2018-07-10T23:18:15.3280983+07:00 0HLF6G2LRA9NI:00000001 [INF] Request finished in 142.8383ms 304 application/javascript (791a596a)
+2018-07-10T23:18:15.3650138+07:00 0HLF6G2LRA9NJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/shared/maihien.js   (ca22a1cb)
+2018-07-10T23:18:15.4121485+07:00 0HLF6G2LRA9NL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-07-10T23:18:15.4168319+07:00 0HLF6G2LRA9NJ:00000001 [INF] Sending file. Request path: '"/app/shared/maihien.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\app\shared\maihien.js"' (27b0a520)
+2018-07-10T23:18:15.4221111+07:00 0HLF6G2LRA9NH:00000001 [INF] Request finished in 151.1109ms 304 application/javascript (791a596a)
+2018-07-10T23:18:15.4493697+07:00 0HLF6G2LRA9NM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/js/custom.js   (ca22a1cb)
+2018-07-10T23:18:15.4529768+07:00 0HLF6G2LRA9NK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-10T23:18:15.4639436+07:00 0HLF6G2LRA9N6:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-10T23:18:15.4712039+07:00 0HLF6G2LRA9NL:00000001 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2018-07-10T23:18:15.5389133+07:00 0HLF6G2LRA9NJ:00000001 [INF] Request finished in 92.0978ms 200 application/javascript (791a596a)
+2018-07-10T23:18:15.5449583+07:00 0HLF6G2LRA9N6:00000005 [INF] The file "/lib/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2018-07-10T23:18:15.5698766+07:00 0HLF6G2LRA9NL:00000001 [INF] Request finished in 99.2465ms 304 application/javascript (791a596a)
+2018-07-10T23:18:15.5726472+07:00 0HLF6G2LRA9NM:00000001 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2018-07-10T23:18:15.5930822+07:00 0HLF6G2LRA9NK:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2018-07-10T23:18:15.6529360+07:00 0HLF6G2LRA9N6:00000005 [INF] Request finished in 148.0079ms 304 font/woff2 (791a596a)
+2018-07-10T23:18:15.6864668+07:00 0HLF6G2LRA9NM:00000001 [INF] Request finished in 201.9878ms 304 application/javascript (791a596a)
+2018-07-10T23:18:15.7190229+07:00 0HLF6G2LRA9NK:00000001 [INF] Request finished in 233.1473ms 304 application/javascript (791a596a)
+2018-07-10T23:18:19.4697388+07:00 0HLF6G2LRA9N7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-10T23:18:19.4823095+07:00 0HLF6G2LRA9N7:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:18:19.7717310+07:00 0HLF6G2LRA9N7:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-10T23:18:19.8783740+07:00 0HLF6G2LRA9N7:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 385.7652ms (afa2e885)
+2018-07-10T23:18:20.0296871+07:00 0HLF6G2LRA9N7:00000003 [INF] Request finished in 418.0648ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:18:20.0965845+07:00 0HLF6G2LRA9N9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/login/index.js   (ca22a1cb)
+2018-07-10T23:18:20.0949809+07:00 0HLF6G2LRA9N8:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/animate.css/animate.css   (ca22a1cb)
+2018-07-10T23:18:20.1312648+07:00 0HLF6G2LRA9N8:00000004 [INF] The file "/lib/animate.css/animate.css" was not modified (f1f8d725)
+2018-07-10T23:18:20.1343437+07:00 0HLF6G2LRA9N9:00000002 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-07-10T23:18:20.1819860+07:00 0HLF6G2LRA9N9:00000002 [INF] Request finished in 106.4612ms 304 application/javascript (791a596a)
+2018-07-10T23:18:20.1977255+07:00 0HLF6G2LRA9N8:00000004 [INF] Request finished in 105.5208ms 304 text/css (791a596a)
+2018-07-10T23:18:40.6756091+07:00 0HLF6G2LRA9NA:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-10T23:18:40.7272399+07:00 0HLF6G2LRA9NA:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:18:40.7548472+07:00 0HLF6G2LRA9NA:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T23:18:40.8792664+07:00 0HLF6G2LRA9NA:00000002 [INF] Executed DbCommand ("67"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-10T23:18:41.0783737+07:00 0HLF6G2LRA9NA:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-10T23:18:41.1455371+07:00 0HLF6G2LRA9NA:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-10T23:18:41.1574244+07:00 0HLF6G2LRA9NA:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-10T23:18:41.1650915+07:00 0HLF6G2LRA9NA:00000002 [INF] User logged in. (fdce0db4)
+2018-07-10T23:18:41.1759641+07:00 0HLF6G2LRA9NA:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-10T23:18:41.2544538+07:00 0HLF6G2LRA9NA:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 555.5612ms (afa2e885)
+2018-07-10T23:18:41.2955259+07:00 0HLF6G2LRA9NA:00000002 [INF] Request finished in 585.9027ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-10T23:18:41.3266508+07:00 0HLF6G2LRA9NC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-10T23:18:41.3390264+07:00 0HLF6G2LRA9NC:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:18:41.3451104+07:00 0HLF6G2LRA9NC:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:18:41.3514591+07:00 0HLF6G2LRA9NC:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T23:18:41.4290028+07:00 0HLF6G2LRA9NC:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 12.4719ms (afa2e885)
+2018-07-10T23:18:41.7986869+07:00 0HLF6G2LRA9NC:00000002 [INF] Request finished in 138.6111ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:19:53.5527148+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T23:19:54.0045713+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:19:54.0333643+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:19:54.0596061+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T23:19:54.0921465+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T23:19:54.1024020+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T23:19:54.1639326+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T23:19:54.2166949+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T23:19:54.2341869+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T23:19:54.2585564+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T23:19:54.3330793+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:19:54.3533697+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:19:54.3648227+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:19:54.6713089+07:00 0HLF6G3SAO0K2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T23:19:54.7576391+07:00 0HLF6G3SAO0K2:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:19:55.4074826+07:00 0HLF6G3SAO0K2:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-10T23:19:55.4408884+07:00 0HLF6G3SAO0K2:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:20:00.0005687+07:00 0HLF6G3SAO0K2:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T23:20:01.5255377+07:00 0HLF6G3SAO0K2:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 6047.3305ms (afa2e885)
+2018-07-10T23:20:01.6294622+07:00 0HLF6G3SAO0K2:00000001 [INF] Request finished in 6902.3822ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:20:07.2699773+07:00 0HLF6G3SAO0K2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin   (ca22a1cb)
+2018-07-10T23:20:07.2828772+07:00 0HLF6G3SAO0K2:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:20:07.3067363+07:00 0HLF6G3SAO0K2:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:20:07.6845539+07:00 0HLF6G3SAO0K2:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T23:20:08.1133383+07:00 0HLF6G3SAO0K2:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 806.8022ms (afa2e885)
+2018-07-10T23:20:08.1295358+07:00 0HLF6G3SAO0K2:00000002 [INF] Request finished in 851.7662ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:20:09.1434826+07:00 0HLF6G3SAO0K2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-10T23:20:09.1519977+07:00 0HLF6G3SAO0K2:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:20:09.1748860+07:00 0HLF6G3SAO0K2:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:20:09.6129159+07:00 0HLF6G3SAO0K2:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-10T23:20:09.8454936+07:00 0HLF6G3SAO0K2:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 549.0303ms (afa2e885)
+2018-07-10T23:20:09.9895019+07:00 0HLF6G3SAO0K2:00000003 [INF] Request finished in 739.0098ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:20:23.3946921+07:00 0HLF6G3SAO0K2:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-10T23:20:23.4002979+07:00 0HLF6G3SAO0K2:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:20:23.5245594+07:00 0HLF6G3SAO0K2:00000004 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:20:23.5646838+07:00 0HLF6G3SAO0K2:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T23:20:23.6881464+07:00 0HLF6G3SAO0K2:00000004 [INF] Executed DbCommand ("64"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-10T23:20:23.8790821+07:00 0HLF6G3SAO0K2:00000004 [INF] Executed DbCommand ("7"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-10T23:20:23.9385621+07:00 0HLF6G3SAO0K2:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-10T23:20:23.9664140+07:00 0HLF6G3SAO0K2:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-10T23:20:23.9775179+07:00 0HLF6G3SAO0K2:00000004 [INF] User logged in. (fdce0db4)
+2018-07-10T23:20:23.9910316+07:00 0HLF6G3SAO0K2:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-10T23:20:24.0673613+07:00 0HLF6G3SAO0K2:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 605.23ms (afa2e885)
+2018-07-10T23:20:24.0777438+07:00 0HLF6G3SAO0K2:00000004 [INF] Request finished in 680.3307ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-10T23:20:24.0993235+07:00 0HLF6G3SAO0K2:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-10T23:20:24.1058799+07:00 0HLF6G3SAO0K2:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:20:24.1124583+07:00 0HLF6G3SAO0K2:00000005 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:20:24.1182703+07:00 0HLF6G3SAO0K2:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T23:20:24.1394399+07:00 0HLF6G3SAO0K2:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 13.3443ms (afa2e885)
+2018-07-10T23:20:24.3788144+07:00 0HLF6G3SAO0K2:00000005 [INF] Request finished in 47.5469ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:20:30.3215773+07:00 0HLF6G3SAO0K2:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/login.html   (ca22a1cb)
+2018-07-10T23:20:30.3286132+07:00 0HLF6G3SAO0K2:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:20:30.3908839+07:00 0HLF6G3SAO0K2:00000006 [INF] Request finished in 15.4576ms 404  (791a596a)
+2018-07-10T23:20:45.7792890+07:00 0HLF6G3SAO0K2:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home   (ca22a1cb)
+2018-07-10T23:20:45.7859096+07:00 0HLF6G3SAO0K2:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:20:45.7921800+07:00 0HLF6G3SAO0K2:00000007 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:20:45.7967566+07:00 0HLF6G3SAO0K2:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T23:20:45.8144307+07:00 0HLF6G3SAO0K2:00000007 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 11.1129ms (afa2e885)
+2018-07-10T23:20:45.9332223+07:00 0HLF6G3SAO0K2:00000007 [INF] Request finished in 42.5132ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:21:40.4536726+07:00 0HLF6G3SAO0K2:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/login.html   (ca22a1cb)
+2018-07-10T23:21:40.4617040+07:00 0HLF6G3SAO0K2:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:21:40.4861647+07:00 0HLF6G3SAO0K2:00000008 [INF] Request finished in 16.8368ms 404  (791a596a)
+2018-07-10T23:21:46.3728840+07:00 0HLF6G3SAO0K2:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/login   (ca22a1cb)
+2018-07-10T23:21:46.3782238+07:00 0HLF6G3SAO0K2:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:21:46.3843903+07:00 0HLF6G3SAO0K2:00000009 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:21:46.3915553+07:00 0HLF6G3SAO0K2:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-10T23:21:46.4093428+07:00 0HLF6G3SAO0K2:00000009 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 14.0653ms (afa2e885)
+2018-07-10T23:21:46.7006244+07:00 0HLF6G3SAO0K2:00000009 [INF] Request finished in 156.1715ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:23:58.2132422+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T23:23:58.6459540+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:23:58.6946906+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:23:58.7575609+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-10T23:23:58.8335617+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-10T23:23:58.8449984+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-10T23:23:58.9603030+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-10T23:23:59.0687326+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-10T23:23:59.2646361+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-10T23:23:59.5088716+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-10T23:23:59.8337785+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:23:59.9730944+07:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:24:00.1489153+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-10T23:24:00.7855248+07:00 0HLF6G65L675I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-10T23:24:00.8931654+07:00 0HLF6G65L675I:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:24:01.7611042+07:00 0HLF6G65L675I:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-10T23:24:01.8288920+07:00 0HLF6G65L675I:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:24:08.0278837+07:00 0HLF6G65L675I:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T23:24:09.8116121+07:00 0HLF6G65L675I:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 8049.5042ms (afa2e885)
+2018-07-10T23:24:10.0787210+07:00 0HLF6G65L675I:00000001 [INF] Request finished in 9074.1803ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:24:38.3720736+07:00 0HLF6G65L675I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-10T23:24:38.3850048+07:00 0HLF6G65L675I:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:24:38.4169526+07:00 0HLF6G65L675I:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:24:38.8432861+07:00 0HLF6G65L675I:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-10T23:24:38.9435830+07:00 0HLF6G65L675I:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 533.4499ms (afa2e885)
+2018-07-10T23:24:39.0787269+07:00 0HLF6G65L675I:00000002 [INF] Request finished in 580.328ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:24:39.1025654+07:00 0HLF6G65L675I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/shared/maihien.js   (ca22a1cb)
+2018-07-10T23:24:39.1676983+07:00 0HLF6G65L675I:00000003 [INF] The file "/app/shared/maihien.js" was not modified (f1f8d725)
+2018-07-10T23:24:39.5871992+07:00 0HLF6G65L675I:00000003 [INF] Request finished in 89.275ms 304 application/javascript (791a596a)
+2018-07-10T23:24:52.8842979+07:00 0HLF6G65L675I:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-10T23:24:52.8898067+07:00 0HLF6G65L675I:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:24:53.0251888+07:00 0HLF6G65L675I:00000004 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:24:53.0682866+07:00 0HLF6G65L675I:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-10T23:24:53.4715695+07:00 0HLF6G65L675I:00000004 [INF] Executed DbCommand ("220"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-10T23:24:53.8279110+07:00 0HLF6G65L675I:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-10T23:24:53.9068681+07:00 0HLF6G65L675I:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-10T23:24:53.9326634+07:00 0HLF6G65L675I:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-10T23:24:53.9407054+07:00 0HLF6G65L675I:00000004 [INF] User logged in. (fdce0db4)
+2018-07-10T23:24:53.9514882+07:00 0HLF6G65L675I:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-10T23:24:54.0155222+07:00 0HLF6G65L675I:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 1061.5741ms (afa2e885)
+2018-07-10T23:24:54.0458145+07:00 0HLF6G65L675I:00000004 [INF] Request finished in 1138.4935ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-10T23:24:54.0604331+07:00 0HLF6G65L675I:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-10T23:24:54.0754217+07:00 0HLF6G65L675K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/robots.txt   (ca22a1cb)
+2018-07-10T23:24:54.0793543+07:00 0HLF6G65L675I:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:24:54.0940635+07:00 0HLF6G65L675K:00000001 [INF] Request finished in 23.6272ms 404  (791a596a)
+2018-07-10T23:24:54.1046813+07:00 0HLF6G65L675I:00000005 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:24:54.3305854+07:00 0HLF6G65L675I:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-10T23:24:54.8218886+07:00 0HLF6G65L675I:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 708.3291ms (afa2e885)
+2018-07-10T23:24:54.8904995+07:00 0HLF6G65L675I:00000005 [INF] Request finished in 771.5591ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-10T23:25:06.1730938+07:00 0HLF6G65L675K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/login.html   (ca22a1cb)
+2018-07-10T23:25:06.1803597+07:00 0HLF6G65L675K:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:25:06.2210607+07:00 0HLF6G65L675K:00000002 [INF] Request finished in 15.2537ms 404  (791a596a)
+2018-07-10T23:25:10.7344528+07:00 0HLF6G65L675I:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/login   (ca22a1cb)
+2018-07-10T23:25:10.7401990+07:00 0HLF6G65L675I:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:25:10.7727380+07:00 0HLF6G65L675I:00000006 [INF] Request finished in 10.4304ms 404  (791a596a)
+2018-07-10T23:25:14.6874242+07:00 0HLF6G65L675K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/login   (ca22a1cb)
+2018-07-10T23:25:14.6933619+07:00 0HLF6G65L675K:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:25:14.7245031+07:00 0HLF6G65L675K:00000003 [INF] Request finished in 10.9371ms 404  (791a596a)
+2018-07-10T23:25:19.3810000+07:00 0HLF6G65L675I:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/login   (ca22a1cb)
+2018-07-10T23:25:19.3866837+07:00 0HLF6G65L675I:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-10T23:25:19.3933526+07:00 0HLF6G65L675I:00000007 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-10T23:25:19.3983389+07:00 0HLF6G65L675I:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-10T23:25:19.4540331+07:00 0HLF6G65L675I:00000007 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 12.1405ms (afa2e885)
+2018-07-10T23:25:19.5501485+07:00 0HLF6G65L675I:00000007 [INF] Request finished in 95.3675ms 200 text/html; charset=utf-8 (791a596a)
