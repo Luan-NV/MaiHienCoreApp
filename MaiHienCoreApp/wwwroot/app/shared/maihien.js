@@ -1,4 +1,4 @@
-﻿var MaiHien = {
+﻿var maihien = {
     configs: {
         pageSize: 10,
         pageIndex: 1
