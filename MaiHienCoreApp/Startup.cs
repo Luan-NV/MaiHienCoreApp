@@ -15,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using System;
+using TeduCoreApp.Helpers;
 
 namespace MaiHienCoreApp
 {
@@ -67,6 +68,8 @@ namespace MaiHienCoreApp
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddTransient<DbInitializer>();
+
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
 

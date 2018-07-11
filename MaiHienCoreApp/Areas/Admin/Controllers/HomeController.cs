@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MaiHienCoreApp.Extensions;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MaiHienCoreApp.Areas.Admin.Controllers
 {
@@ -7,6 +8,7 @@ namespace MaiHienCoreApp.Areas.Admin.Controllers
     {
         public IActionResult Index()
         {
+            var email = User.GetSpecificClaim("UserId");
             return View();
         }
     }
