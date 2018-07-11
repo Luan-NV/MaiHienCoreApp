@@ -1,24 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using MaiHienCoreApp.Data.Entities;
 using MaiHienCoreApp.Models.AccountViewModels;
-using Microsoft.AspNetCore.Authorization;
-using MaiHienCoreApp.Data.Entities;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging;
 using MaiHienCoreApp.Utilities.Dtos;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
 
 namespace MaiHienCoreApp.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class LoginController : Controller
+    public class LoginController : BaseController
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly ILogger _logger;
-
 
         public LoginController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager
             , ILogger<LoginController> logger)
@@ -27,6 +22,7 @@ namespace MaiHienCoreApp.Areas.Admin.Controllers
             _signInManager = signInManager;
             _logger = logger;
         }
+
         public IActionResult Index()
         {
             return View();
@@ -61,6 +57,5 @@ namespace MaiHienCoreApp.Areas.Admin.Controllers
             // If we got this far, something failed, redisplay form
             return new ObjectResult(new GenericResult(false, model));
         }
-
     }
 }
