@@ -7,7 +7,7 @@ namespace MaiHienCoreApp.Areas.Admin.Controllers
     {
         public IActionResult Index()
         {
-            var email = User.GetSpecificClaim("UserId");
+            var email = User.GetSpecificClaim("Email");
             return View();
         }
     }

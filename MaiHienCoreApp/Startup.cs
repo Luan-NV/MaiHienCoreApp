@@ -1,21 +1,26 @@
-﻿using AutoMapper;
-using MaiHienCoreApp.Application.Implementation;
-using MaiHienCoreApp.Application.Interfaces;
-using MaiHienCoreApp.Data.EF;
-using MaiHienCoreApp.Data.EF.Repositories;
-using MaiHienCoreApp.Data.Entities;
-using MaiHienCoreApp.Data.IRepositories;
-using MaiHienCoreApp.Helpers;
-using MaiHienCoreApp.Services;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MaiHienCoreApp.Data;
+using MaiHienCoreApp.Models;
+using MaiHienCoreApp.Services;
+using MaiHienCoreApp.Data.EF;
+using MaiHienCoreApp.Data.Entities;
+using AutoMapper;
+using MaiHienCoreApp.Application.Interfaces;
+using MaiHienCoreApp.Data.EF.Repositories;
+using MaiHienCoreApp.Data.IRepositories;
+using MaiHienCoreApp.Application.Implementation;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
-using System;
+using MaiHienCoreApp.Helpers;
 
 namespace MaiHienCoreApp
 {
@@ -77,6 +82,7 @@ namespace MaiHienCoreApp
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IFunctionRepository, FunctionRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
+
             //Serrvices
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
             services.AddTransient<IFunctionService, FunctionService>();
@@ -111,6 +117,7 @@ namespace MaiHienCoreApp
                 routes.MapRoute(name: "areaRoute",
                     template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
             });
+
         }
     }
 }
