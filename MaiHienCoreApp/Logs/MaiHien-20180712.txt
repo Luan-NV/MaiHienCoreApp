@@ -11488,3 +11488,1201 @@ WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
 2018-07-12T16:32:36.7714364+07:00 0HLF7QJ4L0CA9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/products/product-1.jpg   (ca22a1cb)
 2018-07-12T16:32:36.7796256+07:00 0HLF7QJ4L0CA9:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
 2018-07-12T16:32:36.8087739+07:00 0HLF7QJ4L0CA9:00000002 [INF] Request finished in 14.2662ms 404  (791a596a)
+2018-07-12T19:16:13.1661907+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:13.7011441+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:16:13.7610102+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:16:13.8162827+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-12T19:16:13.8634083+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-12T19:16:13.8777173+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-12T19:16:13.8906361+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-12T19:16:13.9039591+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-12T19:16:13.9172439+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-12T19:16:13.9434377+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-12T19:16:13.9706506+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:16:13.9843186+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:16:14.0049703+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:16:14.9083406+07:00 0HLF7U51JOF9J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-12T19:16:15.3302916+07:00 0HLF7U51JOF9J:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-07-12T19:16:15.3463475+07:00 0HLF7U51JOF9J:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-12T19:16:15.3632347+07:00 0HLF7U51JOF9J:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-12T19:16:15.3781433+07:00 0HLF7U51JOF9J:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-12T19:16:15.3965927+07:00 0HLF7U51JOF9J:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 77.7741ms (afa2e885)
+2018-07-12T19:16:15.4190404+07:00 0HLF7U51JOF9J:00000001 [INF] Request finished in 591.2933ms 302  (791a596a)
+2018-07-12T19:16:15.4484650+07:00 0HLF7U51JOF9J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-12T19:16:15.6096340+07:00 0HLF7U51JOF9J:00000002 [INF] Executing action method "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:15.6419576+07:00 0HLF7U51JOF9J:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-12T19:16:23.0281152+07:00 0HLF7U51JOF9J:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-07-12T19:16:24.7407772+07:00 0HLF7U51JOF9J:00000002 [INF] Executed action "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" in 9216.5428ms (afa2e885)
+2018-07-12T19:16:24.7581083+07:00 0HLF7U51JOF9J:00000002 [INF] Request finished in 9308.998ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:16:24.8260417+07:00 0HLF7U51JOF9O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/robots.txt   (ca22a1cb)
+2018-07-12T19:16:24.8404922+07:00 0HLF7U51JOF9O:00000001 [INF] Request finished in 53.4075ms 404  (791a596a)
+2018-07-12T19:16:24.8641336+07:00 0HLF7U51JOF9P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-07-12T19:16:24.8657162+07:00 0HLF7U51JOF9J:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-12T19:16:24.8856016+07:00 0HLF7U51JOF9P:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-07-12T19:16:24.9406286+07:00 0HLF7U51JOF9P:00000001 [INF] Request finished in 90.0664ms 304 application/javascript (791a596a)
+2018-07-12T19:16:24.9631820+07:00 0HLF7U51JOF9J:00000003 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-07-12T19:16:24.9715452+07:00 0HLF7U51JOF9J:00000003 [INF] Request finished in 167.2238ms 304 text/css (791a596a)
+2018-07-12T19:16:29.7423778+07:00 0HLF7U51JOF9Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-12T19:16:29.7581643+07:00 0HLF7U51JOF9Q:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:30.2765021+07:00 0HLF7U51JOF9Q:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-12T19:16:30.3502526+07:00 0HLF7U51JOF9Q:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 576.5412ms (afa2e885)
+2018-07-12T19:16:30.3594373+07:00 0HLF7U51JOF9Q:00000001 [INF] Request finished in 621.1814ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:16:30.4086443+07:00 0HLF7U51JOF9U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-12T19:16:30.4202262+07:00 0HLF7U51JOF9U:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2018-07-12T19:16:30.4243628+07:00 0HLF7U51JOF9R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-12T19:16:30.4567752+07:00 0HLF7U51JOF9Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-12T19:16:30.4587701+07:00 0HLF7U51JOF9R:00000001 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-07-12T19:16:30.4636263+07:00 0HLF7U51JOF9S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/animate.css/animate.css   (ca22a1cb)
+2018-07-12T19:16:30.4857606+07:00 0HLF7U51JOF9S:00000001 [INF] The file "/lib/animate.css/animate.css" was not modified (f1f8d725)
+2018-07-12T19:16:30.5304992+07:00 0HLF7U51JOF9S:00000001 [INF] Request finished in 98.965ms 304 text/css (791a596a)
+2018-07-12T19:16:30.5321516+07:00 0HLF7U51JOF9Q:00000002 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-07-12T19:16:30.5443451+07:00 0HLF7U51JOF9R:00000001 [INF] Request finished in 72.4175ms 304 text/css (791a596a)
+2018-07-12T19:16:30.5524838+07:00 0HLF7U51JOF9U:00000001 [INF] Request finished in 28.8327ms 304 text/css (791a596a)
+2018-07-12T19:16:30.5670567+07:00 0HLF7U51JOF9Q:00000002 [INF] Request finished in 155.3955ms 304 text/css (791a596a)
+2018-07-12T19:16:30.5942602+07:00 0HLF7U51JOF9S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-07-12T19:16:30.6147447+07:00 0HLF7U51JOF9R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/shared/maihien.js   (ca22a1cb)
+2018-07-12T19:16:30.6667030+07:00 0HLF7U51JOF9Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/login/index.js   (ca22a1cb)
+2018-07-12T19:16:30.6918721+07:00 0HLF7U51JOF9S:00000002 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2018-07-12T19:16:30.7077339+07:00 0HLF7U51JOF9U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-12T19:16:30.7078147+07:00 0HLF7U51JOF9R:00000002 [INF] The file "/app/shared/maihien.js" was not modified (f1f8d725)
+2018-07-12T19:16:30.7590461+07:00 0HLF7U51JOF9U:00000002 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2018-07-12T19:16:30.7739114+07:00 0HLF7U51JOF9U:00000002 [INF] Request finished in 201.6564ms 304 application/javascript (791a596a)
+2018-07-12T19:16:30.7980967+07:00 0HLF7U51JOF9S:00000002 [INF] Request finished in 152.4679ms 304 application/javascript (791a596a)
+2018-07-12T19:16:30.8026895+07:00 0HLF7U51JOF9Q:00000003 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-07-12T19:16:30.8160021+07:00 0HLF7U51JOF9Q:00000003 [INF] Request finished in 208.5131ms 304 application/javascript (791a596a)
+2018-07-12T19:16:30.8176690+07:00 0HLF7U51JOF9R:00000002 [INF] Request finished in 160.5733ms 304 application/javascript (791a596a)
+2018-07-12T19:16:30.8505583+07:00 0HLF7U51JOF9T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/css/custom.css   (ca22a1cb)
+2018-07-12T19:16:30.8527577+07:00 0HLF7U51JOF9V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-12T19:16:30.8800158+07:00 0HLF7U51JOF9T:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2018-07-12T19:16:30.8810850+07:00 0HLF7U51JOF9V:00000001 [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2018-07-12T19:16:30.8946943+07:00 0HLF7U51JOF9T:00000001 [INF] Request finished in 81.4825ms 304 text/css (791a596a)
+2018-07-12T19:16:30.9014784+07:00 0HLF7U51JOF9V:00000001 [INF] Request finished in 59.3974ms 304 application/javascript (791a596a)
+2018-07-12T19:16:33.5026791+07:00 0HLF7U51JOF9V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin   (ca22a1cb)
+2018-07-12T19:16:33.5112180+07:00 0HLF7U51JOF9V:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:33.5176783+07:00 0HLF7U51JOF9V:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-12T19:16:33.5395932+07:00 0HLF7U51JOF9V:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 15.9224ms (afa2e885)
+2018-07-12T19:16:33.6280851+07:00 0HLF7U51JOF9V:00000002 [INF] Request finished in 93.3232ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:16:33.7814704+07:00 0HLF7U51JOF9V:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-12T19:16:33.7890587+07:00 0HLF7U51JOF9V:00000003 [INF] The file "/lib/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2018-07-12T19:16:33.7984513+07:00 0HLF7U51JOF9V:00000003 [INF] Request finished in 14.9098ms 304 font/woff2 (791a596a)
+2018-07-12T19:16:35.6053948+07:00 0HLF7U51JOF9V:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:16:35.6851892+07:00 0HLF7U51JOF9V:00000004 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:35.7193352+07:00 0HLF7U51JOF9V:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:35.8583293+07:00 0HLF7U51JOF9V:00000004 [INF] Executed DbCommand ("64"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-12T19:16:36.0637177+07:00 0HLF7U51JOF9V:00000004 [INF] Executed DbCommand ("16"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-12T19:16:36.1628141+07:00 0HLF7U51JOF9V:00000004 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:16:36.1928403+07:00 0HLF7U51JOF9V:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-12T19:16:36.2298725+07:00 0HLF7U51JOF9V:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-12T19:16:36.2400138+07:00 0HLF7U51JOF9V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:16:36.2560689+07:00 0HLF7U51JOF9V:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-12T19:16:36.2686473+07:00 0HLF7U51JOF9V:00000004 [INF] User logged in. (fdce0db4)
+2018-07-12T19:16:36.2822661+07:00 0HLF7U51JOF9V:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:16:36.3673858+07:00 0HLF7U51JOF9V:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 721.3652ms (afa2e885)
+2018-07-12T19:16:36.3890514+07:00 0HLF7U51JOF9V:00000004 [INF] Request finished in 775.0511ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:16:36.4011649+07:00 0HLF7U51JOF9V:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-12T19:16:36.4188676+07:00 0HLF7U51JOF9V:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:36.4276302+07:00 0HLF7U51JOF9V:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:16:36.4347085+07:00 0HLF7U51JOF9V:00000005 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:36.7133950+07:00 0HLF7U51JOF9V:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-12T19:16:37.0709063+07:00 0HLF7U51JOF9V:00000005 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:37.1704246+07:00 0HLF7U51JOF9V:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:16:37.7108382+07:00 0HLF7U51JOF9V:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 1191.6216ms (afa2e885)
+2018-07-12T19:16:37.7924930+07:00 0HLF7U51JOF9T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-12T19:16:37.8016212+07:00 0HLF7U51JOF9V:00000005 [INF] Request finished in 1318.4362ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:16:37.8768296+07:00 0HLF7U51JOF9U:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/mustache/mustache.js   (ca22a1cb)
+2018-07-12T19:16:37.8830653+07:00 0HLF7U51JOF9T:00000002 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-07-12T19:16:37.8939994+07:00 0HLF7U51JOF9S:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-07-12T19:16:37.8988373+07:00 0HLF7U51JOF9V:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-07-12T19:16:37.9070184+07:00 0HLF7U51JOF9R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-07-12T19:16:37.9252586+07:00 0HLF7U51JOF9U:00000003 [INF] The file "/lib/mustache/mustache.js" was not modified (f1f8d725)
+2018-07-12T19:16:37.9445996+07:00 0HLF7U51JOF9Q:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-07-12T19:16:37.9599743+07:00 0HLF7U51JOF9T:00000002 [INF] Request finished in 220.4962ms 304 text/css (791a596a)
+2018-07-12T19:16:37.9730941+07:00 0HLF7U51JOF9S:00000003 [INF] The file "/lib/twbs-pagination/jquery.twbsPagination.js" was not modified (f1f8d725)
+2018-07-12T19:16:38.0123833+07:00 0HLF7U51JOF9V:00000006 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2018-07-12T19:16:38.0269515+07:00 0HLF7U51JOF9R:00000003 [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2018-07-12T19:16:38.0435048+07:00 0HLF7U51JOF9S:00000003 [INF] Request finished in 130.9289ms 304 application/javascript (791a596a)
+2018-07-12T19:16:38.0628325+07:00 0HLF7U51JOF9U:00000003 [INF] Request finished in 91.522ms 304 application/javascript (791a596a)
+2018-07-12T19:16:38.0931769+07:00 0HLF7U51JOF9T:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-07-12T19:16:38.1030386+07:00 0HLF7U51JOF9Q:00000004 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-07-12T19:16:38.2028700+07:00 0HLF7U51JOF9S:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-07-12T19:16:38.2405009+07:00 0HLF7U51JOF9R:00000003 [INF] Request finished in 191.8251ms 304 application/javascript (791a596a)
+2018-07-12T19:16:38.2475026+07:00 0HLF7U51JOF9V:00000006 [INF] Request finished in 162.7777ms 304 application/javascript (791a596a)
+2018-07-12T19:16:38.2623021+07:00 0HLF7U51JOF9S:00000004 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-07-12T19:16:38.2760138+07:00 0HLF7U51JOF9Q:00000004 [INF] Request finished in 262.6194ms 304 application/javascript (791a596a)
+2018-07-12T19:16:38.2921120+07:00 0HLF7U51JOF9T:00000003 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2018-07-12T19:16:38.3033480+07:00 0HLF7U51JOF9S:00000004 [INF] Request finished in 193.368ms 304 application/javascript (791a596a)
+2018-07-12T19:16:38.3247935+07:00 0HLF7U51JOF9U:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/moment/moment.js   (ca22a1cb)
+2018-07-12T19:16:38.3381351+07:00 0HLF7U51JOF9R:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-07-12T19:16:38.3440574+07:00 0HLF7U51JOF9V:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-07-12T19:16:38.3467195+07:00 0HLF7U51JOF9T:00000003 [INF] Request finished in 300.2276ms 304 application/javascript (791a596a)
+2018-07-12T19:16:38.3611342+07:00 0HLF7U51JOF9U:00000004 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2018-07-12T19:16:38.3650072+07:00 0HLF7U51JOF9Q:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/js/custom.js   (ca22a1cb)
+2018-07-12T19:16:38.3767983+07:00 0HLF7U51JOF9U:00000004 [INF] Request finished in 129.028ms 304 application/javascript (791a596a)
+2018-07-12T19:16:38.3916201+07:00 0HLF7U51JOF9V:00000007 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2018-07-12T19:16:38.4137651+07:00 0HLF7U51JOF9Q:00000005 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2018-07-12T19:16:38.4329492+07:00 0HLF7U51JOF9V:00000007 [INF] Request finished in 105.8242ms 304 font/woff2 (791a596a)
+2018-07-12T19:16:38.4429105+07:00 0HLF7U51JOF9R:00000004 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2018-07-12T19:16:38.4583074+07:00 0HLF7U51JOF9R:00000004 [INF] Request finished in 162.7623ms 304 application/javascript (791a596a)
+2018-07-12T19:16:38.4712625+07:00 0HLF7U51JOF9Q:00000005 [INF] Request finished in 107.0541ms 304 application/javascript (791a596a)
+2018-07-12T19:16:49.8520593+07:00 0HLF7U51JOFA0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/productcategory/index   (ca22a1cb)
+2018-07-12T19:16:49.8619103+07:00 0HLF7U51JOFA0:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:49.8826945+07:00 0HLF7U51JOFA0:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:16:49.8913725+07:00 0HLF7U51JOFA0:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:50.1373178+07:00 0HLF7U51JOFA0:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-07-12T19:16:50.1633653+07:00 0HLF7U51JOFA0:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:50.1776795+07:00 0HLF7U51JOFA0:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:16:50.2912511+07:00 0HLF7U51JOFA4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2018-07-12T19:16:50.3734085+07:00 0HLF7U51JOFA0:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" in 332.3095ms (afa2e885)
+2018-07-12T19:16:50.4332036+07:00 0HLF7U51JOFA4:00000001 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/jquery.easyui.min.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jQuery-EasyUI\jquery.easyui.min.js"' (27b0a520)
+2018-07-12T19:16:50.4718485+07:00 0HLF7U51JOFA2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2018-07-12T19:16:50.4858410+07:00 0HLF7U51JOFA3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/product-category/index.js?v=dap8Dclyz_u49Zzk9BiUU7WyZ_vmQuIO6Yc_peoNTyo   (ca22a1cb)
+2018-07-12T19:16:50.5038414+07:00 0HLF7U51JOFA1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-07-12T19:16:50.5283263+07:00 0HLF7U51JOFA1:00000001 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/easyui.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\easyui.css"' (27b0a520)
+2018-07-12T19:16:50.5504299+07:00 0HLF7U51JOFA3:00000001 [INF] Sending file. Request path: '"/app/controllers/product-category/index.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\app\controllers\product-category\index.js"' (27b0a520)
+2018-07-12T19:16:50.5546126+07:00 0HLF7U51JOFA0:00000001 [INF] Request finished in 533.0197ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:16:50.5730380+07:00 0HLF7U51JOFA2:00000001 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icon.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jQuery-EasyUI\themes\icon.css"' (27b0a520)
+2018-07-12T19:16:50.6077344+07:00 0HLF7U51JOFA3:00000001 [INF] Request finished in 300.2092ms 200 application/javascript (791a596a)
+2018-07-12T19:16:50.6303892+07:00 0HLF7U51JOFA2:00000001 [INF] Request finished in 345.0218ms 200 text/css (791a596a)
+2018-07-12T19:16:50.6609837+07:00 0HLF7U51JOFA1:00000001 [INF] Request finished in 325.8424ms 200 text/css (791a596a)
+2018-07-12T19:16:50.6720724+07:00 0HLF7U51JOFA4:00000001 [INF] Request finished in 390.6105ms 200 application/javascript (791a596a)
+2018-07-12T19:16:50.8413099+07:00 0HLF7U51JOFA4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:16:50.8487640+07:00 0HLF7U51JOFA4:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:50.8588959+07:00 0HLF7U51JOFA4:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:16:50.8687165+07:00 0HLF7U51JOFA4:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:50.8782288+07:00 0HLF7U51JOFA4:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:50.9764737+07:00 0HLF7U51JOFA4:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-12T19:16:51.0222672+07:00 0HLF7U51JOFA4:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:51.0549141+07:00 0HLF7U51JOFA4:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:51.1242133+07:00 0HLF7U51JOFA4:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:51.1468663+07:00 0HLF7U51JOFA4:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:51.1602337+07:00 0HLF7U51JOFA4:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:16:51.3593706+07:00 0HLF7U51JOFA4:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" in 449.5987ms (afa2e885)
+2018-07-12T19:16:51.3784738+07:00 0HLF7U51JOFA4:00000002 [INF] Request finished in 524.13ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:16:56.4760790+07:00 0HLF7U51JOFA4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/product/index   (ca22a1cb)
+2018-07-12T19:16:56.4831315+07:00 0HLF7U51JOFA4:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:56.4984117+07:00 0HLF7U51JOFA4:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:16:56.5086715+07:00 0HLF7U51JOFA4:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:56.7257297+07:00 0HLF7U51JOFA4:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-07-12T19:16:56.7577226+07:00 0HLF7U51JOFA4:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:56.7676309+07:00 0HLF7U51JOFA4:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:16:56.7913991+07:00 0HLF7U51JOFA4:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.Index (MaiHienCoreApp)" in 289.6446ms (afa2e885)
+2018-07-12T19:16:56.8550216+07:00 0HLF7U51JOFA4:00000003 [INF] Request finished in 338.7993ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:16:56.8703676+07:00 0HLF7U51JOFA4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/product/index.js   (ca22a1cb)
+2018-07-12T19:16:56.8874310+07:00 0HLF7U51JOFA4:00000004 [INF] The file "/app/controllers/product/index.js" was not modified (f1f8d725)
+2018-07-12T19:16:56.9018919+07:00 0HLF7U51JOFA4:00000004 [INF] Request finished in 27.7863ms 304 application/javascript (791a596a)
+2018-07-12T19:16:57.0265214+07:00 0HLF7U51JOFA4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/product/GetAllCategories   (ca22a1cb)
+2018-07-12T19:16:57.0353241+07:00 0HLF7U51JOFA2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/product/GetAllPaging?categoryId=--Select+category--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-12T19:16:57.0517342+07:00 0HLF7U51JOFA2:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:57.0551167+07:00 0HLF7U51JOFA4:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:57.0707172+07:00 0HLF7U51JOFA4:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:16:57.0833901+07:00 0HLF7U51JOFA4:00000005 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:57.0917671+07:00 0HLF7U51JOFA2:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:16:57.1195833+07:00 0HLF7U51JOFA4:00000005 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:57.1367926+07:00 0HLF7U51JOFA2:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Invalid (ba7f4ac2)
+2018-07-12T19:16:57.1402218+07:00 0HLF7U51JOFA4:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-12T19:16:57.1526976+07:00 0HLF7U51JOFA4:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.1618069+07:00 0HLF7U51JOFA4:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.1715434+07:00 0HLF7U51JOFA4:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.1898760+07:00 0HLF7U51JOFA2:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:57.1956179+07:00 0HLF7U51JOFA4:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.2099927+07:00 0HLF7U51JOFA4:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:16:57.2511712+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[Status] = 1" (0723d8ff)
+2018-07-12T19:16:57.2567390+07:00 0HLF7U51JOFA4:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (MaiHienCoreApp)" in 154.515ms (afa2e885)
+2018-07-12T19:16:57.2809854+07:00 0HLF7U51JOFA4:00000005 [INF] Request finished in 244.4369ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:16:57.4610460+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("22"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-12T19:16:57.4916778+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.5110645+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.5249827+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.5432871+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.5620405+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.5788585+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.5951719+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.6080360+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.6426306+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.6554938+07:00 0HLF7U51JOFA2:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:57.6697930+07:00 0HLF7U51JOFA2:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:16:57.6966998+07:00 0HLF7U51JOFA2:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (MaiHienCoreApp)" in 628.9002ms (afa2e885)
+2018-07-12T19:16:57.7364414+07:00 0HLF7U51JOFA2:00000002 [INF] Request finished in 686.4776ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:16:57.7808280+07:00 0HLF7U51JOFA2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-12T19:16:57.8634057+07:00 0HLF7U51JOFA2:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:57.8722286+07:00 0HLF7U51JOFA4:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-07-12T19:16:57.9240660+07:00 0HLF7U51JOFA2:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:16:57.9254879+07:00 0HLF7U51JOFA4:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:57.9638422+07:00 0HLF7U51JOFA2:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:57.9755162+07:00 0HLF7U51JOFA4:00000006 [INF] Request finished in 166.3177ms 404  (791a596a)
+2018-07-12T19:16:58.0117102+07:00 0HLF7U51JOFA2:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:58.0270234+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[Status] = 1" (0723d8ff)
+2018-07-12T19:16:58.0419803+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-12T19:16:58.0521199+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.0653052+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.0777518+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.0926138+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.1021030+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.1130584+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.1509306+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.1601239+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.1715519+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.1815384+07:00 0HLF7U51JOFA2:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:16:58.2000079+07:00 0HLF7U51JOFA2:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:16:58.2225613+07:00 0HLF7U51JOFA2:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (MaiHienCoreApp)" in 334.8903ms (afa2e885)
+2018-07-12T19:16:58.2486012+07:00 0HLF7U51JOFA2:00000003 [INF] Request finished in 479.421ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:16:58.2712452+07:00 0HLF7U51JOFA2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-07-12T19:16:58.2810423+07:00 0HLF7U51JOFA2:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:58.2932546+07:00 0HLF7U51JOFA2:00000004 [INF] Request finished in 24.13ms 404  (791a596a)
+2018-07-12T19:16:59.5240624+07:00 0HLF7U51JOFA5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/productcategory/index   (ca22a1cb)
+2018-07-12T19:16:59.5308147+07:00 0HLF7U51JOFA5:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:59.5363808+07:00 0HLF7U51JOFA5:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:16:59.5427581+07:00 0HLF7U51JOFA5:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:59.5492723+07:00 0HLF7U51JOFA5:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-07-12T19:16:59.5633932+07:00 0HLF7U51JOFA5:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:59.5722438+07:00 0HLF7U51JOFA5:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:16:59.5911556+07:00 0HLF7U51JOFA5:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" in 42.9198ms (afa2e885)
+2018-07-12T19:16:59.6696639+07:00 0HLF7U51JOFA5:00000001 [INF] Request finished in 77.5436ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:16:59.9324043+07:00 0HLF7U51JOFA5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:16:59.9450140+07:00 0HLF7U51JOFA5:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:16:59.9539545+07:00 0HLF7U51JOFA5:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:16:59.9631102+07:00 0HLF7U51JOFA5:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:16:59.9746858+07:00 0HLF7U51JOFA5:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:16:59.9847386+07:00 0HLF7U51JOFA5:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-12T19:16:59.9923099+07:00 0HLF7U51JOFA5:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:17:00.0410395+07:00 0HLF7U51JOFA5:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:17:00.0522705+07:00 0HLF7U51JOFA5:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:17:00.0651956+07:00 0HLF7U51JOFA5:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:17:00.0764642+07:00 0HLF7U51JOFA5:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:17:00.2929133+07:00 0HLF7U51JOFA5:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" in 131.8936ms (afa2e885)
+2018-07-12T19:17:00.3259853+07:00 0HLF7U51JOFA5:00000002 [INF] Request finished in 377.598ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:17:07.4066463+07:00 0HLF7U51JOFA5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-07-12T19:17:07.4190215+07:00 0HLF7U51JOFA5:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2018-07-12T19:17:07.4624396+07:00 0HLF7U51JOFA5:00000003 [INF] Request finished in 59.8447ms 200 text/plain (791a596a)
+2018-07-12T19:22:57.2627037+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:22:57.6823355+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:22:57.7239519+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:22:57.7562930+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-12T19:22:57.8042739+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-12T19:22:57.8200197+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-12T19:22:57.8339503+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-12T19:22:57.8461148+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-12T19:22:57.8612338+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-12T19:22:57.8741962+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-12T19:22:57.8979880+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:22:57.9102949+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:22:57.9251821+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:22:58.8676380+07:00 0HLF7U8Q1A1VD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-12T19:22:59.0183702+07:00 0HLF7U8Q1A1VD:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:22:59.4741649+07:00 0HLF7U8Q1A1VD:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:22:59.5017819+07:00 0HLF7U8Q1A1VD:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:23:05.6672431+07:00 0HLF7U8Q1A1VD:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-12T19:23:06.9757686+07:00 0HLF7U8Q1A1VD:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 7496.9505ms (afa2e885)
+2018-07-12T19:23:07.0118343+07:00 0HLF7U8Q1A1VD:00000001 [INF] Request finished in 8170.8348ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:23:07.1066128+07:00 0HLF7U8Q1A1VJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/robots.txt   (ca22a1cb)
+2018-07-12T19:23:07.1309251+07:00 0HLF7U8Q1A1VJ:00000001 [INF] Request finished in 26.3841ms 404  (791a596a)
+2018-07-12T19:24:10.8640125+07:00 0HLF7U8Q1A1VK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-12T19:24:10.8754018+07:00 0HLF7U8Q1A1VK:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:10.9004503+07:00 0HLF7U8Q1A1VK:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:24:11.4190481+07:00 0HLF7U8Q1A1VK:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-12T19:24:11.4831922+07:00 0HLF7U8Q1A1VK:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 591.5293ms (afa2e885)
+2018-07-12T19:24:11.4965352+07:00 0HLF7U8Q1A1VL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-12T19:24:11.5032247+07:00 0HLF7U8Q1A1VK:00000001 [INF] Request finished in 636.6848ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:24:11.5408410+07:00 0HLF7U8Q1A1VL:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:11.5665589+07:00 0HLF7U8Q1A1VL:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:24:11.5855360+07:00 0HLF7U8Q1A1VL:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-12T19:24:11.7423406+07:00 0HLF7U8Q1A1VL:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 44.5478ms (afa2e885)
+2018-07-12T19:24:11.7624834+07:00 0HLF7U8Q1A1VL:00000001 [INF] Request finished in 259.6542ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:24:13.4589214+07:00 0HLF7U8Q1A1VL:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:24:13.4660646+07:00 0HLF7U8Q1A1VL:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:13.6289322+07:00 0HLF7U8Q1A1VL:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:24:13.6481078+07:00 0HLF7U8Q1A1VL:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:24:13.7457886+07:00 0HLF7U8Q1A1VL:00000002 [INF] Executed DbCommand ("43"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-12T19:24:13.9441506+07:00 0HLF7U8Q1A1VL:00000002 [INF] Executed DbCommand ("8"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-12T19:24:14.0064880+07:00 0HLF7U8Q1A1VL:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:24:14.0427055+07:00 0HLF7U8Q1A1VL:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-12T19:24:14.0831002+07:00 0HLF7U8Q1A1VL:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-12T19:24:14.0925176+07:00 0HLF7U8Q1A1VL:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:24:14.1204224+07:00 0HLF7U8Q1A1VL:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-12T19:24:14.1340378+07:00 0HLF7U8Q1A1VL:00000002 [INF] User logged in. (fdce0db4)
+2018-07-12T19:24:14.1529400+07:00 0HLF7U8Q1A1VL:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:24:14.2608170+07:00 0HLF7U8Q1A1VL:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 724.1512ms (afa2e885)
+2018-07-12T19:24:14.2735296+07:00 0HLF7U8Q1A1VL:00000002 [INF] Request finished in 810.0337ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:24:14.2934625+07:00 0HLF7U8Q1A1VL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-12T19:24:14.3012167+07:00 0HLF7U8Q1A1VL:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:14.3139983+07:00 0HLF7U8Q1A1VL:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:24:14.3342938+07:00 0HLF7U8Q1A1VL:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:24:14.5857944+07:00 0HLF7U8Q1A1VL:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-12T19:24:15.0023212+07:00 0HLF7U8Q1A1VL:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:24:15.0898616+07:00 0HLF7U8Q1A1VL:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:24:15.9080207+07:00 0HLF7U8Q1A1VL:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 1523.551ms (afa2e885)
+2018-07-12T19:24:15.9480728+07:00 0HLF7U8Q1A1VK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-12T19:24:15.9687254+07:00 0HLF7U8Q1A1VK:00000002 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2018-07-12T19:24:15.9940157+07:00 0HLF7U8Q1A1VK:00000002 [INF] Request finished in 69.3856ms 304 image/jpeg (791a596a)
+2018-07-12T19:24:16.0227663+07:00 0HLF7U8Q1A1VL:00000003 [INF] Request finished in 1629.161ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:24:26.3591935+07:00 0HLF7U8Q1A1VQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/product/index   (ca22a1cb)
+2018-07-12T19:24:26.3667712+07:00 0HLF7U8Q1A1VQ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:26.3774252+07:00 0HLF7U8Q1A1VQ:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:24:26.3868183+07:00 0HLF7U8Q1A1VQ:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:24:26.6293513+07:00 0HLF7U8Q1A1VQ:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-07-12T19:24:26.6668514+07:00 0HLF7U8Q1A1VQ:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:24:26.6814268+07:00 0HLF7U8Q1A1VQ:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:24:26.7750400+07:00 0HLF7U8Q1A1VQ:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.Index (MaiHienCoreApp)" in 351.1263ms (afa2e885)
+2018-07-12T19:24:26.8077382+07:00 0HLF7U8Q1A1VQ:00000001 [INF] Request finished in 430.7268ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:24:27.0013012+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/product/GetAllCategories   (ca22a1cb)
+2018-07-12T19:24:27.0323530+07:00 0HLF7U8Q1A1VR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/product/GetAllPaging?categoryId=--Select+category--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-12T19:24:27.0379721+07:00 0HLF7U8Q1A1VQ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:27.0450246+07:00 0HLF7U8Q1A1VR:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:27.0681219+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:24:27.1022993+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:24:27.2949519+07:00 0HLF7U8Q1A1VR:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:24:27.3340162+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:24:27.3659934+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Invalid (ba7f4ac2)
+2018-07-12T19:24:27.4169151+07:00 0HLF7U8Q1A1VR:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:24:27.4771309+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[Status] = 1" (0723d8ff)
+2018-07-12T19:24:27.5335957+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-12T19:24:27.5833572+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.6296990+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Executed DbCommand ("10"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.6521980+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-12T19:24:27.6684413+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.6953915+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.7155100+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.7196825+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:24:27.7436316+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.8272399+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.8489377+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.8603092+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.8702235+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.8780051+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.8875302+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.9246039+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategories (MaiHienCoreApp)" in 840.2695ms (afa2e885)
+2018-07-12T19:24:27.9375030+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.9472561+07:00 0HLF7U8Q1A1VQ:00000002 [INF] Request finished in 956.8244ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:24:27.9785319+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:27.9889563+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:24:28.0162385+07:00 0HLF7U8Q1A1VR:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (MaiHienCoreApp)" in 946.1613ms (afa2e885)
+2018-07-12T19:24:28.0584155+07:00 0HLF7U8Q1A1VR:00000001 [INF] Request finished in 1041.5206ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:24:28.0783792+07:00 0HLF7U8Q1A1VR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-12T19:24:28.0799477+07:00 0HLF7U8Q1A1VQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-07-12T19:24:28.1118487+07:00 0HLF7U8Q1A1VR:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:28.1178976+07:00 0HLF7U8Q1A1VR:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:24:28.1436343+07:00 0HLF7U8Q1A1VQ:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:28.1832524+07:00 0HLF7U8Q1A1VQ:00000003 [INF] Request finished in 74.356ms 404  (791a596a)
+2018-07-12T19:24:28.1918769+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:24:28.1994194+07:00 0HLF7U8Q1A1VR:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:24:28.2490668+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[Status] = 1" (0723d8ff)
+2018-07-12T19:24:28.2702206+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("10"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-12T19:24:28.2866549+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.2994040+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.3130113+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.3248674+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.3372547+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.3535890+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.3636751+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.3828635+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.3959508+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.4059710+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:28.4132161+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:24:28.4245209+07:00 0HLF7U8Q1A1VR:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (MaiHienCoreApp)" in 302.8841ms (afa2e885)
+2018-07-12T19:24:28.4407672+07:00 0HLF7U8Q1A1VR:00000002 [INF] Request finished in 360.9319ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:24:28.4649883+07:00 0HLF7U8Q1A1VR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-07-12T19:24:28.4744813+07:00 0HLF7U8Q1A1VR:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:28.5045444+07:00 0HLF7U8Q1A1VR:00000003 [INF] Request finished in 18.4562ms 404  (791a596a)
+2018-07-12T19:24:30.0362714+07:00 0HLF7U8Q1A1VS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/productcategory/index   (ca22a1cb)
+2018-07-12T19:24:30.0430186+07:00 0HLF7U8Q1A1VS:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:30.0553374+07:00 0HLF7U8Q1A1VS:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:24:30.0674967+07:00 0HLF7U8Q1A1VS:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:24:30.3955984+07:00 0HLF7U8Q1A1VS:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-07-12T19:24:30.4156351+07:00 0HLF7U8Q1A1VS:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:24:30.4241724+07:00 0HLF7U8Q1A1VS:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:24:30.4516889+07:00 0HLF7U8Q1A1VS:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" in 388.4146ms (afa2e885)
+2018-07-12T19:24:30.6210048+07:00 0HLF7U8Q1A1VT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2018-07-12T19:24:30.6419973+07:00 0HLF7U8Q1A1VV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2018-07-12T19:24:30.6496631+07:00 0HLF7U8Q1A1VU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/product-category/index.js?v=dap8Dclyz_u49Zzk9BiUU7WyZ_vmQuIO6Yc_peoNTyo   (ca22a1cb)
+2018-07-12T19:24:30.6525625+07:00 0HLF7U8Q1A1VV:00000001 [INF] The file "/lib/jQuery-EasyUI/jquery.easyui.min.js" was not modified (f1f8d725)
+2018-07-12T19:24:30.6791360+07:00 0HLF7U8Q1A1VS:00000001 [INF] Request finished in 428.3248ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:24:30.6823334+07:00 0HLF7U8Q1A1VU:00000001 [INF] The file "/app/controllers/product-category/index.js" was not modified (f1f8d725)
+2018-07-12T19:24:30.7126149+07:00 0HLF7U8Q1A1VV:00000001 [INF] Request finished in 70.4269ms 304 application/javascript (791a596a)
+2018-07-12T19:24:30.7454008+07:00 0HLF7U8Q1A1VT:00000001 [INF] The file "/lib/jQuery-EasyUI/themes/icon.css" was not modified (f1f8d725)
+2018-07-12T19:24:30.7487859+07:00 0HLF7U8Q1A1VU:00000001 [INF] Request finished in 98.8807ms 304 application/javascript (791a596a)
+2018-07-12T19:24:30.7529181+07:00 0HLF7U8Q1A1VS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-07-12T19:24:30.7831539+07:00 0HLF7U8Q1A1VS:00000002 [INF] The file "/lib/jQuery-EasyUI/themes/bootstrap/easyui.css" was not modified (f1f8d725)
+2018-07-12T19:24:30.7817539+07:00 0HLF7U8Q1A1VT:00000001 [INF] Request finished in 168.7757ms 304 text/css (791a596a)
+2018-07-12T19:24:30.8465942+07:00 0HLF7U8Q1A1VS:00000002 [INF] Request finished in 66.4332ms 304 text/css (791a596a)
+2018-07-12T19:24:30.9076667+07:00 0HLF7U8Q1A1VS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:24:30.9330861+07:00 0HLF7U8Q1A1VS:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:24:30.9486241+07:00 0HLF7U8Q1A1VS:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:24:30.9684911+07:00 0HLF7U8Q1A1VS:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:24:30.9814373+07:00 0HLF7U8Q1A1VS:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:24:31.0059560+07:00 0HLF7U8Q1A1VS:00000003 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-12T19:24:31.0278478+07:00 0HLF7U8Q1A1VS:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:31.0428253+07:00 0HLF7U8Q1A1VS:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:31.0636703+07:00 0HLF7U8Q1A1VS:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:31.0734797+07:00 0HLF7U8Q1A1VS:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:24:31.0970325+07:00 0HLF7U8Q1A1VS:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:24:31.1129897+07:00 0HLF7U8Q1A1VS:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" in 161.5543ms (afa2e885)
+2018-07-12T19:24:31.1236527+07:00 0HLF7U8Q1A1VS:00000003 [INF] Request finished in 225.6548ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:25:21.8280148+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:25:22.3554950+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:25:22.4897598+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:25:22.6222556+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-12T19:25:22.7694218+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-12T19:25:22.7912798+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-12T19:25:22.8126517+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-12T19:25:22.8309051+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-12T19:25:22.8514863+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-12T19:25:22.9237200+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-12T19:25:22.9717308+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:25:22.9945433+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:25:23.0257905+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-12T19:25:24.4181796+07:00 0HLF7UA56DPGP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-12T19:25:24.9848301+07:00 0HLF7UA56DPGP:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-07-12T19:25:25.0027638+07:00 0HLF7UA56DPGP:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-12T19:25:25.0297401+07:00 0HLF7UA56DPGP:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-12T19:25:25.0483597+07:00 0HLF7UA56DPGP:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-12T19:25:25.0720172+07:00 0HLF7UA56DPGP:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 101.2062ms (afa2e885)
+2018-07-12T19:25:25.1145061+07:00 0HLF7UA56DPGP:00000001 [INF] Request finished in 714.8344ms 302  (791a596a)
+2018-07-12T19:25:25.1481231+07:00 0HLF7UA56DPGP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-12T19:25:25.3897693+07:00 0HLF7UA56DPGP:00000002 [INF] Executing action method "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:25:25.4485604+07:00 0HLF7UA56DPGP:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-12T19:25:33.9238222+07:00 0HLF7UA56DPGP:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-07-12T19:25:36.0279903+07:00 0HLF7UA56DPGQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-12T19:25:36.0395650+07:00 0HLF7UA56DPGP:00000002 [INF] Executed action "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" in 10734.0475ms (afa2e885)
+2018-07-12T19:25:36.0425131+07:00 0HLF7UA56DPGR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-07-12T19:25:36.0549111+07:00 0HLF7UA56DPGR:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-07-12T19:25:36.1008192+07:00 0HLF7UA56DPGP:00000002 [INF] Request finished in 10923.0033ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:25:36.1160344+07:00 0HLF7UA56DPGQ:00000001 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-07-12T19:25:36.1277083+07:00 0HLF7UA56DPGR:00000001 [INF] Request finished in 90.1451ms 304 application/javascript (791a596a)
+2018-07-12T19:25:36.2003432+07:00 0HLF7UA56DPGQ:00000001 [INF] Request finished in 120.7418ms 304 text/css (791a596a)
+2018-07-12T19:27:04.5105963+07:00 0HLF7UA56DPGS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin   (ca22a1cb)
+2018-07-12T19:27:04.5265269+07:00 0HLF7UA56DPGS:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:27:05.0004917+07:00 0HLF7UA56DPGS:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-12T19:27:05.1024921+07:00 0HLF7UA56DPGS:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 537.5184ms (afa2e885)
+2018-07-12T19:27:05.1110106+07:00 0HLF7UA56DPGV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-12T19:27:05.1278440+07:00 0HLF7UA56DPH1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-07-12T19:27:05.1554682+07:00 0HLF7UA56DPGU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/css/custom.css   (ca22a1cb)
+2018-07-12T19:27:05.1777423+07:00 0HLF7UA56DPGT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-12T19:27:05.2135981+07:00 0HLF7UA56DPH0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-12T19:27:05.2211236+07:00 0HLF7UA56DPGV:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2018-07-12T19:27:05.2222200+07:00 0HLF7UA56DPGS:00000001 [INF] Request finished in 610.7771ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:27:05.2257036+07:00 0HLF7UA56DPGU:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2018-07-12T19:27:05.2361040+07:00 0HLF7UA56DPH1:00000001 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2018-07-12T19:27:05.2469544+07:00 0HLF7UA56DPGT:00000001 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-07-12T19:27:05.2672387+07:00 0HLF7UA56DPH1:00000001 [INF] Request finished in 147.5591ms 304 application/javascript (791a596a)
+2018-07-12T19:27:05.2714923+07:00 0HLF7UA56DPH0:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2018-07-12T19:27:05.2814297+07:00 0HLF7UA56DPGV:00000001 [INF] Request finished in 145.2088ms 304 text/css (791a596a)
+2018-07-12T19:27:05.2950216+07:00 0HLF7UA56DPGU:00000001 [INF] Request finished in 149.8307ms 304 text/css (791a596a)
+2018-07-12T19:27:05.2991432+07:00 0HLF7UA56DPGT:00000001 [INF] Request finished in 170.7308ms 304 text/css (791a596a)
+2018-07-12T19:27:05.3388801+07:00 0HLF7UA56DPH0:00000001 [INF] Request finished in 182.4642ms 304 application/javascript (791a596a)
+2018-07-12T19:27:05.3668742+07:00 0HLF7UA56DPGV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-12T19:27:05.3776758+07:00 0HLF7UA56DPH1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/login/index.js   (ca22a1cb)
+2018-07-12T19:27:05.3881357+07:00 0HLF7UA56DPGT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/shared/maihien.js   (ca22a1cb)
+2018-07-12T19:27:05.3933332+07:00 0HLF7UA56DPGU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/animate.css/animate.css   (ca22a1cb)
+2018-07-12T19:27:05.4135492+07:00 0HLF7UA56DPH1:00000002 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-07-12T19:27:05.4229532+07:00 0HLF7UA56DPGV:00000002 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-07-12T19:27:05.4281405+07:00 0HLF7UA56DPGS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-12T19:27:05.4450127+07:00 0HLF7UA56DPGU:00000002 [INF] The file "/lib/animate.css/animate.css" was not modified (f1f8d725)
+2018-07-12T19:27:05.4775389+07:00 0HLF7UA56DPH0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-12T19:27:05.4901036+07:00 0HLF7UA56DPH1:00000002 [INF] Request finished in 116.8717ms 304 application/javascript (791a596a)
+2018-07-12T19:27:05.4945883+07:00 0HLF7UA56DPGV:00000002 [INF] Request finished in 114.7571ms 304 text/css (791a596a)
+2018-07-12T19:27:05.5236053+07:00 0HLF7UA56DPGU:00000002 [INF] Request finished in 101.1865ms 304 text/css (791a596a)
+2018-07-12T19:27:05.5314550+07:00 0HLF7UA56DPGT:00000002 [INF] Sending file. Request path: '"/app/shared/maihien.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\app\shared\maihien.js"' (27b0a520)
+2018-07-12T19:27:05.5438572+07:00 0HLF7UA56DPH0:00000002 [INF] The file "/lib/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2018-07-12T19:27:05.6005904+07:00 0HLF7UA56DPH0:00000002 [INF] Request finished in 160.1662ms 304 font/woff2 (791a596a)
+2018-07-12T19:27:05.6020812+07:00 0HLF7UA56DPGS:00000002 [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2018-07-12T19:27:05.6270921+07:00 0HLF7UA56DPGS:00000002 [INF] Request finished in 311.9349ms 304 application/javascript (791a596a)
+2018-07-12T19:27:05.6363316+07:00 0HLF7UA56DPGT:00000002 [INF] Request finished in 304.6895ms 200 application/javascript (791a596a)
+2018-07-12T19:27:20.8290018+07:00 0HLF7UA56DPGS:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:27:20.8847622+07:00 0HLF7UA56DPGS:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:27:20.9049657+07:00 0HLF7UA56DPGS:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:27:21.0036306+07:00 0HLF7UA56DPGS:00000003 [INF] Executed DbCommand ("43"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-12T19:27:21.1881843+07:00 0HLF7UA56DPGS:00000003 [INF] Executed DbCommand ("8"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-12T19:27:21.2546346+07:00 0HLF7UA56DPGS:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:27:21.2866836+07:00 0HLF7UA56DPGS:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-12T19:27:21.3384264+07:00 0HLF7UA56DPGS:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-12T19:27:21.3511374+07:00 0HLF7UA56DPGS:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:27:21.3675097+07:00 0HLF7UA56DPGS:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-12T19:27:21.3774727+07:00 0HLF7UA56DPGS:00000003 [INF] User logged in. (fdce0db4)
+2018-07-12T19:27:21.3919656+07:00 0HLF7UA56DPGS:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:27:21.4717946+07:00 0HLF7UA56DPGS:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 624.1915ms (afa2e885)
+2018-07-12T19:27:21.4809228+07:00 0HLF7UA56DPGS:00000003 [INF] Request finished in 651.8119ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:27:21.4920447+07:00 0HLF7UA56DPGS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-12T19:27:21.5090312+07:00 0HLF7UA56DPGS:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:27:21.5223070+07:00 0HLF7UA56DPGS:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:27:21.5306125+07:00 0HLF7UA56DPGS:00000004 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:27:21.7932790+07:00 0HLF7UA56DPGS:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-12T19:27:22.2031168+07:00 0HLF7UA56DPGS:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:27:22.2662543+07:00 0HLF7UA56DPGS:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:27:22.8631539+07:00 0HLF7UA56DPH1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-07-12T19:27:22.8673767+07:00 0HLF7UA56DPGS:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 1303.3575ms (afa2e885)
+2018-07-12T19:27:22.8799261+07:00 0HLF7UA56DPGT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-12T19:27:22.8981847+07:00 0HLF7UA56DPH0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-12T19:27:22.9074408+07:00 0HLF7UA56DPGS:00000004 [INF] Request finished in 1383.1902ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:27:22.9096988+07:00 0HLF7UA56DPH0:00000003 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-07-12T19:27:22.9412341+07:00 0HLF7UA56DPGT:00000003 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2018-07-12T19:27:22.9596634+07:00 0HLF7UA56DPGT:00000003 [INF] Request finished in 118.9641ms 304 image/jpeg (791a596a)
+2018-07-12T19:27:22.9647207+07:00 0HLF7UA56DPGS:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/moment/moment.js   (ca22a1cb)
+2018-07-12T19:27:22.9671803+07:00 0HLF7UA56DPH1:00000003 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-07-12T19:27:22.9759712+07:00 0HLF7UA56DPH0:00000003 [INF] Request finished in 74.5779ms 304 text/css (791a596a)
+2018-07-12T19:27:22.9990831+07:00 0HLF7UA56DPH0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-07-12T19:27:23.0020376+07:00 0HLF7UA56DPGS:00000005 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2018-07-12T19:27:23.0195954+07:00 0HLF7UA56DPGT:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-07-12T19:27:23.0245666+07:00 0HLF7UA56DPGS:00000005 [INF] Request finished in 87.5929ms 304 application/javascript (791a596a)
+2018-07-12T19:27:23.0435151+07:00 0HLF7UA56DPGT:00000004 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-07-12T19:27:23.0619114+07:00 0HLF7UA56DPGS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-07-12T19:27:23.0992669+07:00 0HLF7UA56DPH1:00000003 [INF] Request finished in 173.5361ms 200 application/javascript (791a596a)
+2018-07-12T19:27:23.1170740+07:00 0HLF7UA56DPGS:00000006 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2018-07-12T19:27:23.1205463+07:00 0HLF7UA56DPH0:00000004 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2018-07-12T19:27:23.1220615+07:00 0HLF7UA56DPGT:00000004 [INF] Request finished in 58.9342ms 304 application/javascript (791a596a)
+2018-07-12T19:27:23.1963037+07:00 0HLF7UA56DPH1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-07-12T19:27:23.1978993+07:00 0HLF7UA56DPH0:00000004 [INF] Request finished in 140.3291ms 304 application/javascript (791a596a)
+2018-07-12T19:27:23.2022200+07:00 0HLF7UA56DPGS:00000006 [INF] Request finished in 82.5092ms 304 application/javascript (791a596a)
+2018-07-12T19:27:23.2099230+07:00 0HLF7UA56DPGT:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-07-12T19:27:23.2753056+07:00 0HLF7UA56DPH1:00000004 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2018-07-12T19:27:23.2906123+07:00 0HLF7UA56DPGS:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/js/custom.js   (ca22a1cb)
+2018-07-12T19:27:23.2952786+07:00 0HLF7UA56DPGT:00000005 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-07-12T19:27:23.3093678+07:00 0HLF7UA56DPH0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-07-12T19:27:23.3268499+07:00 0HLF7UA56DPH1:00000004 [INF] Request finished in 163.0993ms 304 application/javascript (791a596a)
+2018-07-12T19:27:23.3340025+07:00 0HLF7UA56DPGT:00000005 [INF] Request finished in 157.6247ms 304 application/javascript (791a596a)
+2018-07-12T19:27:23.3628528+07:00 0HLF7UA56DPH0:00000005 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2018-07-12T19:27:23.3738815+07:00 0HLF7UA56DPH0:00000005 [INF] Request finished in 157.5469ms 304 font/woff2 (791a596a)
+2018-07-12T19:27:23.3804948+07:00 0HLF7UA56DPGS:00000007 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2018-07-12T19:27:23.3863697+07:00 0HLF7UA56DPGU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/mustache/mustache.js   (ca22a1cb)
+2018-07-12T19:27:23.4153619+07:00 0HLF7UA56DPGS:00000007 [INF] Request finished in 164.4515ms 304 application/javascript (791a596a)
+2018-07-12T19:27:23.4223019+07:00 0HLF7UA56DPGU:00000003 [INF] The file "/lib/mustache/mustache.js" was not modified (f1f8d725)
+2018-07-12T19:27:23.4562445+07:00 0HLF7UA56DPGV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-07-12T19:27:23.4573666+07:00 0HLF7UA56DPGU:00000003 [INF] Request finished in 63.3555ms 304 application/javascript (791a596a)
+2018-07-12T19:27:23.4662489+07:00 0HLF7UA56DPGV:00000003 [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2018-07-12T19:27:23.4750352+07:00 0HLF7UA56DPGV:00000003 [INF] Request finished in 70.8609ms 304 application/javascript (791a596a)
+2018-07-12T19:27:27.5259795+07:00 0HLF7UA56DPGV:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/productcategory/index   (ca22a1cb)
+2018-07-12T19:27:27.5399106+07:00 0HLF7UA56DPGV:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:27:27.5656617+07:00 0HLF7UA56DPGV:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:27:27.5761503+07:00 0HLF7UA56DPGV:00000004 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:27:27.7927525+07:00 0HLF7UA56DPGV:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-07-12T19:27:27.8154967+07:00 0HLF7UA56DPGV:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:27:27.8253695+07:00 0HLF7UA56DPGV:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:27:27.8926712+07:00 0HLF7UA56DPH0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2018-07-12T19:27:27.9000056+07:00 0HLF7UA56DPGS:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2018-07-12T19:27:27.9033826+07:00 0HLF7UA56DPGT:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/product-category/index.js?v=dap8Dclyz_u49Zzk9BiUU7WyZ_vmQuIO6Yc_peoNTyo   (ca22a1cb)
+2018-07-12T19:27:27.9062105+07:00 0HLF7UA56DPGU:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-07-12T19:27:27.9080520+07:00 0HLF7UA56DPGV:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" in 293.5749ms (afa2e885)
+2018-07-12T19:27:27.9215092+07:00 0HLF7UA56DPGU:00000004 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/easyui.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\easyui.css"' (27b0a520)
+2018-07-12T19:27:27.9300806+07:00 0HLF7UA56DPH0:00000006 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/jquery.easyui.min.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jQuery-EasyUI\jquery.easyui.min.js"' (27b0a520)
+2018-07-12T19:27:27.9587192+07:00 0HLF7UA56DPGT:00000006 [INF] Sending file. Request path: '"/app/controllers/product-category/index.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\app\controllers\product-category\index.js"' (27b0a520)
+2018-07-12T19:27:27.9947764+07:00 0HLF7UA56DPGS:00000008 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icon.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jQuery-EasyUI\themes\icon.css"' (27b0a520)
+2018-07-12T19:27:28.0062926+07:00 0HLF7UA56DPGV:00000004 [INF] Request finished in 396.5401ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:27:28.0164672+07:00 0HLF7UA56DPGT:00000006 [INF] Request finished in 98.7383ms 200 application/javascript (791a596a)
+2018-07-12T19:27:28.0420752+07:00 0HLF7UA56DPGS:00000008 [INF] Request finished in 134.9461ms 200 text/css (791a596a)
+2018-07-12T19:27:28.0517919+07:00 0HLF7UA56DPH0:00000006 [INF] Request finished in 135.5242ms 200 application/javascript (791a596a)
+2018-07-12T19:27:28.0607367+07:00 0HLF7UA56DPGU:00000004 [INF] Request finished in 65.5326ms 200 text/css (791a596a)
+2018-07-12T19:27:28.2234944+07:00 0HLF7UA56DPGS:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:27:28.2339791+07:00 0HLF7UA56DPGS:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:27:28.2442577+07:00 0HLF7UA56DPGS:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:27:28.2616209+07:00 0HLF7UA56DPGS:00000009 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:27:28.2740783+07:00 0HLF7UA56DPGS:00000009 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:27:28.3493576+07:00 0HLF7UA56DPGS:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-12T19:27:28.3860339+07:00 0HLF7UA56DPGS:00000009 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:27:28.4155718+07:00 0HLF7UA56DPGS:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:27:28.4280429+07:00 0HLF7UA56DPGS:00000009 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:27:28.4370476+07:00 0HLF7UA56DPGS:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:27:28.4458945+07:00 0HLF7UA56DPGS:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:27:28.5406516+07:00 0HLF7UA56DPGS:00000009 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" in 282.5304ms (afa2e885)
+2018-07-12T19:27:28.6151599+07:00 0HLF7UA56DPGS:00000009 [INF] Request finished in 327.1164ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:27:28.6337525+07:00 0HLF7UA56DPGS:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png   (ca22a1cb)
+2018-07-12T19:27:28.6471032+07:00 0HLF7UA56DPGS:0000000A [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\images\tree_icons.png"' (27b0a520)
+2018-07-12T19:27:28.6640863+07:00 0HLF7UA56DPGS:0000000A [INF] Request finished in 24.2647ms 200 image/png (791a596a)
+2018-07-12T19:28:03.2464813+07:00 0HLF7UA56DPGS:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/productcategory/index   (ca22a1cb)
+2018-07-12T19:28:03.2541754+07:00 0HLF7UA56DPGS:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:28:03.2614224+07:00 0HLF7UA56DPGS:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:28:03.2684976+07:00 0HLF7UA56DPGS:0000000B [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:28:03.2776875+07:00 0HLF7UA56DPGS:0000000B [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-07-12T19:28:03.2836833+07:00 0HLF7UA56DPGS:0000000B [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:28:03.2928903+07:00 0HLF7UA56DPGS:0000000B [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:28:03.3474187+07:00 0HLF7UA56DPGU:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-12T19:28:03.3519345+07:00 0HLF7UA56DPH0:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-12T19:28:03.3549719+07:00 0HLF7UA56DPGV:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-07-12T19:28:03.3807159+07:00 0HLF7UA56DPH0:00000007 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-07-12T19:28:03.3951699+07:00 0HLF7UA56DPGS:0000000B [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (MaiHienCoreApp)" in 40.1291ms (afa2e885)
+2018-07-12T19:28:03.4050512+07:00 0HLF7UA56DPGV:00000005 [INF] The file "/lib/jQuery-EasyUI/themes/bootstrap/easyui.css" was not modified (f1f8d725)
+2018-07-12T19:28:03.4117060+07:00 0HLF7UA56DPGS:0000000B [INF] Request finished in 154.066ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:28:03.4132729+07:00 0HLF7UA56DPH0:00000007 [INF] Request finished in 61.4013ms 304 text/css (791a596a)
+2018-07-12T19:28:03.4454536+07:00 0HLF7UA56DPGU:00000005 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-07-12T19:28:03.4528294+07:00 0HLF7UA56DPGS:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-07-12T19:28:03.4923248+07:00 0HLF7UA56DPGV:00000005 [INF] Request finished in 89.1427ms 304 text/css (791a596a)
+2018-07-12T19:28:03.5382881+07:00 0HLF7UA56DPGU:00000005 [INF] Request finished in 129.9864ms 304 text/css (791a596a)
+2018-07-12T19:28:03.5656926+07:00 0HLF7UA56DPGV:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-07-12T19:28:03.5667231+07:00 0HLF7UA56DPGS:0000000C [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2018-07-12T19:28:03.5920929+07:00 0HLF7UA56DPH0:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/css/custom.css   (ca22a1cb)
+2018-07-12T19:28:03.6180549+07:00 0HLF7UA56DPGV:00000006 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-07-12T19:28:03.6211092+07:00 0HLF7UA56DPGS:0000000C [INF] Request finished in 150.7912ms 304 application/javascript (791a596a)
+2018-07-12T19:28:03.6429650+07:00 0HLF7UA56DPH0:00000008 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2018-07-12T19:28:03.6560391+07:00 0HLF7UA56DPGS:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-07-12T19:28:03.6695904+07:00 0HLF7UA56DPGS:0000000D [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2018-07-12T19:28:03.6773498+07:00 0HLF7UA56DPGV:00000006 [INF] Request finished in 100.779ms 304 application/javascript (791a596a)
+2018-07-12T19:28:03.7011852+07:00 0HLF7UA56DPGU:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-12T19:28:03.7158530+07:00 0HLF7UA56DPH0:00000008 [INF] Request finished in 153.1906ms 304 text/css (791a596a)
+2018-07-12T19:28:03.7720765+07:00 0HLF7UA56DPGS:0000000D [INF] Request finished in 31.6786ms 304 application/javascript (791a596a)
+2018-07-12T19:28:03.7889950+07:00 0HLF7UA56DPGS:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-07-12T19:28:03.8122103+07:00 0HLF7UA56DPGV:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-12T19:28:03.8196759+07:00 0HLF7UA56DPH0:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-07-12T19:28:03.8430307+07:00 0HLF7UA56DPGU:00000006 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2018-07-12T19:28:03.8513434+07:00 0HLF7UA56DPGU:00000006 [INF] Request finished in 218.2862ms 304 text/css (791a596a)
+2018-07-12T19:28:03.8894884+07:00 0HLF7UA56DPGV:00000007 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-07-12T19:28:03.9027484+07:00 0HLF7UA56DPH0:00000009 [INF] The file "/lib/twbs-pagination/jquery.twbsPagination.js" was not modified (f1f8d725)
+2018-07-12T19:28:03.9050239+07:00 0HLF7UA56DPGS:0000000E [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2018-07-12T19:28:03.9311663+07:00 0HLF7UA56DPGV:00000007 [INF] Request finished in 214.5102ms 304 text/css (791a596a)
+2018-07-12T19:28:03.9372016+07:00 0HLF7UA56DPH0:00000009 [INF] Request finished in 137.6102ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.0067386+07:00 0HLF7UA56DPGS:0000000E [INF] Request finished in 126.2668ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.0162620+07:00 0HLF7UA56DPGU:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/moment/moment.js   (ca22a1cb)
+2018-07-12T19:28:04.0190390+07:00 0HLF7UA56DPH0:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-07-12T19:28:04.0452256+07:00 0HLF7UA56DPGU:00000007 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.0489708+07:00 0HLF7UA56DPGV:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/mustache/mustache.js   (ca22a1cb)
+2018-07-12T19:28:04.0946138+07:00 0HLF7UA56DPH0:0000000A [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.1029103+07:00 0HLF7UA56DPGV:00000008 [INF] The file "/lib/mustache/mustache.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.1114117+07:00 0HLF7UA56DPGS:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-12T19:28:04.1195735+07:00 0HLF7UA56DPGT:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-12T19:28:04.1218028+07:00 0HLF7UA56DPH0:0000000A [INF] Request finished in 110.1279ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.1439533+07:00 0HLF7UA56DPGS:0000000F [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.1513638+07:00 0HLF7UA56DPGV:00000008 [INF] Request finished in 139.8822ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.1563764+07:00 0HLF7UA56DPGU:00000007 [INF] Request finished in 159.009ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.2099940+07:00 0HLF7UA56DPH0:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-12T19:28:04.2413420+07:00 0HLF7UA56DPGS:0000000F [INF] Request finished in 131.38ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.2506490+07:00 0HLF7UA56DPH0:0000000B [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.2538238+07:00 0HLF7UA56DPGT:00000007 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-07-12T19:28:04.2588443+07:00 0HLF7UA56DPGV:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-12T19:28:04.2646203+07:00 0HLF7UA56DPGU:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2018-07-12T19:28:04.2750780+07:00 0HLF7UA56DPGV:00000009 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2018-07-12T19:28:04.2827053+07:00 0HLF7UA56DPH0:0000000B [INF] Request finished in 115.0923ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.3319893+07:00 0HLF7UA56DPGS:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-07-12T19:28:04.3795917+07:00 0HLF7UA56DPGT:00000007 [INF] Request finished in 159.3622ms 304 text/css (791a596a)
+2018-07-12T19:28:04.3843098+07:00 0HLF7UA56DPH0:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/shared/maihien.js   (ca22a1cb)
+2018-07-12T19:28:04.3857915+07:00 0HLF7UA56DPGV:00000009 [INF] Request finished in 88.3498ms 304 image/jpeg (791a596a)
+2018-07-12T19:28:04.3998439+07:00 0HLF7UA56DPGU:00000008 [INF] The file "/lib/jQuery-EasyUI/themes/icon.css" was not modified (f1f8d725)
+2018-07-12T19:28:04.4154013+07:00 0HLF7UA56DPGS:00000010 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.4180911+07:00 0HLF7UA56DPH0:0000000C [INF] The file "/app/shared/maihien.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.4293742+07:00 0HLF7UA56DPGS:00000010 [INF] Request finished in 167.7678ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.4407543+07:00 0HLF7UA56DPGV:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-07-12T19:28:04.4498745+07:00 0HLF7UA56DPGU:00000008 [INF] Request finished in 235.6563ms 304 text/css (791a596a)
+2018-07-12T19:28:04.4602113+07:00 0HLF7UA56DPH0:0000000C [INF] Request finished in 110.3396ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.4602113+07:00 0HLF7UA56DPGT:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/js/custom.js   (ca22a1cb)
+2018-07-12T19:28:04.4716645+07:00 0HLF7UA56DPGV:0000000A [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.6130935+07:00 0HLF7UA56DPGV:0000000A [INF] Request finished in 68.2896ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.6646460+07:00 0HLF7UA56DPGS:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/product-category/index.js?v=dap8Dclyz_u49Zzk9BiUU7WyZ_vmQuIO6Yc_peoNTyo   (ca22a1cb)
+2018-07-12T19:28:04.6704520+07:00 0HLF7UA56DPH1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-07-12T19:28:04.6734750+07:00 0HLF7UA56DPGT:00000008 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.6884802+07:00 0HLF7UA56DPGT:00000008 [INF] Request finished in 280.7374ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.6894133+07:00 0HLF7UA56DPGU:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2018-07-12T19:28:04.7030180+07:00 0HLF7UA56DPH1:00000005 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.7276967+07:00 0HLF7UA56DPGS:00000011 [INF] The file "/app/controllers/product-category/index.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.7390692+07:00 0HLF7UA56DPH1:00000005 [INF] Request finished in 221.7017ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.7537833+07:00 0HLF7UA56DPGU:00000009 [INF] The file "/lib/jQuery-EasyUI/jquery.easyui.min.js" was not modified (f1f8d725)
+2018-07-12T19:28:04.7870869+07:00 0HLF7UA56DPGU:00000009 [INF] Request finished in 183.4243ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.8033023+07:00 0HLF7UA56DPGS:00000011 [INF] Request finished in 263.7941ms 304 application/javascript (791a596a)
+2018-07-12T19:28:04.8843294+07:00 0HLF7UA56DPGU:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:28:04.8938087+07:00 0HLF7UA56DPGU:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-12T19:28:04.9039398+07:00 0HLF7UA56DPGU:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-12T19:28:04.9111442+07:00 0HLF7UA56DPGU:0000000A [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-12T19:28:04.9213958+07:00 0HLF7UA56DPGU:0000000A [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-12T19:28:04.9313652+07:00 0HLF7UA56DPGU:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-12T19:28:04.9397934+07:00 0HLF7UA56DPGU:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:28:04.9521584+07:00 0HLF7UA56DPGU:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:28:04.9619654+07:00 0HLF7UA56DPGU:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:28:04.9738198+07:00 0HLF7UA56DPGU:0000000A [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-12T19:28:04.9880185+07:00 0HLF7UA56DPGU:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-12T19:28:04.9964129+07:00 0HLF7UA56DPGU:0000000A [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (MaiHienCoreApp)" in 95.2801ms (afa2e885)
+2018-07-12T19:28:05.0302289+07:00 0HLF7UA56DPGU:0000000A [INF] Request finished in 122.4271ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:28:05.0437233+07:00 0HLF7UA56DPGU:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png   (ca22a1cb)
+2018-07-12T19:28:05.0549222+07:00 0HLF7UA56DPGU:0000000B [INF] The file "/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png" was not modified (f1f8d725)
+2018-07-12T19:28:05.0604263+07:00 0HLF7UA56DPGU:0000000B [INF] Request finished in 17.447ms 304 image/png (791a596a)
