@@ -21,6 +21,7 @@ using MaiHienCoreApp.Application.Implementation;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using MaiHienCoreApp.Helpers;
+using MaiHienCoreApp.Infrastructure.Interfaces;
 
 namespace MaiHienCoreApp
 {
@@ -77,6 +78,9 @@ namespace MaiHienCoreApp
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
+            services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
 
             //Repositories
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();

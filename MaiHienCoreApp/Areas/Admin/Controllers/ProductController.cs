@@ -1,15 +1,20 @@
-﻿using MaiHienCoreApp.Application.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MaiHienCoreApp.Application.Interfaces;
 
 namespace MaiHienCoreApp.Areas.Admin.Controllers
 {
     public class ProductController : BaseController
     {
-        private IProductService _productService;
-
-        public ProductController(IProductService productService)
+        IProductService _productService;
+        IProductCategoryService _productCategoryService;
+        public ProductController(IProductService productService, IProductCategoryService productCategoryService)
         {
             _productService = productService;
+            _productCategoryService = productCategoryService;
         }
 
         public IActionResult Index()
@@ -18,11 +23,16 @@ namespace MaiHienCoreApp.Areas.Admin.Controllers
         }
 
         #region AJAX API
-
         [HttpGet]
         public IActionResult GetAll()
         {
             var model = _productService.GetAll();
+            return new OkObjectResult(model);
+        }
+        [HttpGet]
+        public IActionResult GetAllCategories()
+        {
+            var model = _productCategoryService.GetAll();
             return new OkObjectResult(model);
         }
 
@@ -32,7 +42,6 @@ namespace MaiHienCoreApp.Areas.Admin.Controllers
             var model = _productService.GetAllPaging(categoryId, keyword, page, pageSize);
             return new OkObjectResult(model);
         }
-
-        #endregion AJAX API
+        #endregion
     }
 }
