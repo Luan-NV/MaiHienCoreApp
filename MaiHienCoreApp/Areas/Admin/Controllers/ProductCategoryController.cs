@@ -1,13 +1,18 @@
-﻿using MaiHienCoreApp.Application.Interfaces;
-using Microsoft.AspNetCore.Mvc;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using MaiHienCoreApp.Application.Interfaces;
+using MaiHienCoreApp.Application.ViewModels.Product;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using MaiHienCoreApp.Utilities.Helpers;
 
 namespace MaiHienCoreApp.Areas.Admin.Controllers
 {
     public class ProductCategoryController : BaseController
     {
-        private IProductCategoryService _productCategoryService;
-
+        IProductCategoryService _productCategoryService;
         public ProductCategoryController(IProductCategoryService productCategoryService)
         {
             _productCategoryService = productCategoryService;
@@ -19,7 +24,52 @@ namespace MaiHienCoreApp.Areas.Admin.Controllers
         }
 
         #region Get Data API
+        [HttpGet]
+        public IActionResult GetById(int id)
+        {
+            var model = _productCategoryService.GetById(id);
 
+            return new ObjectResult(model);
+        }
+        [HttpPost]
+        public IActionResult SaveEntity(ProductCategoryViewModel productVm)
+        {
+            if (!ModelState.IsValid)
+            {
+                IEnumerable<ModelError> allErrors = ModelState.Values.SelectMany(v => v.Errors);
+                return new BadRequestObjectResult(allErrors);
+            }
+            else
+            {
+                productVm.SeoAlias = TextHelper.ToUnsignString(productVm.Name);
+                if (productVm.Id == 0)
+                {
+                    _productCategoryService.Add(productVm);
+                }
+                else
+                {
+                    _productCategoryService.Update(productVm);
+                }
+                _productCategoryService.Save();
+                return new OkObjectResult(productVm);
+
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            if (id == 0)
+            {
+                return new BadRequestResult();
+            }
+            else
+            {
+                _productCategoryService.Delete(id);
+                _productCategoryService.Save();
+                return new OkObjectResult(id);
+            }
+        }
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -71,6 +121,6 @@ namespace MaiHienCoreApp.Areas.Admin.Controllers
             }
         }
 
-        #endregion Get Data API
+        #endregion
     }
 }
