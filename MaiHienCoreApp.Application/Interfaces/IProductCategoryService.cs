@@ -1,5 +1,7 @@
-﻿using MaiHienCoreApp.Application.ViewModels.Product;
+﻿using System;
 using System.Collections.Generic;
+using System.Text;
+using MaiHienCoreApp.Application.ViewModels.Product;
 
 namespace MaiHienCoreApp.Application.Interfaces
 {
@@ -20,7 +22,6 @@ namespace MaiHienCoreApp.Application.Interfaces
         ProductCategoryViewModel GetById(int id);
 
         void UpdateParentId(int sourceId, int targetId, Dictionary<int, int> items);
-
         void ReOrder(int sourceId, int targetId);
 
         List<ProductCategoryViewModel> GetHomeCategories(int top);
