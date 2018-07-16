@@ -31,4 +31,8 @@
     <ProjectReference Include="..\MaiHienCoreApp.Utilities\MaiHienCoreApp.Utilities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\uploaded\images\" />
+  </ItemGroup>
+
 </Project>
