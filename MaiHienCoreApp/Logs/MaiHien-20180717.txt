@@ -1,0 +1,1349 @@
+2018-07-17T14:13:46.5882307+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:13:47.4161495+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:13:47.4774127+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:13:47.5286296+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-17T14:13:47.6079163+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-17T14:13:47.6328251+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-17T14:13:47.6522278+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-17T14:13:47.6685082+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-17T14:13:47.6839612+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-17T14:13:47.7011294+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-17T14:13:47.7185487+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:13:47.7478668+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:13:47.7661794+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:13:52.0900920+07:00 0HLFBMJBJO2M0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-17T14:13:52.6132053+07:00 0HLFBMJBJO2M0:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-07-17T14:13:52.6338460+07:00 0HLFBMJBJO2M0:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-17T14:13:52.6640104+07:00 0HLFBMJBJO2M0:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-17T14:13:52.6992324+07:00 0HLFBMJBJO2M0:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-17T14:13:52.7220279+07:00 0HLFBMJBJO2M0:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 119.3975ms (afa2e885)
+2018-07-17T14:13:52.7501063+07:00 0HLFBMJBJO2M0:00000001 [INF] Request finished in 695.6127ms 302  (791a596a)
+2018-07-17T14:13:52.8297386+07:00 0HLFBMJBJO2M0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-17T14:13:53.0143858+07:00 0HLFBMJBJO2M0:00000002 [INF] Executing action method "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:13:53.0577974+07:00 0HLFBMJBJO2M0:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-17T14:14:01.2869673+07:00 0HLFBMJBJO2M0:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-07-17T14:14:03.1816676+07:00 0HLFBMJBJO2M0:00000002 [INF] Executed action "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" in 10267.0419ms (afa2e885)
+2018-07-17T14:14:03.2155717+07:00 0HLFBMJBJO2M2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-17T14:14:03.2356649+07:00 0HLFBMJBJO2M4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-07-17T14:14:03.2438712+07:00 0HLFBMJBJO2M0:00000002 [INF] Request finished in 10417.3193ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:14:03.2500539+07:00 0HLFBMJBJO2M3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/css/site.css   (ca22a1cb)
+2018-07-17T14:14:03.2724778+07:00 0HLFBMJBJO2M5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-07-17T14:14:03.2832768+07:00 0HLFBMJBJO2M3:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\css\site.css"' (27b0a520)
+2018-07-17T14:14:03.2918671+07:00 0HLFBMJBJO2M2:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-17T14:14:03.3546160+07:00 0HLFBMJBJO2M0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-07-17T14:14:03.3567627+07:00 0HLFBMJBJO2M5:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\js\site.js"' (27b0a520)
+2018-07-17T14:14:03.3596891+07:00 0HLFBMJBJO2M4:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-07-17T14:14:03.3719416+07:00 0HLFBMJBJO2M0:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-07-17T14:14:03.4130359+07:00 0HLFBMJBJO2M5:00000001 [INF] Request finished in 200.0518ms 200 application/javascript (791a596a)
+2018-07-17T14:14:03.5280395+07:00 0HLFBMJBJO2M0:00000003 [INF] Request finished in 127.8133ms 200 application/javascript (791a596a)
+2018-07-17T14:14:03.7932948+07:00 0HLFBMJBJO2M2:00000001 [INF] Request finished in 278.8544ms 200 text/css (791a596a)
+2018-07-17T14:14:03.9475166+07:00 0HLFBMJBJO2M4:00000001 [INF] Request finished in 391.7562ms 200 application/javascript (791a596a)
+2018-07-17T14:14:03.9585381+07:00 0HLFBMJBJO2M6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-07-17T14:14:03.9659216+07:00 0HLFBMJBJO2M3:00000001 [INF] Request finished in 200.8917ms 200 text/css (791a596a)
+2018-07-17T14:14:03.9723695+07:00 0HLFBMJBJO2M6:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-07-17T14:14:03.9898106+07:00 0HLFBMJBJO2M3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-07-17T14:14:04.0035260+07:00 0HLFBMJBJO2M3:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-07-17T14:14:04.0153099+07:00 0HLFBMJBJO2M6:00000001 [INF] Request finished in 594.6454ms 200 application/javascript (791a596a)
+2018-07-17T14:14:04.1376555+07:00 0HLFBMJBJO2M3:00000002 [INF] Request finished in 91.0539ms 200 application/javascript (791a596a)
+2018-07-17T14:14:33.6887528+07:00 0HLFBMJBJO2M3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Login   (ca22a1cb)
+2018-07-17T14:14:33.7106464+07:00 0HLFBMJBJO2M3:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:14:34.4427047+07:00 0HLFBMJBJO2M3:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-17T14:14:34.5898116+07:00 0HLFBMJBJO2M5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-17T14:14:34.6111198+07:00 0HLFBMJBJO2M0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/login/index.js   (ca22a1cb)
+2018-07-17T14:14:34.6155894+07:00 0HLFBMJBJO2M3:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 821.5402ms (afa2e885)
+2018-07-17T14:14:34.6184678+07:00 0HLFBMJBJO2M4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/animate.css/animate.css   (ca22a1cb)
+2018-07-17T14:14:34.6224628+07:00 0HLFBMJBJO2M2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-17T14:14:34.6567351+07:00 0HLFBMJBJO2M4:00000002 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2018-07-17T14:14:34.6618726+07:00 0HLFBMJBJO2M5:00000002 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-07-17T14:14:34.6660049+07:00 0HLFBMJBJO2M3:00000003 [INF] Request finished in 935.5979ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:14:34.6723941+07:00 0HLFBMJBJO2M0:00000004 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-07-17T14:14:34.6823610+07:00 0HLFBMJBJO2M5:00000002 [INF] Request finished in 120.9143ms 200 application/javascript (791a596a)
+2018-07-17T14:14:34.6919780+07:00 0HLFBMJBJO2M2:00000002 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-17T14:14:34.6888683+07:00 0HLFBMJBJO2M6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-17T14:14:34.7352922+07:00 0HLFBMJBJO2M5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-07-17T14:14:34.7418230+07:00 0HLFBMJBJO2M4:00000002 [INF] Request finished in 133.7232ms 200 text/css (791a596a)
+2018-07-17T14:14:34.7447023+07:00 0HLFBMJBJO2M2:00000002 [INF] Request finished in 175.5954ms 200 text/css (791a596a)
+2018-07-17T14:14:34.7564696+07:00 0HLFBMJBJO2M0:00000004 [INF] Request finished in 138.4037ms 200 application/javascript (791a596a)
+2018-07-17T14:14:34.7832672+07:00 0HLFBMJBJO2M5:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-07-17T14:14:34.7878498+07:00 0HLFBMJBJO2M3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/shared/maihien.js   (ca22a1cb)
+2018-07-17T14:14:34.8206496+07:00 0HLFBMJBJO2M6:00000002 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-07-17T14:14:34.8236444+07:00 0HLFBMJBJO2M2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/css/custom.css   (ca22a1cb)
+2018-07-17T14:14:34.8270993+07:00 0HLFBMJBJO2M4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-17T14:14:34.8415973+07:00 0HLFBMJBJO2M5:00000003 [INF] Request finished in 125.3001ms 200 application/javascript (791a596a)
+2018-07-17T14:14:34.8643714+07:00 0HLFBMJBJO2M0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-17T14:14:34.8750396+07:00 0HLFBMJBJO2M4:00000003 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2018-07-17T14:14:34.8780754+07:00 0HLFBMJBJO2M3:00000004 [INF] Sending file. Request path: '"/app/shared/maihien.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\app\shared\maihien.js"' (27b0a520)
+2018-07-17T14:14:34.9074704+07:00 0HLFBMJBJO2M2:00000003 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-07-17T14:14:34.9421148+07:00 0HLFBMJBJO2M0:00000005 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-07-17T14:14:34.9478092+07:00 0HLFBMJBJO2M6:00000002 [INF] Request finished in 300.4461ms 200 text/css (791a596a)
+2018-07-17T14:14:34.9770722+07:00 0HLFBMJBJO2M2:00000003 [INF] Request finished in 194.7688ms 200 text/css (791a596a)
+2018-07-17T14:14:34.9878057+07:00 0HLFBMJBJO2M3:00000004 [INF] Request finished in 204.5419ms 200 application/javascript (791a596a)
+2018-07-17T14:14:34.9982939+07:00 0HLFBMJBJO2M0:00000005 [INF] Request finished in 180.4195ms 200 text/css (791a596a)
+2018-07-17T14:14:35.0006361+07:00 0HLFBMJBJO2M4:00000003 [INF] Request finished in 158.6803ms 200 application/javascript (791a596a)
+2018-07-17T14:14:35.1039203+07:00 0HLFBMJBJO2M5:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-17T14:14:35.1166758+07:00 0HLFBMJBJO2M5:00000004 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-17T14:14:35.1508523+07:00 0HLFBMJBJO2M5:00000004 [INF] Request finished in 47.4139ms 200 font/woff2 (791a596a)
+2018-07-17T14:14:44.9317892+07:00 0HLFBMJBJO2M5:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-17T14:14:45.0034640+07:00 0HLFBMJBJO2M5:00000005 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:14:45.0327419+07:00 0HLFBMJBJO2M5:00000005 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:14:45.2362324+07:00 0HLFBMJBJO2M5:00000005 [INF] Executed DbCommand ("105"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:14:45.4881853+07:00 0HLFBMJBJO2M5:00000005 [INF] Executed DbCommand ("10"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-17T14:14:45.6517629+07:00 0HLFBMJBJO2M5:00000005 [INF] Executed DbCommand ("13"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:14:45.6970686+07:00 0HLFBMJBJO2M5:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-17T14:14:45.7484244+07:00 0HLFBMJBJO2M5:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-17T14:14:45.7622314+07:00 0HLFBMJBJO2M5:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:14:45.7824162+07:00 0HLFBMJBJO2M5:00000005 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-17T14:14:45.8127163+07:00 0HLFBMJBJO2M5:00000005 [INF] User logged in. (fdce0db4)
+2018-07-17T14:14:45.8385290+07:00 0HLFBMJBJO2M5:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:14:45.9389281+07:00 0HLFBMJBJO2M5:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 979.385ms (afa2e885)
+2018-07-17T14:14:45.9636637+07:00 0HLFBMJBJO2M5:00000005 [INF] Request finished in 1028.8575ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:14:45.9821798+07:00 0HLFBMJBJO2M5:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-17T14:14:46.0009324+07:00 0HLFBMJBJO2M5:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:14:46.0125174+07:00 0HLFBMJBJO2M5:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:14:46.0198877+07:00 0HLFBMJBJO2M5:00000006 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:14:46.3577617+07:00 0HLFBMJBJO2M5:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-17T14:14:46.8528291+07:00 0HLFBMJBJO2M5:00000006 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:14:46.9875248+07:00 0HLFBMJBJO2M5:00000006 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-17T14:14:47.7738276+07:00 0HLFBMJBJO2M0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-17T14:14:47.8147706+07:00 0HLFBMJBJO2M6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/mustache/mustache.js   (ca22a1cb)
+2018-07-17T14:14:47.8365500+07:00 0HLFBMJBJO2M5:00000006 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 1736.5035ms (afa2e885)
+2018-07-17T14:14:47.8471733+07:00 0HLFBMJBJO2M4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-07-17T14:14:47.8663667+07:00 0HLFBMJBJO2M3:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-07-17T14:14:47.9116544+07:00 0HLFBMJBJO2M2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-17T14:14:47.9133017+07:00 0HLFBMJBJO2M6:00000003 [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2018-07-17T14:14:47.9242760+07:00 0HLFBMJBJO2M4:00000004 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2018-07-17T14:14:47.9303035+07:00 0HLFBMJBJO2M2:00000004 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-07-17T14:14:47.9376704+07:00 0HLFBMJBJO2M5:00000006 [INF] Request finished in 1869.2783ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:14:47.9432219+07:00 0HLFBMJBJO2M3:00000005 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2018-07-17T14:14:47.9653635+07:00 0HLFBMJBJO2M4:00000004 [INF] Request finished in 203.6918ms 200 text/css (791a596a)
+2018-07-17T14:14:47.9857770+07:00 0HLFBMJBJO2M0:00000006 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-07-17T14:14:48.0550452+07:00 0HLFBMJBJO2M6:00000003 [INF] Request finished in 187.8463ms 200 application/javascript (791a596a)
+2018-07-17T14:14:48.1144055+07:00 0HLFBMJBJO2M3:00000005 [INF] Request finished in 257.1627ms 200 application/javascript (791a596a)
+2018-07-17T14:14:48.1314283+07:00 0HLFBMJBJO2M5:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-07-17T14:14:48.1360143+07:00 0HLFBMJBJO2M2:00000004 [INF] Request finished in 211.361ms 200 text/css (791a596a)
+2018-07-17T14:14:48.1419635+07:00 0HLFBMJBJO2M0:00000006 [INF] Request finished in 292.0465ms 200 image/jpeg (791a596a)
+2018-07-17T14:14:48.1579484+07:00 0HLFBMJBJO2M6:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2018-07-17T14:14:48.1992874+07:00 0HLFBMJBJO2M6:00000004 [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2018-07-17T14:14:48.2483746+07:00 0HLFBMJBJO2M4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-07-17T14:14:48.2648390+07:00 0HLFBMJBJO2M5:00000007 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2018-07-17T14:14:48.3110645+07:00 0HLFBMJBJO2M3:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-07-17T14:14:48.3399699+07:00 0HLFBMJBJO2M3:00000006 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-07-17T14:14:48.3578810+07:00 0HLFBMJBJO2M0:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-07-17T14:14:48.3800021+07:00 0HLFBMJBJO2M0:00000007 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2018-07-17T14:14:48.4525972+07:00 0HLFBMJBJO2M4:00000005 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-07-17T14:14:48.4773127+07:00 0HLFBMJBJO2M2:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-07-17T14:14:48.4823438+07:00 0HLFBMJBJO2M5:00000007 [INF] Request finished in 403.3541ms 200 application/javascript (791a596a)
+2018-07-17T14:14:48.5155381+07:00 0HLFBMJBJO2M4:00000005 [INF] Request finished in 517.4515ms 200 application/javascript (791a596a)
+2018-07-17T14:14:48.5269251+07:00 0HLFBMJBJO2M0:00000007 [INF] Request finished in 243.5947ms 200 application/javascript (791a596a)
+2018-07-17T14:14:48.5296881+07:00 0HLFBMJBJO2M3:00000006 [INF] Request finished in 269.5962ms 200 application/javascript (791a596a)
+2018-07-17T14:14:48.5526485+07:00 0HLFBMJBJO2M2:00000005 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2018-07-17T14:14:48.5846077+07:00 0HLFBMJBJO2M3:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/js/custom.js   (ca22a1cb)
+2018-07-17T14:14:48.5947833+07:00 0HLFBMJBJO2M5:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/moment/moment.js   (ca22a1cb)
+2018-07-17T14:14:48.6092275+07:00 0HLFBMJBJO2M0:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-07-17T14:14:48.6819599+07:00 0HLFBMJBJO2M0:00000008 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2018-07-17T14:14:48.7054640+07:00 0HLFBMJBJO2M3:00000007 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2018-07-17T14:14:48.7119764+07:00 0HLFBMJBJO2M5:00000008 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\moment\moment.js"' (27b0a520)
+2018-07-17T14:14:48.7630709+07:00 0HLFBMJBJO2M2:00000005 [INF] Request finished in 426.8581ms 200 application/javascript (791a596a)
+2018-07-17T14:14:48.8760800+07:00 0HLFBMJBJO2M3:00000007 [INF] Request finished in 289.6282ms 200 application/javascript (791a596a)
+2018-07-17T14:14:48.8795002+07:00 0HLFBMJBJO2M4:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-07-17T14:14:48.9122095+07:00 0HLFBMJBJO2M4:00000006 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-07-17T14:14:48.9266635+07:00 0HLFBMJBJO2M5:00000008 [INF] Request finished in 321.454ms 200 application/javascript (791a596a)
+2018-07-17T14:14:48.9376029+07:00 0HLFBMJBJO2M0:00000008 [INF] Request finished in 303.0675ms 200 application/javascript (791a596a)
+2018-07-17T14:14:49.0120598+07:00 0HLFBMJBJO2M6:00000004 [INF] Request finished in 868.104ms 200 application/javascript (791a596a)
+2018-07-17T14:14:49.0818497+07:00 0HLFBMJBJO2M4:00000006 [INF] Request finished in 360.5141ms 200 font/woff2 (791a596a)
+2018-07-17T14:14:51.7464381+07:00 0HLFBMJBJO2M6:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/index   (ca22a1cb)
+2018-07-17T14:14:51.7635157+07:00 0HLFBMJBJO2M6:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:14:51.7818620+07:00 0HLFBMJBJO2M6:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:14:51.7910904+07:00 0HLFBMJBJO2M6:00000005 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:14:52.0821037+07:00 0HLFBMJBJO2M6:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/User/Index.cshtml". (9707eebe)
+2018-07-17T14:14:52.4071007+07:00 0HLFBMJBJO2M6:00000005 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:14:52.4198806+07:00 0HLFBMJBJO2M6:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-17T14:14:52.5768830+07:00 0HLFBMJBJO2M4:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/user/index.js?v=83OVA_mS2_0ZKF1eBbFg-omEqozmH4yn6YWbIGGV2Ms   (ca22a1cb)
+2018-07-17T14:14:52.6096603+07:00 0HLFBMJBJO2M6:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.Index (MaiHienCoreApp)" in 800.6011ms (afa2e885)
+2018-07-17T14:14:52.6226745+07:00 0HLFBMJBJO2M4:00000007 [INF] Sending file. Request path: '"/app/controllers/user/index.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\app\controllers\user\index.js"' (27b0a520)
+2018-07-17T14:14:52.6399140+07:00 0HLFBMJBJO2M6:00000005 [INF] Request finished in 870.5744ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:14:52.6549501+07:00 0HLFBMJBJO2M4:00000007 [INF] Request finished in 90.6643ms 200 application/javascript (791a596a)
+2018-07-17T14:14:53.0181323+07:00 0HLFBMJBJO2M4:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:14:53.0279935+07:00 0HLFBMJBJO2M4:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:14:53.0425458+07:00 0HLFBMJBJO2M4:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:14:53.0570704+07:00 0HLFBMJBJO2M4:00000008 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:14:53.0772026+07:00 0HLFBMJBJO2M4:00000008 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:14:53.0986711+07:00 0HLFBMJBJO2M4:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:14:53.1705170+07:00 0HLFBMJBJO2M4:00000008 [WRN] Query: '"(from AppUser x in DbSet<AppUser> select new AppUserViewModel{ { 
+    UserName = [x].UserName, , 
+..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-07-17T14:14:53.2182871+07:00 0HLFBMJBJO2M4:00000008 [INF] Executed DbCommand ("9"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:14:53.2401341+07:00 0HLFBMJBJO2M4:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:14:53.3025361+07:00 0HLFBMJBJO2M4:00000008 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 256.2643ms (afa2e885)
+2018-07-17T14:14:53.3415069+07:00 0HLFBMJBJO2M4:00000008 [INF] Request finished in 362.2234ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:14:53.3929478+07:00 0HLFBMJBJO2M4:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/null   (ca22a1cb)
+2018-07-17T14:14:53.4438089+07:00 0HLFBMJBJO2M6:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:14:53.4553708+07:00 0HLFBMJBJO2M4:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:14:53.4926408+07:00 0HLFBMJBJO2M6:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:14:53.5171446+07:00 0HLFBMJBJO2M6:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:14:53.5255754+07:00 0HLFBMJBJO2M4:00000009 [INF] Request finished in 99.167ms 404  (791a596a)
+2018-07-17T14:14:53.5872501+07:00 0HLFBMJBJO2M6:00000006 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:14:53.6662585+07:00 0HLFBMJBJO2M6:00000006 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:14:53.6772567+07:00 0HLFBMJBJO2M6:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:14:53.6883034+07:00 0HLFBMJBJO2M6:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:14:53.6953799+07:00 0HLFBMJBJO2M6:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:14:53.7028673+07:00 0HLFBMJBJO2M6:00000006 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 202.8998ms (afa2e885)
+2018-07-17T14:14:53.7115534+07:00 0HLFBMJBJO2M6:00000006 [INF] Request finished in 365.4118ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:15:09.7246309+07:00 0HLFBMJBJO2M6:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/User/GetById?id=40a344c3-d2e2-43f5-952e-08d5e6e63eff   (ca22a1cb)
+2018-07-17T14:15:09.7352345+07:00 0HLFBMJBJO2M6:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:15:09.7644920+07:00 0HLFBMJBJO2M6:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:15:09.7855187+07:00 0HLFBMJBJO2M6:00000007 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" with arguments (["40a344c3-d2e2-43f5-952e-08d5e6e63eff"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:15:09.8022725+07:00 0HLFBMJBJO2M6:00000007 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:15:09.8326503+07:00 0HLFBMJBJO2M6:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:15:09.8565623+07:00 0HLFBMJBJO2M6:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:15:09.8964923+07:00 0HLFBMJBJO2M6:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:15:09.9037209+07:00 0HLFBMJBJO2M6:00000007 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" in 142.754ms (afa2e885)
+2018-07-17T14:15:09.9144392+07:00 0HLFBMJBJO2M6:00000007 [INF] Request finished in 185.7829ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:15:09.9248927+07:00 0HLFBMJBJO2M6:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:15:09.9344302+07:00 0HLFBMJBJO2M6:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:15:09.9493132+07:00 0HLFBMJBJO2M6:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:15:09.9617107+07:00 0HLFBMJBJO2M6:00000008 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:15:09.9758175+07:00 0HLFBMJBJO2M6:00000008 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:15:10.0150413+07:00 0HLFBMJBJO2M6:00000008 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:15:10.0231788+07:00 0HLFBMJBJO2M6:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:15:10.0352838+07:00 0HLFBMJBJO2M6:00000008 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 87.6354ms (afa2e885)
+2018-07-17T14:15:10.0472259+07:00 0HLFBMJBJO2M6:00000008 [INF] Request finished in 118.8834ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:12.0377718+07:00 0HLFBMJBJO2M7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/User/GetById?id=40a344c3-d2e2-43f5-952e-08d5e6e63eff   (ca22a1cb)
+2018-07-17T14:17:12.0486683+07:00 0HLFBMJBJO2M7:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:12.0554613+07:00 0HLFBMJBJO2M7:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:12.0614028+07:00 0HLFBMJBJO2M7:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" with arguments (["40a344c3-d2e2-43f5-952e-08d5e6e63eff"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:12.0712838+07:00 0HLFBMJBJO2M7:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:12.0925996+07:00 0HLFBMJBJO2M7:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:17:12.1045763+07:00 0HLFBMJBJO2M7:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:17:12.1116742+07:00 0HLFBMJBJO2M7:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:12.1168135+07:00 0HLFBMJBJO2M7:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" in 63.519ms (afa2e885)
+2018-07-17T14:17:12.1240038+07:00 0HLFBMJBJO2M7:00000001 [INF] Request finished in 89.2262ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:12.1353206+07:00 0HLFBMJBJO2M7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:17:12.1414521+07:00 0HLFBMJBJO2M7:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:12.1483584+07:00 0HLFBMJBJO2M7:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:12.1544500+07:00 0HLFBMJBJO2M7:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:12.1617031+07:00 0HLFBMJBJO2M7:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:12.1740253+07:00 0HLFBMJBJO2M7:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:17:12.1816176+07:00 0HLFBMJBJO2M7:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:12.1913205+07:00 0HLFBMJBJO2M7:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 41.2551ms (afa2e885)
+2018-07-17T14:17:12.2084631+07:00 0HLFBMJBJO2M7:00000002 [INF] Request finished in 62.6526ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:19.4014800+07:00 0HLFBMJBJO2M7:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44346/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 161 (ca22a1cb)
+2018-07-17T14:17:19.4075425+07:00 0HLFBMJBJO2M7:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:19.4289126+07:00 0HLFBMJBJO2M7:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:19.4544291+07:00 0HLFBMJBJO2M7:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Application.ViewModels.System.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:19.4928935+07:00 0HLFBMJBJO2M7:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:19.6014676+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("40"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:17:19.6185260+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:17:19.6425239+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:17:19.6900195+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("17"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:17:19.8968891+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("53"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:17:19.9407066+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("16"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:17:19.9632322+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:17:19.9756857+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:17:19.9932051+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:17:20.0120163+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:17:20.0311610+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed DbCommand ("9"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:17:20.0574403+07:00 0HLFBMJBJO2M7:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:20.0712102+07:00 0HLFBMJBJO2M7:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" in 634.2199ms (afa2e885)
+2018-07-17T14:17:20.1162743+07:00 0HLFBMJBJO2M7:00000003 [INF] Request finished in 681.8604ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:20.1384317+07:00 0HLFBMJBJO2M7:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:17:20.1476886+07:00 0HLFBMJBJO2M7:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:20.1593070+07:00 0HLFBMJBJO2M7:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:20.1667406+07:00 0HLFBMJBJO2M7:00000004 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:20.1785775+07:00 0HLFBMJBJO2M7:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:20.1894061+07:00 0HLFBMJBJO2M7:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:17:20.1964642+07:00 0HLFBMJBJO2M7:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:20.2023630+07:00 0HLFBMJBJO2M7:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 48.7913ms (afa2e885)
+2018-07-17T14:17:20.2139223+07:00 0HLFBMJBJO2M7:00000004 [INF] Request finished in 79.9961ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:20.2267005+07:00 0HLFBMJBJO2M7:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:17:20.2348477+07:00 0HLFBMJBJO2M7:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:20.2465512+07:00 0HLFBMJBJO2M7:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:20.2672414+07:00 0HLFBMJBJO2M7:00000005 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:20.2799066+07:00 0HLFBMJBJO2M7:00000005 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:20.2979751+07:00 0HLFBMJBJO2M7:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:17:20.3175145+07:00 0HLFBMJBJO2M7:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:17:20.3354593+07:00 0HLFBMJBJO2M7:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:20.3637451+07:00 0HLFBMJBJO2M7:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 100.86ms (afa2e885)
+2018-07-17T14:17:20.4207684+07:00 0HLFBMJBJO2M7:00000005 [INF] Request finished in 145.5216ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:20.4322914+07:00 0HLFBMJBJO2M7:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:17:20.4380743+07:00 0HLFBMJBJO2M7:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:20.4458427+07:00 0HLFBMJBJO2M7:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:20.4513733+07:00 0HLFBMJBJO2M7:00000006 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:20.4608928+07:00 0HLFBMJBJO2M7:00000006 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:20.4686745+07:00 0HLFBMJBJO2M7:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:17:20.4821501+07:00 0HLFBMJBJO2M7:00000006 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:17:20.4911419+07:00 0HLFBMJBJO2M7:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:20.5036344+07:00 0HLFBMJBJO2M7:00000006 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 54.912ms (afa2e885)
+2018-07-17T14:17:20.5245440+07:00 0HLFBMJBJO2M7:00000006 [INF] Request finished in 79.0301ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:22.1770560+07:00 0HLFBMJBJO2M7:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/User/GetById?id=40a344c3-d2e2-43f5-952e-08d5e6e63eff   (ca22a1cb)
+2018-07-17T14:17:22.1854650+07:00 0HLFBMJBJO2M7:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:22.1921028+07:00 0HLFBMJBJO2M7:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:22.1985181+07:00 0HLFBMJBJO2M7:00000007 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" with arguments (["40a344c3-d2e2-43f5-952e-08d5e6e63eff"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:22.2050052+07:00 0HLFBMJBJO2M7:00000007 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:22.2203440+07:00 0HLFBMJBJO2M7:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:17:22.2344817+07:00 0HLFBMJBJO2M7:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:17:22.2406862+07:00 0HLFBMJBJO2M7:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:22.2500654+07:00 0HLFBMJBJO2M7:00000007 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" in 56.014ms (afa2e885)
+2018-07-17T14:17:22.2628295+07:00 0HLFBMJBJO2M7:00000007 [INF] Request finished in 79.8105ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:22.2773566+07:00 0HLFBMJBJO2M7:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:17:22.2920775+07:00 0HLFBMJBJO2M7:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:22.3045858+07:00 0HLFBMJBJO2M7:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:22.3133822+07:00 0HLFBMJBJO2M7:00000008 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:22.3221133+07:00 0HLFBMJBJO2M7:00000008 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:22.3328135+07:00 0HLFBMJBJO2M7:00000008 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:17:22.3399315+07:00 0HLFBMJBJO2M7:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:22.3490717+07:00 0HLFBMJBJO2M7:00000008 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 49.4554ms (afa2e885)
+2018-07-17T14:17:22.3570163+07:00 0HLFBMJBJO2M7:00000008 [INF] Request finished in 81.161ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:51.9416256+07:00 0HLFBMJBJO2M7:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:17:51.9468359+07:00 0HLFBMJBJO2M7:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:51.9520342+07:00 0HLFBMJBJO2M7:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:51.9581014+07:00 0HLFBMJBJO2M7:00000009 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:51.9642341+07:00 0HLFBMJBJO2M7:00000009 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:51.9729181+07:00 0HLFBMJBJO2M7:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:17:51.9780583+07:00 0HLFBMJBJO2M7:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:51.9837672+07:00 0HLFBMJBJO2M7:00000009 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 31.3323ms (afa2e885)
+2018-07-17T14:17:51.9911644+07:00 0HLFBMJBJO2M7:00000009 [INF] Request finished in 46.7262ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:17:52.0010594+07:00 0HLFBMJBJO2M7:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:17:52.0080042+07:00 0HLFBMJBJO2M7:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:17:52.0145564+07:00 0HLFBMJBJO2M7:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:17:52.0246840+07:00 0HLFBMJBJO2M7:0000000A [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:17:52.0340963+07:00 0HLFBMJBJO2M7:0000000A [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:17:52.0540882+07:00 0HLFBMJBJO2M7:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:17:52.0614075+07:00 0HLFBMJBJO2M7:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:17:52.0683472+07:00 0HLFBMJBJO2M7:0000000A [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 53.8006ms (afa2e885)
+2018-07-17T14:17:52.0809351+07:00 0HLFBMJBJO2M7:0000000A [INF] Request finished in 74.9543ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:18:57.7769524+07:00 0HLFBMJBJO2M9:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44346/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 95 (ca22a1cb)
+2018-07-17T14:18:57.7829422+07:00 0HLFBMJBJO2M9:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:18:57.7920636+07:00 0HLFBMJBJO2M9:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:18:57.7980950+07:00 0HLFBMJBJO2M9:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Application.ViewModels.System.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:18:57.8329886+07:00 0HLFBMJBJO2M9:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:18:57.8491207+07:00 0HLFBMJBJO2M9:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:18:57.8702586+07:00 0HLFBMJBJO2M9:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:18:57.9134732+07:00 0HLFBMJBJO2M9:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?', @p7='?', @p8='?' (Size = 4000), @p9='?', @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?', @p18='?' (Size = 4000), @p19='?', @p20='?', @p21='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppUsers] ([Id], [AccessFailedCount], [Avatar], [Balance], [BirthDay], [ConcurrencyStamp], [DateCreated], [DateModified], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [Status], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);" (0723d8ff)
+2018-07-17T14:18:57.9201592+07:00 0HLFBMJBJO2M9:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:18:57.9258146+07:00 0HLFBMJBJO2M9:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" in 137.5236ms (afa2e885)
+2018-07-17T14:18:57.9351718+07:00 0HLFBMJBJO2M9:00000001 [INF] Request finished in 154.4853ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:18:57.9550806+07:00 0HLFBMJBJO2M9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:18:57.9623658+07:00 0HLFBMJBJO2M9:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:18:57.9678635+07:00 0HLFBMJBJO2M9:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:18:57.9734146+07:00 0HLFBMJBJO2M9:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:18:57.9793095+07:00 0HLFBMJBJO2M9:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:18:57.9889377+07:00 0HLFBMJBJO2M9:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:18:57.9950546+07:00 0HLFBMJBJO2M9:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:18:58.0004993+07:00 0HLFBMJBJO2M9:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 32.7657ms (afa2e885)
+2018-07-17T14:18:58.0095971+07:00 0HLFBMJBJO2M9:00000002 [INF] Request finished in 51.1612ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:18:58.0225921+07:00 0HLFBMJBJO2M9:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:18:58.0411373+07:00 0HLFBMJBJO2M9:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:18:58.0511721+07:00 0HLFBMJBJO2M9:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:18:58.0721981+07:00 0HLFBMJBJO2M9:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:18:58.0855082+07:00 0HLFBMJBJO2M9:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:18:58.1000080+07:00 0HLFBMJBJO2M9:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:18:58.1151632+07:00 0HLFBMJBJO2M9:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:18:58.1244467+07:00 0HLFBMJBJO2M9:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:18:58.1326215+07:00 0HLFBMJBJO2M9:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 83.191ms (afa2e885)
+2018-07-17T14:18:58.1449672+07:00 0HLFBMJBJO2M9:00000003 [INF] Request finished in 120.0795ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:18:58.1614598+07:00 0HLFBMJBJO2M9:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:18:58.1680620+07:00 0HLFBMJBJO2M9:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:18:58.1767396+07:00 0HLFBMJBJO2M9:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:18:58.1828723+07:00 0HLFBMJBJO2M9:00000004 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:18:58.1913107+07:00 0HLFBMJBJO2M9:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:18:58.2009086+07:00 0HLFBMJBJO2M9:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:18:58.2146818+07:00 0HLFBMJBJO2M9:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:18:58.2200280+07:00 0HLFBMJBJO2M9:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:18:58.2288788+07:00 0HLFBMJBJO2M9:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 51.9861ms (afa2e885)
+2018-07-17T14:18:58.2376196+07:00 0HLFBMJBJO2M9:00000004 [INF] Request finished in 76.3335ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:03.4908725+07:00 0HLFBMJBJO2M9:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/User/GetById?id=2e8caf7a-7bd8-4309-d28d-08d5ebb58fe9   (ca22a1cb)
+2018-07-17T14:19:03.4997323+07:00 0HLFBMJBJO2M9:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:03.5076229+07:00 0HLFBMJBJO2M9:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:03.5155235+07:00 0HLFBMJBJO2M9:00000005 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" with arguments (["2e8caf7a-7bd8-4309-d28d-08d5ebb58fe9"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:03.5247831+07:00 0HLFBMJBJO2M9:00000005 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:03.5352926+07:00 0HLFBMJBJO2M9:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:19:03.5505100+07:00 0HLFBMJBJO2M9:00000005 [INF] Executed DbCommand ("6"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:03.5564284+07:00 0HLFBMJBJO2M9:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:03.5626205+07:00 0HLFBMJBJO2M9:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" in 56.4724ms (afa2e885)
+2018-07-17T14:19:03.5695208+07:00 0HLFBMJBJO2M9:00000005 [INF] Request finished in 78.6149ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:03.5787154+07:00 0HLFBMJBJO2M9:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:19:03.5844867+07:00 0HLFBMJBJO2M9:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:03.5891787+07:00 0HLFBMJBJO2M9:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:03.5939498+07:00 0HLFBMJBJO2M9:00000006 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:03.5997815+07:00 0HLFBMJBJO2M9:00000006 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:03.6072176+07:00 0HLFBMJBJO2M9:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:19:03.6125887+07:00 0HLFBMJBJO2M9:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:03.6176754+07:00 0HLFBMJBJO2M9:00000006 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 28.1545ms (afa2e885)
+2018-07-17T14:19:03.6257008+07:00 0HLFBMJBJO2M9:00000006 [INF] Request finished in 45.6858ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:06.9689775+07:00 0HLFBMJBJO2M9:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44346/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 122 (ca22a1cb)
+2018-07-17T14:19:06.9754809+07:00 0HLFBMJBJO2M9:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:06.9827126+07:00 0HLFBMJBJO2M9:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:06.9889424+07:00 0HLFBMJBJO2M9:00000007 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Application.ViewModels.System.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:06.9943533+07:00 0HLFBMJBJO2M9:00000007 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:07.0058284+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:19:07.0165736+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:07.0249201+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:07.0338161+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:19:07.0496737+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("6"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:19:07.0663339+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:07.0805903+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:19:07.1025523+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("8"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:19:07.1192574+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:07.1343618+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:19:07.1674855+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed DbCommand ("7"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:19:07.1796180+07:00 0HLFBMJBJO2M9:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:07.1887325+07:00 0HLFBMJBJO2M9:00000007 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" in 205.1577ms (afa2e885)
+2018-07-17T14:19:07.2033217+07:00 0HLFBMJBJO2M9:00000007 [INF] Request finished in 226.1037ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:07.2149131+07:00 0HLFBMJBJO2M9:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:19:07.2220914+07:00 0HLFBMJBJO2M9:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:07.2301344+07:00 0HLFBMJBJO2M9:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:07.2380332+07:00 0HLFBMJBJO2M9:00000008 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:07.2456138+07:00 0HLFBMJBJO2M9:00000008 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:07.2581042+07:00 0HLFBMJBJO2M9:00000008 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:19:07.2652298+07:00 0HLFBMJBJO2M9:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:07.2723251+07:00 0HLFBMJBJO2M9:00000008 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 42.7449ms (afa2e885)
+2018-07-17T14:19:07.2846705+07:00 0HLFBMJBJO2M9:00000008 [INF] Request finished in 65.5519ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:07.2947404+07:00 0HLFBMJBJO2M9:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:19:07.3056682+07:00 0HLFBMJBJO2M9:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:07.3141708+07:00 0HLFBMJBJO2M9:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:07.3245880+07:00 0HLFBMJBJO2M9:00000009 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:07.3325133+07:00 0HLFBMJBJO2M9:00000009 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:07.3475310+07:00 0HLFBMJBJO2M9:00000009 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:19:07.3755328+07:00 0HLFBMJBJO2M9:00000009 [INF] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:19:07.3967179+07:00 0HLFBMJBJO2M9:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:07.4297957+07:00 0HLFBMJBJO2M9:00000009 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 106.0035ms (afa2e885)
+2018-07-17T14:19:07.4815381+07:00 0HLFBMJBJO2M9:00000009 [INF] Request finished in 142.3084ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:07.5248275+07:00 0HLFBMJBJO2M9:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:19:07.5367024+07:00 0HLFBMJBJO2M9:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:07.5484457+07:00 0HLFBMJBJO2M9:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:07.5627851+07:00 0HLFBMJBJO2M9:0000000A [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:07.5976938+07:00 0HLFBMJBJO2M9:0000000A [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:07.6818577+07:00 0HLFBMJBJO2M9:0000000A [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:19:07.6989322+07:00 0HLFBMJBJO2M9:0000000A [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:19:07.7156364+07:00 0HLFBMJBJO2M9:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:07.7268217+07:00 0HLFBMJBJO2M9:0000000A [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 178.5863ms (afa2e885)
+2018-07-17T14:19:07.7374612+07:00 0HLFBMJBJO2M9:0000000A [INF] Request finished in 227.8377ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:09.6589767+07:00 0HLFBMJBJO2M9:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/User/GetById?id=2e8caf7a-7bd8-4309-d28d-08d5ebb58fe9   (ca22a1cb)
+2018-07-17T14:19:09.6668242+07:00 0HLFBMJBJO2M9:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:09.6741979+07:00 0HLFBMJBJO2M9:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:09.6828178+07:00 0HLFBMJBJO2M9:0000000B [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" with arguments (["2e8caf7a-7bd8-4309-d28d-08d5ebb58fe9"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:09.6885510+07:00 0HLFBMJBJO2M9:0000000B [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:09.7013094+07:00 0HLFBMJBJO2M9:0000000B [INF] Executed DbCommand ("4"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:19:09.7126721+07:00 0HLFBMJBJO2M9:0000000B [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:09.7189383+07:00 0HLFBMJBJO2M9:0000000B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:09.7274815+07:00 0HLFBMJBJO2M9:0000000B [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" in 53.647ms (afa2e885)
+2018-07-17T14:19:09.7373910+07:00 0HLFBMJBJO2M9:0000000B [INF] Request finished in 77.1785ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:09.7506499+07:00 0HLFBMJBJO2M9:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:19:09.7653280+07:00 0HLFBMJBJO2M9:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:09.7735993+07:00 0HLFBMJBJO2M9:0000000C [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:09.7821276+07:00 0HLFBMJBJO2M9:0000000C [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:09.7966709+07:00 0HLFBMJBJO2M9:0000000C [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:09.8109218+07:00 0HLFBMJBJO2M9:0000000C [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:19:09.8165500+07:00 0HLFBMJBJO2M9:0000000C [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:09.8224645+07:00 0HLFBMJBJO2M9:0000000C [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 51.1882ms (afa2e885)
+2018-07-17T14:19:09.8285674+07:00 0HLFBMJBJO2M9:0000000C [INF] Request finished in 82.4456ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:12.4287601+07:00 0HLFBMJBJO2M9:0000000D [INF] Request starting HTTP/1.1 POST http://localhost:44346/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 122 (ca22a1cb)
+2018-07-17T14:19:12.4345912+07:00 0HLFBMJBJO2M9:0000000D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:12.4420471+07:00 0HLFBMJBJO2M9:0000000D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:12.4484033+07:00 0HLFBMJBJO2M9:0000000D [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Application.ViewModels.System.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:12.4530133+07:00 0HLFBMJBJO2M9:0000000D [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:12.4646000+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("2"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:19:12.4737890+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:12.4827065+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:12.4918223+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:19:12.5033295+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("4"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:19:12.5124856+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:12.5193328+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:19:12.5288456+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:19:12.5391396+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:12.5513917+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:19:12.5620210+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:19:12.5721046+07:00 0HLFBMJBJO2M9:0000000D [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:12.5832445+07:00 0HLFBMJBJO2M9:0000000D [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" in 137.0519ms (afa2e885)
+2018-07-17T14:19:12.6071966+07:00 0HLFBMJBJO2M9:0000000D [INF] Request finished in 161.9641ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:12.6200039+07:00 0HLFBMJBJO2M9:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:19:12.6267160+07:00 0HLFBMJBJO2M9:0000000E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:12.6337163+07:00 0HLFBMJBJO2M9:0000000E [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:12.6404032+07:00 0HLFBMJBJO2M9:0000000E [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:12.6534487+07:00 0HLFBMJBJO2M9:0000000E [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:12.6628639+07:00 0HLFBMJBJO2M9:0000000E [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:19:12.6681858+07:00 0HLFBMJBJO2M9:0000000E [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:12.6745652+07:00 0HLFBMJBJO2M9:0000000E [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 41.0609ms (afa2e885)
+2018-07-17T14:19:12.6844598+07:00 0HLFBMJBJO2M9:0000000E [INF] Request finished in 61.7041ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:12.6983861+07:00 0HLFBMJBJO2M9:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:19:12.7087965+07:00 0HLFBMJBJO2M9:0000000F [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:12.7159187+07:00 0HLFBMJBJO2M9:0000000F [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:12.7232172+07:00 0HLFBMJBJO2M9:0000000F [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:12.7385692+07:00 0HLFBMJBJO2M9:0000000F [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:12.7530536+07:00 0HLFBMJBJO2M9:0000000F [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:19:12.7658801+07:00 0HLFBMJBJO2M9:0000000F [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:19:12.7739234+07:00 0HLFBMJBJO2M9:0000000F [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:12.7855272+07:00 0HLFBMJBJO2M9:0000000F [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 63.9466ms (afa2e885)
+2018-07-17T14:19:12.8187463+07:00 0HLFBMJBJO2M9:0000000F [INF] Request finished in 98.4327ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:12.8299845+07:00 0HLFBMJBJO2M9:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:19:12.8394083+07:00 0HLFBMJBJO2M9:00000010 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:12.8505203+07:00 0HLFBMJBJO2M9:00000010 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:12.8582870+07:00 0HLFBMJBJO2M9:00000010 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:12.8729408+07:00 0HLFBMJBJO2M9:00000010 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:12.8864861+07:00 0HLFBMJBJO2M9:00000010 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:19:12.9026677+07:00 0HLFBMJBJO2M9:00000010 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:19:12.9391701+07:00 0HLFBMJBJO2M9:00000010 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:13.0007934+07:00 0HLFBMJBJO2M9:00000010 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 99.9662ms (afa2e885)
+2018-07-17T14:19:13.0093136+07:00 0HLFBMJBJO2M9:00000010 [INF] Request finished in 178.9861ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:14.4479090+07:00 0HLFBMJBJO2M9:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/User/GetById?id=2e8caf7a-7bd8-4309-d28d-08d5ebb58fe9   (ca22a1cb)
+2018-07-17T14:19:14.4614637+07:00 0HLFBMJBJO2M9:00000011 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:14.4709448+07:00 0HLFBMJBJO2M9:00000011 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:14.4762898+07:00 0HLFBMJBJO2M9:00000011 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" with arguments (["2e8caf7a-7bd8-4309-d28d-08d5ebb58fe9"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:14.4822595+07:00 0HLFBMJBJO2M9:00000011 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:14.4927131+07:00 0HLFBMJBJO2M9:00000011 [INF] Executed DbCommand ("3"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:19:14.5022275+07:00 0HLFBMJBJO2M9:00000011 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:14.5068674+07:00 0HLFBMJBJO2M9:00000011 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:14.5124279+07:00 0HLFBMJBJO2M9:00000011 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetById (MaiHienCoreApp)" in 45.448ms (afa2e885)
+2018-07-17T14:19:14.5212547+07:00 0HLFBMJBJO2M9:00000011 [INF] Request finished in 75.9225ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:14.5304872+07:00 0HLFBMJBJO2M9:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:19:14.5369535+07:00 0HLFBMJBJO2M9:00000012 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:14.5426799+07:00 0HLFBMJBJO2M9:00000012 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:14.5489957+07:00 0HLFBMJBJO2M9:00000012 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:14.5559212+07:00 0HLFBMJBJO2M9:00000012 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:14.5641104+07:00 0HLFBMJBJO2M9:00000012 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:19:14.5726605+07:00 0HLFBMJBJO2M9:00000012 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:14.5791918+07:00 0HLFBMJBJO2M9:00000012 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 36.2222ms (afa2e885)
+2018-07-17T14:19:14.5881562+07:00 0HLFBMJBJO2M9:00000012 [INF] Request finished in 55.3636ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:17.4280198+07:00 0HLFBMJBJO2M9:00000013 [INF] Request starting HTTP/1.1 POST http://localhost:44346/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 122 (ca22a1cb)
+2018-07-17T14:19:17.4358891+07:00 0HLFBMJBJO2M9:00000013 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:17.4490410+07:00 0HLFBMJBJO2M9:00000013 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:17.4616395+07:00 0HLFBMJBJO2M9:00000013 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Application.ViewModels.System.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:17.4692638+07:00 0HLFBMJBJO2M9:00000013 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:17.4819585+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("4"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:19:17.4937762+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:17.5043973+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:17.5153357+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:19:17.5299433+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("5"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:19:17.5374761+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:17.5450067+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:19:17.5536796+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("1"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:19:17.5625046+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:17.5697367+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-07-17T14:19:17.5783716+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed DbCommand ("1"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [BirthDay] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:19:17.5850269+07:00 0HLFBMJBJO2M9:00000013 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:17.5902957+07:00 0HLFBMJBJO2M9:00000013 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (MaiHienCoreApp)" in 148.8961ms (afa2e885)
+2018-07-17T14:19:17.5970070+07:00 0HLFBMJBJO2M9:00000013 [INF] Request finished in 168.5925ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:17.6100311+07:00 0HLFBMJBJO2M9:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Role/GetAll   (ca22a1cb)
+2018-07-17T14:19:17.6151028+07:00 0HLFBMJBJO2M9:00000014 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:17.6203498+07:00 0HLFBMJBJO2M9:00000014 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:17.6264492+07:00 0HLFBMJBJO2M9:00000014 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:17.6345999+07:00 0HLFBMJBJO2M9:00000014 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:17.6472472+07:00 0HLFBMJBJO2M9:00000014 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-07-17T14:19:17.6557609+07:00 0HLFBMJBJO2M9:00000014 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:17.6639954+07:00 0HLFBMJBJO2M9:00000014 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.RoleController.GetAll (MaiHienCoreApp)" in 41.3397ms (afa2e885)
+2018-07-17T14:19:17.7155543+07:00 0HLFBMJBJO2M9:00000014 [INF] Request finished in 58.3895ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:17.7326443+07:00 0HLFBMJBJO2M9:00000015 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:19:17.7426352+07:00 0HLFBMJBJO2M9:00000015 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:17.7493507+07:00 0HLFBMJBJO2M9:00000015 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:17.7593462+07:00 0HLFBMJBJO2M9:00000015 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:17.7664236+07:00 0HLFBMJBJO2M9:00000015 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:17.7777546+07:00 0HLFBMJBJO2M9:00000015 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:19:17.7924909+07:00 0HLFBMJBJO2M9:00000015 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:19:17.7991704+07:00 0HLFBMJBJO2M9:00000015 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:17.8094286+07:00 0HLFBMJBJO2M9:00000015 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 56.5276ms (afa2e885)
+2018-07-17T14:19:17.8585598+07:00 0HLFBMJBJO2M9:00000015 [INF] Request finished in 84.0984ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:17.8703509+07:00 0HLFBMJBJO2M9:00000016 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:19:17.8831278+07:00 0HLFBMJBJO2M9:00000016 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:17.8978619+07:00 0HLFBMJBJO2M9:00000016 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:17.9097353+07:00 0HLFBMJBJO2M9:00000016 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:17.9321856+07:00 0HLFBMJBJO2M9:00000016 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:17.9624120+07:00 0HLFBMJBJO2M9:00000016 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:19:17.9780732+07:00 0HLFBMJBJO2M9:00000016 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:19:17.9875786+07:00 0HLFBMJBJO2M9:00000016 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:17.9977487+07:00 0HLFBMJBJO2M9:00000016 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 105.0563ms (afa2e885)
+2018-07-17T14:19:18.0154026+07:00 0HLFBMJBJO2M9:00000016 [INF] Request finished in 135.686ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:21.3733323+07:00 0HLFBMJBJO2M9:00000017 [INF] Request starting HTTP/1.1 POST http://localhost:44346/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-07-17T14:19:21.3818562+07:00 0HLFBMJBJO2M9:00000017 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:21.3973922+07:00 0HLFBMJBJO2M9:00000017 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:21.4019722+07:00 0HLFBMJBJO2M9:00000017 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.AccountController.Logout (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:21.4118749+07:00 0HLFBMJBJO2M9:00000017 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-07-17T14:19:21.4169906+07:00 0HLFBMJBJO2M9:00000017 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-17T14:19:21.4241433+07:00 0HLFBMJBJO2M9:00000017 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-07-17T14:19:21.4337287+07:00 0HLFBMJBJO2M9:00000017 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-07-17T14:19:21.4423768+07:00 0HLFBMJBJO2M9:00000017 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.AccountController.Logout (MaiHienCoreApp)" in 41.0289ms (afa2e885)
+2018-07-17T14:19:21.4530265+07:00 0HLFBMJBJO2M9:00000017 [INF] Request finished in 80.5409ms 302  (791a596a)
+2018-07-17T14:19:21.4732994+07:00 0HLFBMJBJO2M9:00000018 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Login/Index   (ca22a1cb)
+2018-07-17T14:19:21.4815599+07:00 0HLFBMJBJO2M9:00000018 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:21.5068015+07:00 0HLFBMJBJO2M9:00000018 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-17T14:19:21.6107806+07:00 0HLFBMJBJO2M9:00000018 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 34.0713ms (afa2e885)
+2018-07-17T14:19:21.6275144+07:00 0HLFBMJBJO2M9:00000018 [INF] Request finished in 151.0539ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:19:30.3820252+07:00 0HLFBMJBJO2M9:00000019 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2018-07-17T14:19:30.3892009+07:00 0HLFBMJBJO2M9:00000019 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:30.3941196+07:00 0HLFBMJBJO2M9:00000019 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:30.4051534+07:00 0HLFBMJBJO2M9:00000019 [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:30.4236151+07:00 0HLFBMJBJO2M9:00000019 [WRN] Invalid password for user "2e8caf7a-7bd8-4309-d28d-08d5ebb58fe9". (c2dce6c7)
+2018-07-17T14:19:30.4289114+07:00 0HLFBMJBJO2M9:00000019 [WRN] User "2e8caf7a-7bd8-4309-d28d-08d5ebb58fe9" failed to provide the correct password. (ec8d2479)
+2018-07-17T14:19:30.4365562+07:00 0HLFBMJBJO2M9:00000019 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:30.4429797+07:00 0HLFBMJBJO2M9:00000019 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 53.3888ms (afa2e885)
+2018-07-17T14:19:30.4492518+07:00 0HLFBMJBJO2M9:00000019 [INF] Request finished in 68.2862ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:38.7272189+07:00 0HLFBMJBJO2M9:0000001A [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 32 (ca22a1cb)
+2018-07-17T14:19:38.7884223+07:00 0HLFBMJBJO2M9:0000001A [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:38.7996096+07:00 0HLFBMJBJO2M9:0000001A [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:38.8161031+07:00 0HLFBMJBJO2M9:0000001A [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:38.8474751+07:00 0HLFBMJBJO2M9:0000001A [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-17T14:19:38.8606459+07:00 0HLFBMJBJO2M9:0000001A [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:38.8724836+07:00 0HLFBMJBJO2M9:0000001A [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:38.8821310+07:00 0HLFBMJBJO2M9:0000001A [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-17T14:19:38.8910194+07:00 0HLFBMJBJO2M9:0000001A [INF] User logged in. (fdce0db4)
+2018-07-17T14:19:38.8992436+07:00 0HLFBMJBJO2M9:0000001A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:38.9086157+07:00 0HLFBMJBJO2M9:0000001A [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 173.2639ms (afa2e885)
+2018-07-17T14:19:38.9707111+07:00 0HLFBMJBJO2M9:0000001A [INF] Request finished in 210.5198ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:38.9915754+07:00 0HLFBMJBJO2M9:0000001B [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-17T14:19:39.0037026+07:00 0HLFBMJBJO2M9:0000001B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:39.0183268+07:00 0HLFBMJBJO2M9:0000001B [INF] Authorization was successful for user: "luan". (d7eb274a)
+2018-07-17T14:19:39.0260058+07:00 0HLFBMJBJO2M9:0000001B [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:39.0363965+07:00 0HLFBMJBJO2M9:0000001B [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-17T14:19:39.1450634+07:00 0HLFBMJBJO2M9:0000001B [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 88.8631ms (afa2e885)
+2018-07-17T14:19:39.1720394+07:00 0HLFBMJBJO2M9:0000001B [INF] Request finished in 170.8709ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:19:48.0666867+07:00 0HLFBMJBJO2M9:0000001C [INF] Request starting HTTP/1.1 POST http://localhost:44346/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-07-17T14:19:48.0828157+07:00 0HLFBMJBJO2M9:0000001C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:48.0943815+07:00 0HLFBMJBJO2M9:0000001C [INF] Authorization was successful for user: "luan". (d7eb274a)
+2018-07-17T14:19:48.1028517+07:00 0HLFBMJBJO2M9:0000001C [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.AccountController.Logout (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:48.1100924+07:00 0HLFBMJBJO2M9:0000001C [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-07-17T14:19:48.1157201+07:00 0HLFBMJBJO2M9:0000001C [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-17T14:19:48.1222123+07:00 0HLFBMJBJO2M9:0000001C [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-07-17T14:19:48.1276617+07:00 0HLFBMJBJO2M9:0000001C [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-07-17T14:19:48.1337790+07:00 0HLFBMJBJO2M9:0000001C [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.AccountController.Logout (MaiHienCoreApp)" in 44.7446ms (afa2e885)
+2018-07-17T14:19:48.1421867+07:00 0HLFBMJBJO2M9:0000001C [INF] Request finished in 82.2878ms 302  (791a596a)
+2018-07-17T14:19:48.1538239+07:00 0HLFBMJBJO2M9:0000001D [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Login/Index   (ca22a1cb)
+2018-07-17T14:19:48.1616607+07:00 0HLFBMJBJO2M9:0000001D [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:48.1699299+07:00 0HLFBMJBJO2M9:0000001D [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-17T14:19:48.2026242+07:00 0HLFBMJBJO2M9:0000001D [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 16.5194ms (afa2e885)
+2018-07-17T14:19:48.2270973+07:00 0HLFBMJBJO2M9:0000001D [INF] Request finished in 57.9328ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:19:55.8456389+07:00 0HLFBMJBJO2M9:0000001E [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-17T14:19:55.8532405+07:00 0HLFBMJBJO2M9:0000001E [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:55.8627006+07:00 0HLFBMJBJO2M9:0000001E [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:55.8763465+07:00 0HLFBMJBJO2M9:0000001E [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:19:55.9223624+07:00 0HLFBMJBJO2M9:0000001E [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-17T14:19:56.0437377+07:00 0HLFBMJBJO2M9:0000001E [INF] Executed DbCommand ("104"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:56.0752038+07:00 0HLFBMJBJO2M9:0000001E [INF] Executed DbCommand ("20"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-17T14:19:56.0878755+07:00 0HLFBMJBJO2M9:0000001E [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-17T14:19:56.1020653+07:00 0HLFBMJBJO2M9:0000001E [INF] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:19:56.1108579+07:00 0HLFBMJBJO2M9:0000001E [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-17T14:19:56.1175379+07:00 0HLFBMJBJO2M9:0000001E [INF] User logged in. (fdce0db4)
+2018-07-17T14:19:56.1245332+07:00 0HLFBMJBJO2M9:0000001E [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:19:56.1335425+07:00 0HLFBMJBJO2M9:0000001E [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 278.5461ms (afa2e885)
+2018-07-17T14:19:56.1858973+07:00 0HLFBMJBJO2M9:0000001E [INF] Request finished in 299.664ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:19:56.1979263+07:00 0HLFBMJBJO2M9:0000001F [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-17T14:19:56.2059460+07:00 0HLFBMJBJO2M9:0000001F [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:19:56.2152912+07:00 0HLFBMJBJO2M9:0000001F [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:19:56.2234671+07:00 0HLFBMJBJO2M9:0000001F [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:19:56.2354960+07:00 0HLFBMJBJO2M9:0000001F [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-17T14:19:56.2499321+07:00 0HLFBMJBJO2M9:0000001F [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:19:56.2669267+07:00 0HLFBMJBJO2M9:0000001F [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-17T14:19:56.6862529+07:00 0HLFBMJBJO2M9:0000001F [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 111.337ms (afa2e885)
+2018-07-17T14:19:56.7264907+07:00 0HLFBMJBJO2M9:0000001F [INF] Request finished in 497.1637ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:25:27.2127535+07:00 0HLFBMJBJO2MH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/index   (ca22a1cb)
+2018-07-17T14:25:27.2298166+07:00 0HLFBMJBJO2MH:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:25:27.2390454+07:00 0HLFBMJBJO2MH:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:25:27.2455775+07:00 0HLFBMJBJO2MH:00000001 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:25:27.2536538+07:00 0HLFBMJBJO2MH:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/User/Index.cshtml". (9707eebe)
+2018-07-17T14:25:27.2672243+07:00 0HLFBMJBJO2MH:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:25:28.2437519+07:00 0HLFBMJBJO2MH:00000001 [INF] Executed DbCommand ("98"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-17T14:25:28.4072000+07:00 0HLFBMJBJO2MG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/user/index.js?v=83OVA_mS2_0ZKF1eBbFg-omEqozmH4yn6YWbIGGV2Ms   (ca22a1cb)
+2018-07-17T14:25:28.4176693+07:00 0HLFBMJBJO2MH:00000001 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.Index (MaiHienCoreApp)" in 1016.5567ms (afa2e885)
+2018-07-17T14:25:28.4296914+07:00 0HLFBMJBJO2MH:00000001 [INF] Request finished in 1215.0515ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:25:28.4431794+07:00 0HLFBMJBJO2MG:00000001 [INF] The file "/app/controllers/user/index.js" was not modified (f1f8d725)
+2018-07-17T14:25:28.4529773+07:00 0HLFBMJBJO2MG:00000001 [INF] Request finished in 67.011ms 304 application/javascript (791a596a)
+2018-07-17T14:25:28.9555352+07:00 0HLFBMJBJO2MG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:25:29.0165620+07:00 0HLFBMJBJO2MG:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:25:29.0420627+07:00 0HLFBMJBJO2MG:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:25:29.0604351+07:00 0HLFBMJBJO2MG:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:25:29.0765085+07:00 0HLFBMJBJO2MG:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:25:29.1510045+07:00 0HLFBMJBJO2MG:00000002 [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:25:29.2528905+07:00 0HLFBMJBJO2MG:00000002 [INF] Executed DbCommand ("14"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:25:29.2845303+07:00 0HLFBMJBJO2MG:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:25:29.3257294+07:00 0HLFBMJBJO2MG:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 268.2885ms (afa2e885)
+2018-07-17T14:25:29.3991326+07:00 0HLFBMJBJO2MG:00000002 [INF] Request finished in 509.5864ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:25:29.5261202+07:00 0HLFBMJBJO2MG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/null   (ca22a1cb)
+2018-07-17T14:25:29.6508482+07:00 0HLFBMJBJO2MH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:25:29.7413206+07:00 0HLFBMJBJO2MG:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:25:29.7888722+07:00 0HLFBMJBJO2MH:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:25:29.8188211+07:00 0HLFBMJBJO2MG:00000003 [INF] Request finished in 331.3217ms 404  (791a596a)
+2018-07-17T14:25:29.8407177+07:00 0HLFBMJBJO2MH:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:25:29.8826400+07:00 0HLFBMJBJO2MH:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:25:29.8917656+07:00 0HLFBMJBJO2MH:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:25:29.9051626+07:00 0HLFBMJBJO2MH:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:25:29.9204808+07:00 0HLFBMJBJO2MH:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:25:29.9354219+07:00 0HLFBMJBJO2MH:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:25:29.9490780+07:00 0HLFBMJBJO2MH:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 145.0773ms (afa2e885)
+2018-07-17T14:25:29.9608508+07:00 0HLFBMJBJO2MH:00000002 [INF] Request finished in 587.5757ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:25:34.3563556+07:00 0HLFBMJBJO2MH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-17T14:25:34.6376395+07:00 0HLFBMJBJO2MH:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-17T14:25:34.7669714+07:00 0HLFBMJBJO2MG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-17T14:25:34.7927884+07:00 0HLFBMJBJO2MJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-17T14:25:34.7994099+07:00 0HLFBMJBJO2MI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-17T14:25:34.8713876+07:00 0HLFBMJBJO2MK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-07-17T14:25:34.8862209+07:00 0HLFBMJBJO2MI:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-17T14:25:34.8920953+07:00 0HLFBMJBJO2MG:00000004 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-07-17T14:25:34.9291212+07:00 0HLFBMJBJO2MJ:00000001 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-07-17T14:25:35.0132966+07:00 0HLFBMJBJO2MK:00000001 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2018-07-17T14:25:35.1894715+07:00 0HLFBMJBJO2MG:00000004 [INF] Request finished in 681.7856ms 200 text/css (791a596a)
+2018-07-17T14:25:35.4551219+07:00 0HLFBMJBJO2MI:00000001 [INF] Request finished in 639.6654ms 200 text/css (791a596a)
+2018-07-17T14:25:35.4687519+07:00 0HLFBMJBJO2ML:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-17T14:25:35.5092176+07:00 0HLFBMJBJO2MK:00000001 [INF] Request finished in 289.5047ms 200 text/css (791a596a)
+2018-07-17T14:25:36.5357270+07:00 0HLFBMJBJO2MM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin-side/css/custom.css   (ca22a1cb)
+2018-07-17T14:25:37.3868476+07:00 0HLFBMJBJO2ML:00000001 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-07-17T14:25:38.0968862+07:00 0HLFBMJBJO2MM:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-07-17T14:25:38.1133980+07:00 0HLFBMJBJO2MJ:00000001 [INF] Request finished in 1682.5293ms 200 text/css (791a596a)
+2018-07-17T14:25:38.1236992+07:00 0HLFBMJBJO2MK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Account/Logout   (ca22a1cb)
+2018-07-17T14:25:38.1575375+07:00 0HLFBMJBJO2MH:00000003 [INF] Request finished in 3209.8835ms 200 text/css (791a596a)
+2018-07-17T14:25:38.1654338+07:00 0HLFBMJBJO2ML:00000001 [INF] Request finished in 2519.9219ms 200 text/css (791a596a)
+2018-07-17T14:25:38.1815478+07:00 0HLFBMJBJO2MG:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-17T14:25:38.2424788+07:00 0HLFBMJBJO2MK:00000002 [INF] Request finished in 768.6543ms 404  (791a596a)
+2018-07-17T14:25:38.2553147+07:00 0HLFBMJBJO2MM:00000001 [INF] Request finished in 2439.0593ms 200 text/css (791a596a)
+2018-07-17T14:25:38.2638956+07:00 0HLFBMJBJO2MG:00000005 [INF] Authorization failed for user: null. (a4ab1676)
+2018-07-17T14:25:38.3037310+07:00 0HLFBMJBJO2ML:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-07-17T14:25:38.3385605+07:00 0HLFBMJBJO2MG:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-17T14:25:38.3687078+07:00 0HLFBMJBJO2ML:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2018-07-17T14:25:38.3743291+07:00 0HLFBMJBJO2MG:00000005 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-17T14:25:38.3882413+07:00 0HLFBMJBJO2MG:00000005 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-17T14:25:38.4113587+07:00 0HLFBMJBJO2MG:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 201.3261ms (afa2e885)
+2018-07-17T14:25:38.4336376+07:00 0HLFBMJBJO2MG:00000005 [INF] Request finished in 1876.8538ms 302  (791a596a)
+2018-07-17T14:25:38.4905727+07:00 0HLFBMJBJO2MG:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Account/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex   (ca22a1cb)
+2018-07-17T14:25:38.5231893+07:00 0HLFBMJBJO2MG:00000006 [INF] Executing action method "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" with arguments (["/Admin/Home/Index"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:25:38.5416844+07:00 0HLFBMJBJO2ML:00000002 [INF] Request finished in 232.0414ms 200 text/plain (791a596a)
+2018-07-17T14:25:38.6390896+07:00 0HLFBMJBJO2MG:00000006 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-17T14:25:38.8203366+07:00 0HLFBMJBJO2MG:00000006 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-07-17T14:25:39.0112264+07:00 0HLFBMJBJO2MG:00000006 [INF] Executed action "MaiHienCoreApp.Controllers.AccountController.Login (MaiHienCoreApp)" in 354.6038ms (afa2e885)
+2018-07-17T14:25:39.0401627+07:00 0HLFBMJBJO2MG:00000006 [INF] Request finished in 564.4403ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:34:29.9431946+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:34:31.5384391+07:00  [INF] Executed DbCommand ("442"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:34:31.5803104+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:34:31.6537951+07:00  [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-17T14:34:32.0364419+07:00  [INF] Executed DbCommand ("334"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-17T14:34:32.0837305+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-17T14:34:32.1492285+07:00  [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-17T14:34:32.1994191+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-17T14:34:32.2252717+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-17T14:34:32.2576696+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-17T14:34:32.2938266+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:34:32.3125428+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:34:32.3278923+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-17T14:34:33.4716663+07:00 0HLFBMUUFOFTS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-17T14:34:33.5884838+07:00 0HLFBMUUFOFTS:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:34:34.0197248+07:00 0HLFBMUUFOFTS:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:34:34.0533873+07:00 0HLFBMUUFOFTS:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:34:40.3642450+07:00 0HLFBMUUFOFTS:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-17T14:34:42.1630083+07:00 0HLFBMUUFOFTQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/images/banner1.svg   (ca22a1cb)
+2018-07-17T14:34:42.1772198+07:00 0HLFBMUUFOFTS:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 7962.9322ms (afa2e885)
+2018-07-17T14:34:42.2459388+07:00 0HLFBMUUFOFTS:00000001 [INF] Request finished in 8819.8446ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:34:42.2652268+07:00 0HLFBMUUFOFTP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/images/banner3.svg   (ca22a1cb)
+2018-07-17T14:34:42.2737872+07:00 0HLFBMUUFOFTR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/images/banner2.svg   (ca22a1cb)
+2018-07-17T14:34:42.2800550+07:00 0HLFBMUUFOFTN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/images/banner4.svg   (ca22a1cb)
+2018-07-17T14:34:42.3015795+07:00 0HLFBMUUFOFTQ:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\images\banner1.svg"' (27b0a520)
+2018-07-17T14:34:42.3202107+07:00 0HLFBMUUFOFTP:00000001 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\images\banner3.svg"' (27b0a520)
+2018-07-17T14:34:42.3375294+07:00 0HLFBMUUFOFTR:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\images\banner2.svg"' (27b0a520)
+2018-07-17T14:34:42.3597241+07:00 0HLFBMUUFOFTN:00000001 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\images\banner4.svg"' (27b0a520)
+2018-07-17T14:34:42.3788235+07:00 0HLFBMUUFOFTQ:00000001 [INF] Request finished in 357.3642ms 200 image/svg+xml (791a596a)
+2018-07-17T14:34:42.4338193+07:00 0HLFBMUUFOFTP:00000001 [INF] Request finished in 399.3805ms 200 image/svg+xml (791a596a)
+2018-07-17T14:34:42.4617071+07:00 0HLFBMUUFOFTR:00000001 [INF] Request finished in 398.5607ms 200 image/svg+xml (791a596a)
+2018-07-17T14:34:42.4764108+07:00 0HLFBMUUFOFTN:00000001 [INF] Request finished in 400.9187ms 200 image/svg+xml (791a596a)
+2018-07-17T14:35:04.3908589+07:00 0HLFBMUUFOFTN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/login   (ca22a1cb)
+2018-07-17T14:35:04.4532194+07:00 0HLFBMUUFOFTN:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:35:04.5081917+07:00 0HLFBMUUFOFTN:00000002 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:35:05.6549437+07:00 0HLFBMUUFOFTN:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-07-17T14:35:05.7778362+07:00 0HLFBMUUFOFTN:00000002 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Index (MaiHienCoreApp)" in 1268.672ms (afa2e885)
+2018-07-17T14:35:05.7993189+07:00 0HLFBMUUFOFTN:00000002 [INF] Request finished in 1416.2019ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:35:14.4690855+07:00 0HLFBMUUFOFTN:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44346/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-17T14:35:14.4754302+07:00 0HLFBMUUFOFTN:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:35:14.6209481+07:00 0HLFBMUUFOFTN:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" with arguments (["MaiHienCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:35:14.6475564+07:00 0HLFBMUUFOFTN:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:35:15.0011278+07:00 0HLFBMUUFOFTN:00000003 [INF] Executed DbCommand ("284"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-17T14:35:15.5845714+07:00 0HLFBMUUFOFTN:00000003 [INF] Executed DbCommand ("242"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-17T14:35:15.6931998+07:00 0HLFBMUUFOFTN:00000003 [INF] Executed DbCommand ("26"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:35:15.7165328+07:00 0HLFBMUUFOFTN:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-17T14:35:15.7758055+07:00 0HLFBMUUFOFTN:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-17T14:35:15.7887559+07:00 0HLFBMUUFOFTN:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-17T14:35:15.8540415+07:00 0HLFBMUUFOFTN:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-17T14:35:15.8679789+07:00 0HLFBMUUFOFTN:00000003 [INF] User logged in. (fdce0db4)
+2018-07-17T14:35:15.8888055+07:00 0HLFBMUUFOFTN:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:35:15.9593643+07:00 0HLFBMUUFOFTN:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.LoginController.Authen (MaiHienCoreApp)" in 1411.3949ms (afa2e885)
+2018-07-17T14:35:15.9702942+07:00 0HLFBMUUFOFTN:00000003 [INF] Request finished in 1501.7954ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:35:15.9848803+07:00 0HLFBMUUFOFTN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/Admin/Home/Index   (ca22a1cb)
+2018-07-17T14:35:16.0072687+07:00 0HLFBMUUFOFTN:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:35:16.0922087+07:00 0HLFBMUUFOFTN:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:35:16.1287402+07:00 0HLFBMUUFOFTN:00000004 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:35:16.6041758+07:00 0HLFBMUUFOFTN:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-07-17T14:35:17.2322656+07:00 0HLFBMUUFOFTN:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:35:17.5665329+07:00 0HLFBMUUFOFTN:00000004 [INF] Executed DbCommand ("230"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-17T14:35:18.5368316+07:00 0HLFBMUUFOFTN:00000004 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.HomeController.Index (MaiHienCoreApp)" in 2481.2937ms (afa2e885)
+2018-07-17T14:35:18.5445209+07:00 0HLFBMUUFOFTN:00000004 [INF] Request finished in 2561.4127ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:35:22.8670642+07:00 0HLFBMUUFOFTN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/index   (ca22a1cb)
+2018-07-17T14:35:22.8774270+07:00 0HLFBMUUFOFTN:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:35:22.8922548+07:00 0HLFBMUUFOFTN:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:35:22.9026429+07:00 0HLFBMUUFOFTN:00000005 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:35:23.4449729+07:00 0HLFBMUUFOFTN:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/User/Index.cshtml". (9707eebe)
+2018-07-17T14:35:23.7757315+07:00 0HLFBMUUFOFTN:00000005 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:35:23.7863068+07:00 0HLFBMUUFOFTN:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-17T14:35:23.9186282+07:00 0HLFBMUUFOFTN:00000005 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.Index (MaiHienCoreApp)" in 953.0855ms (afa2e885)
+2018-07-17T14:35:23.9619211+07:00 0HLFBMUUFOFTR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/app/controllers/user/index.js?v=83OVA_mS2_0ZKF1eBbFg-omEqozmH4yn6YWbIGGV2Ms   (ca22a1cb)
+2018-07-17T14:35:23.9654093+07:00 0HLFBMUUFOFTN:00000005 [INF] Request finished in 1060.2728ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-17T14:35:23.9842226+07:00 0HLFBMUUFOFTR:00000002 [INF] The file "/app/controllers/user/index.js" was not modified (f1f8d725)
+2018-07-17T14:35:24.0003214+07:00 0HLFBMUUFOFTR:00000002 [INF] Request finished in 111.1313ms 304 application/javascript (791a596a)
+2018-07-17T14:35:24.2470327+07:00 0HLFBMUUFOFTR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:35:24.2566622+07:00 0HLFBMUUFOFTR:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:35:24.4362294+07:00 0HLFBMUUFOFTR:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:35:24.4669956+07:00 0HLFBMUUFOFTR:00000003 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:35:24.5099125+07:00 0HLFBMUUFOFTR:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:35:24.5722508+07:00 0HLFBMUUFOFTR:00000003 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:35:24.6222870+07:00 0HLFBMUUFOFTR:00000003 [WRN] Query: '"(from AppUser x in DbSet<AppUser> select new AppUserViewModel{ { 
+    UserName = [x].UserName, , 
+..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-07-17T14:35:24.7276381+07:00 0HLFBMUUFOFTR:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:35:24.7553765+07:00 0HLFBMUUFOFTR:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:35:24.8194634+07:00 0HLFBMUUFOFTR:00000003 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 549.1721ms (afa2e885)
+2018-07-17T14:35:24.8444133+07:00 0HLFBMUUFOFTR:00000003 [INF] Request finished in 585.8973ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:35:24.8734668+07:00 0HLFBMUUFOFTR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/null   (ca22a1cb)
+2018-07-17T14:35:24.9000664+07:00 0HLFBMUUFOFTR:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:35:24.9326043+07:00 0HLFBMUUFOFTR:00000004 [INF] Request finished in 50.2829ms 404  (791a596a)
+2018-07-17T14:35:24.9458340+07:00 0HLFBMUUFOFTN:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:35:24.9888975+07:00 0HLFBMUUFOFTN:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:35:25.0006207+07:00 0HLFBMUUFOFTN:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:35:25.0087572+07:00 0HLFBMUUFOFTN:00000006 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:35:25.0153492+07:00 0HLFBMUUFOFTN:00000006 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:35:25.0227084+07:00 0HLFBMUUFOFTN:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:35:25.0317785+07:00 0HLFBMUUFOFTN:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:35:25.0372184+07:00 0HLFBMUUFOFTN:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:35:25.0437356+07:00 0HLFBMUUFOFTN:00000006 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 48.4043ms (afa2e885)
+2018-07-17T14:35:25.0526274+07:00 0HLFBMUUFOFTN:00000006 [INF] Request finished in 193.5154ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-17T14:35:28.7334008+07:00 0HLFBMUUFOFTN:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44346/Admin/User/Delete application/x-www-form-urlencoded; charset=UTF-8 39 (ca22a1cb)
+2018-07-17T14:35:28.7395938+07:00 0HLFBMUUFOFTN:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:35:28.7526269+07:00 0HLFBMUUFOFTN:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:35:28.7584597+07:00 0HLFBMUUFOFTN:00000007 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.Delete (MaiHienCoreApp)" with arguments (["2e8caf7a-7bd8-4309-d28d-08d5ebb58fe9"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:35:28.7721684+07:00 0HLFBMUUFOFTN:00000007 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:35:28.7939649+07:00 0HLFBMUUFOFTN:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-17T14:35:29.3390227+07:00 0HLFBMUUFOFTN:00000007 [INF] Executed DbCommand ("392"ms) [Parameters=["@p0='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [AppUsers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-17T14:35:29.3532719+07:00 0HLFBMUUFOFTN:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:35:29.3600474+07:00 0HLFBMUUFOFTN:00000007 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.Delete (MaiHienCoreApp)" in 607.0857ms (afa2e885)
+2018-07-17T14:35:29.3701647+07:00 0HLFBMUUFOFTN:00000007 [INF] Request finished in 632.0009ms 200 text/plain; charset=utf-8 (791a596a)
+2018-07-17T14:35:29.4011045+07:00 0HLFBMUUFOFTN:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-17T14:35:29.4169817+07:00 0HLFBMUUFOFTN:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-17T14:35:29.4266548+07:00 0HLFBMUUFOFTN:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-17T14:35:29.4350775+07:00 0HLFBMUUFOFTN:00000008 [INF] Executing action method "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-07-17T14:35:29.4454874+07:00 0HLFBMUUFOFTN:00000008 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-17T14:35:29.4706789+07:00 0HLFBMUUFOFTN:00000008 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-07-17T14:35:29.4836682+07:00 0HLFBMUUFOFTN:00000008 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-17T14:35:29.4920498+07:00 0HLFBMUUFOFTN:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-17T14:35:29.4987880+07:00 0HLFBMUUFOFTN:00000008 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MaiHienCoreApp)" in 75.0514ms (afa2e885)
+2018-07-17T14:35:29.5225290+07:00 0HLFBMUUFOFTN:00000008 [INF] Request finished in 107.794ms 200 application/json; charset=utf-8 (791a596a)
