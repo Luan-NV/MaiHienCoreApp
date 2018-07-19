@@ -120,6 +120,24 @@
             });
             return false;
         });
+
+        $('#btn-export').on('click', function () {
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Product/ExportExcel",
+                beforeSend: function () {
+                    maihien.startLoading();
+                },
+                success: function (response) {
+                    window.location.href = response;
+                    maihien.stopLoading();
+                },
+                error: function () {
+                    maihien.notify('Has an error in progress', 'error');
+                    maihien.stopLoading();
+                }
+            });
+        });
     }
 
     function registerControls() {
