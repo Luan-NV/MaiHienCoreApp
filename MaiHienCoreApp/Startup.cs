@@ -22,6 +22,8 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using MaiHienCoreApp.Helpers;
 using MaiHienCoreApp.Infrastructure.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using MaiHienCoreApp.Authorization;
 
 namespace MaiHienCoreApp
 {
@@ -96,6 +98,10 @@ namespace MaiHienCoreApp
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
+
+            services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
