@@ -262,7 +262,7 @@
         });
     }
 
-    function loadDetails(that) {
+    function loadDetails(id) {
         $.ajax({
             type: "GET",
             url: "/Admin/Product/GetById",
@@ -410,14 +410,15 @@
                         CreatedDate: maihien.dateTimeFormatJson(item.DateCreated),
                         Status: maihien.getStatus(item.Status)
                     });
-                    $('#lblTotalRecords').text(response.RowCount);
-                    if (render != '') {
-                        $('#tbl-content').html(render);
-                    }
-                    wrapPaging(response.RowCount, function () {
-                        loadData();
-                    }, isPageChanged);
+
                 });
+                $('#lblTotalRecords').text(response.RowCount);
+                if (render != '') {
+                    $('#tbl-content').html(render);
+                }
+                wrapPaging(response.RowCount, function () {
+                    loadData();
+                }, isPageChanged);
             },
             error: function (status) {
                 console.log(status);

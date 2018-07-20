@@ -5443,3 +5443,596 @@ WHERE [x].[ProductId] = @__productId_0" (0723d8ff)
 2018-07-20T14:25:28.1208129+07:00 0HLFE26N6VU04:00000011 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
 2018-07-20T14:25:28.1339012+07:00 0HLFE26N6VU04:00000011 [INF] Executed action "MaiHienCoreApp.Areas.Admin.Controllers.ProductController.GetWholePrices (MaiHienCoreApp)" in 55.7722ms (afa2e885)
 2018-07-20T14:25:28.1412872+07:00 0HLFE26N6VU04:00000011 [INF] Request finished in 135.6572ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-20T15:07:55.7599193+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-20T15:07:56.0060371+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:07:56.0319643+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:07:56.0587761+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-20T15:07:56.0907625+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-20T15:07:56.0961413+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-20T15:07:56.1034419+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-20T15:07:56.1088241+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-20T15:07:56.1134503+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-20T15:07:56.1187209+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-20T15:07:56.1262772+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:07:56.1315162+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:07:56.1375189+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:07:56.8793952+07:00 0HLFE2VJBPK6B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-20T15:07:56.9690714+07:00 0HLFE2VJBPK6B:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-20T15:07:57.1316902+07:00 0HLFE2VJBPK6B:00000001 [INF] Executed DbCommand ("77"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-20T15:07:57.3191514+07:00 0HLFE2VJBPK6B:00000001 [INF] Executed DbCommand ("15"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-20T15:07:57.4189424+07:00 0HLFE2VJBPK6B:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-20T15:07:57.4625908+07:00 0HLFE2VJBPK6B:00000001 [INF] Executed DbCommand ("19"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-20T15:07:57.5184567+07:00 0HLFE2VJBPK6B:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-20T15:07:57.5253408+07:00 0HLFE2VJBPK6B:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-20T15:07:57.5307435+07:00 0HLFE2VJBPK6B:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-20T15:07:57.7600968+07:00 0HLFE2VJBPK6B:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-07-20T15:07:57.7830445+07:00 0HLFE2VJBPK6B:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-20T15:08:03.0575762+07:00 0HLFE2VJBPK6B:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-20T15:08:04.3165984+07:00 0HLFE2VJBPK6B:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 6521.8536ms (afa2e885)
+2018-07-20T15:08:04.3166403+07:00 0HLFE2VJBPK6G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/robots.txt   (ca22a1cb)
+2018-07-20T15:08:04.3230296+07:00 0HLFE2VJBPK6B:00000001 [INF] Request finished in 7484.8815ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-20T15:08:04.3230296+07:00 0HLFE2VJBPK6G:00000001 [INF] Request finished in 6.3542ms 404  (791a596a)
+2018-07-20T15:39:15.1943441+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-20T15:39:15.5696221+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:39:15.5998209+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:39:15.6232579+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-20T15:39:15.6602745+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-20T15:39:15.6720695+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-20T15:39:15.6862307+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-20T15:39:15.6976238+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-20T15:39:15.7120899+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-20T15:39:15.7307362+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-20T15:39:15.7511190+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:39:15.7677869+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:39:15.7863703+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:39:17.1310959+07:00 0HLFE3H3EU5FM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-20T15:39:17.2776322+07:00 0HLFE3H3EU5FM:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-20T15:39:17.4111017+07:00 0HLFE3H3EU5FM:00000001 [INF] Executed DbCommand ("51"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-07-20T15:39:17.6153466+07:00 0HLFE3H3EU5FM:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-20T15:39:17.7481679+07:00 0HLFE3H3EU5FM:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-20T15:39:17.7911478+07:00 0HLFE3H3EU5FM:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-20T15:39:17.8552843+07:00 0HLFE3H3EU5FM:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-20T15:39:17.8777638+07:00 0HLFE3H3EU5FM:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-20T15:39:17.9023982+07:00 0HLFE3H3EU5FM:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-20T15:39:18.5171678+07:00 0HLFE3H3EU5FM:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-20T15:39:25.9639663+07:00 0HLFE3H3EU5FM:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-20T15:39:27.3737383+07:00 0HLFE3H3EU5FO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/flag-default.jpg   (ca22a1cb)
+2018-07-20T15:39:27.3809315+07:00 0HLFE3H3EU5FP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/robots.txt   (ca22a1cb)
+2018-07-20T15:39:27.4165835+07:00 0HLFE3H3EU5FO:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-default.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\flag-default.jpg"' (27b0a520)
+2018-07-20T15:39:27.4784762+07:00 0HLFE3H3EU5FP:00000001 [INF] Request finished in 81.1952ms 404  (791a596a)
+2018-07-20T15:39:27.5042104+07:00 0HLFE3H3EU5FO:00000001 [INF] Request finished in 154.5301ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:27.5365786+07:00 0HLFE3H3EU5FQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/style.css   (ca22a1cb)
+2018-07-20T15:39:27.5546219+07:00 0HLFE3H3EU5FR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/flag-english.jpg   (ca22a1cb)
+2018-07-20T15:39:27.6730934+07:00 0HLFE3H3EU5FR:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-english.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\flag-english.jpg"' (27b0a520)
+2018-07-20T15:39:27.6849684+07:00 0HLFE3H3EU5FQ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-20T15:39:27.7301477+07:00 0HLFE3H3EU5FM:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 9008.9598ms (afa2e885)
+2018-07-20T15:39:27.7383660+07:00 0HLFE3H3EU5FT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/flag-chile.jpg   (ca22a1cb)
+2018-07-20T15:39:27.7873671+07:00 0HLFE3H3EU5FO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/flag-german.jpg   (ca22a1cb)
+2018-07-20T15:39:27.9003609+07:00 0HLFE3H3EU5FR:00000001 [INF] Request finished in 359.2908ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:27.9145268+07:00 0HLFE3H3EU5FT:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-chile.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\flag-chile.jpg"' (27b0a520)
+2018-07-20T15:39:27.9436189+07:00 0HLFE3H3EU5FO:00000002 [INF] Sending file. Request path: '"/client-side/images/flag-german.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\flag-german.jpg"' (27b0a520)
+2018-07-20T15:39:27.9931545+07:00 0HLFE3H3EU5FQ:00000001 [INF] Request finished in 370.3242ms 404  (791a596a)
+2018-07-20T15:39:28.0823569+07:00 0HLFE3H3EU5FT:00000001 [INF] Request finished in 309.1274ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:28.1307721+07:00 0HLFE3H3EU5FM:00000001 [INF] Request finished in 10683.6451ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-20T15:39:28.1630009+07:00 0HLFE3H3EU5FO:00000002 [INF] Request finished in 345.1955ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:28.1961153+07:00 0HLFE3H3EU5FT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/js/owl.carousel.min.js   (ca22a1cb)
+2018-07-20T15:39:28.2088798+07:00 0HLFE3H3EU5FR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/js/jquery.min.js   (ca22a1cb)
+2018-07-20T15:39:28.2407003+07:00 0HLFE3H3EU5FT:00000002 [INF] Sending file. Request path: '"/client-side/js/owl.carousel.min.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\js\owl.carousel.min.js"' (27b0a520)
+2018-07-20T15:39:28.3297251+07:00 0HLFE3H3EU5FQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/flag-spain.jpg   (ca22a1cb)
+2018-07-20T15:39:28.3782699+07:00 0HLFE3H3EU5FS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/flag-brazil.jpg   (ca22a1cb)
+2018-07-20T15:39:28.4115289+07:00 0HLFE3H3EU5FR:00000002 [INF] Sending file. Request path: '"/client-side/js/jquery.min.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\js\jquery.min.js"' (27b0a520)
+2018-07-20T15:39:28.5690897+07:00 0HLFE3H3EU5FM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/js/bootstrap.min.js   (ca22a1cb)
+2018-07-20T15:39:28.5869563+07:00 0HLFE3H3EU5FO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/js/mobile-menu.js   (ca22a1cb)
+2018-07-20T15:39:28.5967171+07:00 0HLFE3H3EU5FS:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-brazil.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\flag-brazil.jpg"' (27b0a520)
+2018-07-20T15:39:28.6514160+07:00 0HLFE3H3EU5FT:00000002 [INF] Request finished in 484.911ms 200 application/javascript (791a596a)
+2018-07-20T15:39:28.6706378+07:00 0HLFE3H3EU5FQ:00000002 [INF] Sending file. Request path: '"/client-side/images/flag-spain.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\flag-spain.jpg"' (27b0a520)
+2018-07-20T15:39:28.7201470+07:00 0HLFE3H3EU5FM:00000002 [INF] Sending file. Request path: '"/client-side/js/bootstrap.min.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\js\bootstrap.min.js"' (27b0a520)
+2018-07-20T15:39:28.7355975+07:00 0HLFE3H3EU5FS:00000001 [INF] Request finished in 388.7293ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:28.7744902+07:00 0HLFE3H3EU5FO:00000003 [INF] Sending file. Request path: '"/client-side/js/mobile-menu.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\js\mobile-menu.js"' (27b0a520)
+2018-07-20T15:39:28.8226860+07:00 0HLFE3H3EU5FQ:00000002 [INF] Request finished in 558.1236ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:28.8351456+07:00 0HLFE3H3EU5FS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/js/main.js   (ca22a1cb)
+2018-07-20T15:39:28.8491071+07:00 0HLFE3H3EU5FT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/js/jquery-ui.js   (ca22a1cb)
+2018-07-20T15:39:28.8593990+07:00 0HLFE3H3EU5FO:00000003 [INF] Request finished in 584.3475ms 200 application/javascript (791a596a)
+2018-07-20T15:39:28.8829309+07:00 0HLFE3H3EU5FS:00000002 [INF] Sending file. Request path: '"/client-side/js/main.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\js\main.js"' (27b0a520)
+2018-07-20T15:39:28.9311384+07:00 0HLFE3H3EU5FO:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/js/revolution-slider.js   (ca22a1cb)
+2018-07-20T15:39:28.9424668+07:00 0HLFE3H3EU5FQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/js/countdown.js   (ca22a1cb)
+2018-07-20T15:39:28.9543475+07:00 0HLFE3H3EU5FT:00000003 [INF] Sending file. Request path: '"/client-side/js/jquery-ui.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\js\jquery-ui.js"' (27b0a520)
+2018-07-20T15:39:28.9578442+07:00 0HLFE3H3EU5FQ:00000003 [INF] Sending file. Request path: '"/client-side/js/countdown.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\js\countdown.js"' (27b0a520)
+2018-07-20T15:39:28.9901983+07:00 0HLFE3H3EU5FM:00000002 [INF] Request finished in 671.0755ms 200 application/javascript (791a596a)
+2018-07-20T15:39:29.0365635+07:00 0HLFE3H3EU5FO:00000004 [INF] Sending file. Request path: '"/client-side/js/revolution-slider.js"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\js\revolution-slider.js"' (27b0a520)
+2018-07-20T15:39:29.0667379+07:00 0HLFE3H3EU5FS:00000002 [INF] Request finished in 268.1722ms 200 application/javascript (791a596a)
+2018-07-20T15:39:29.0698135+07:00 0HLFE3H3EU5FM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/logo.png   (ca22a1cb)
+2018-07-20T15:39:29.0788083+07:00 0HLFE3H3EU5FQ:00000003 [INF] Request finished in 121.5298ms 200 application/javascript (791a596a)
+2018-07-20T15:39:29.1085628+07:00 0HLFE3H3EU5FQ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-07-20T15:39:29.1159716+07:00 0HLFE3H3EU5FM:00000003 [INF] Sending file. Request path: '"/client-side/images/logo.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\logo.png"' (27b0a520)
+2018-07-20T15:39:29.1661526+07:00 0HLFE3H3EU5FS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/menu-banner-img1.jpg   (ca22a1cb)
+2018-07-20T15:39:29.1931984+07:00 0HLFE3H3EU5FM:00000003 [INF] Request finished in 111.5959ms 200 image/png (791a596a)
+2018-07-20T15:39:29.2073242+07:00 0HLFE3H3EU5FS:00000003 [INF] Sending file. Request path: '"/client-side/images/menu-banner-img1.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\menu-banner-img1.jpg"' (27b0a520)
+2018-07-20T15:39:29.2572715+07:00 0HLFE3H3EU5FR:00000002 [INF] Request finished in 1074.3736ms 200 application/javascript (791a596a)
+2018-07-20T15:39:29.2915025+07:00 0HLFE3H3EU5FQ:00000004 [INF] Sending file. Request path: '"/client-side/images/products/product-1.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\products\product-1.jpg"' (27b0a520)
+2018-07-20T15:39:29.3052998+07:00 0HLFE3H3EU5FM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/menu-banner-img2.jpg   (ca22a1cb)
+2018-07-20T15:39:29.3530727+07:00 0HLFE3H3EU5FS:00000003 [INF] Request finished in 121.2562ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:29.3930977+07:00 0HLFE3H3EU5FM:00000004 [INF] Sending file. Request path: '"/client-side/images/menu-banner-img2.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\menu-banner-img2.jpg"' (27b0a520)
+2018-07-20T15:39:29.4300724+07:00 0HLFE3H3EU5FR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/menu-banner-img3.jpg   (ca22a1cb)
+2018-07-20T15:39:29.5598365+07:00 0HLFE3H3EU5FT:00000003 [INF] Request finished in 794.4627ms 200 application/javascript (791a596a)
+2018-07-20T15:39:29.6015250+07:00 0HLFE3H3EU5FR:00000003 [INF] Sending file. Request path: '"/client-side/images/menu-banner-img3.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\menu-banner-img3.jpg"' (27b0a520)
+2018-07-20T15:39:29.6867345+07:00 0HLFE3H3EU5FS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/menu-banner-img4.jpg   (ca22a1cb)
+2018-07-20T15:39:29.7074846+07:00 0HLFE3H3EU5FQ:00000004 [INF] Request finished in 227.1547ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:29.7317000+07:00 0HLFE3H3EU5FT:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/banner-left.jpg   (ca22a1cb)
+2018-07-20T15:39:29.7471372+07:00 0HLFE3H3EU5FR:00000003 [INF] Request finished in 369.3663ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:29.7649991+07:00 0HLFE3H3EU5FS:00000004 [INF] Sending file. Request path: '"/client-side/images/menu-banner-img4.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\menu-banner-img4.jpg"' (27b0a520)
+2018-07-20T15:39:29.7912582+07:00 0HLFE3H3EU5FT:00000004 [INF] Sending file. Request path: '"/client-side/images/banner-left.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\banner-left.jpg"' (27b0a520)
+2018-07-20T15:39:29.8003039+07:00 0HLFE3H3EU5FQ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/menu-banner-img5.jpg   (ca22a1cb)
+2018-07-20T15:39:29.8379449+07:00 0HLFE3H3EU5FS:00000004 [INF] Request finished in 236.7158ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:29.9325727+07:00 0HLFE3H3EU5FS:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/slider/slide-2.jpg   (ca22a1cb)
+2018-07-20T15:39:29.9412447+07:00 0HLFE3H3EU5FR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/slider/slide-3.jpg   (ca22a1cb)
+2018-07-20T15:39:29.9447457+07:00 0HLFE3H3EU5FT:00000004 [INF] Request finished in 210.3563ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:29.9754051+07:00 0HLFE3H3EU5FT:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/slider/slide-1.jpg   (ca22a1cb)
+2018-07-20T15:39:29.9971791+07:00 0HLFE3H3EU5FR:00000004 [INF] Sending file. Request path: '"/client-side/images/slider/slide-3.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\slider\slide-3.jpg"' (27b0a520)
+2018-07-20T15:39:30.0162123+07:00 0HLFE3H3EU5FS:00000005 [INF] Sending file. Request path: '"/client-side/images/slider/slide-2.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\slider\slide-2.jpg"' (27b0a520)
+2018-07-20T15:39:30.0310731+07:00 0HLFE3H3EU5FQ:00000005 [INF] Sending file. Request path: '"/client-side/images/menu-banner-img5.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\menu-banner-img5.jpg"' (27b0a520)
+2018-07-20T15:39:30.0514353+07:00 0HLFE3H3EU5FT:00000005 [INF] Sending file. Request path: '"/client-side/images/slider/slide-1.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\slider\slide-1.jpg"' (27b0a520)
+2018-07-20T15:39:30.1412470+07:00 0HLFE3H3EU5FQ:00000005 [INF] Request finished in 326.5659ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:30.1784411+07:00 0HLFE3H3EU5FS:00000005 [INF] Request finished in 219.3152ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:30.2208148+07:00 0HLFE3H3EU5FQ:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/banner-laptop.jpg   (ca22a1cb)
+2018-07-20T15:39:30.2374622+07:00 0HLFE3H3EU5FM:00000004 [INF] Request finished in 751.5139ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:30.2505090+07:00 0HLFE3H3EU5FS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/banner-mob.jpg   (ca22a1cb)
+2018-07-20T15:39:30.2884484+07:00 0HLFE3H3EU5FS:00000006 [INF] Sending file. Request path: '"/client-side/images/banner-mob.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\banner-mob.jpg"' (27b0a520)
+2018-07-20T15:39:30.3864626+07:00 0HLFE3H3EU5FQ:00000006 [INF] Sending file. Request path: '"/client-side/images/banner-laptop.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\banner-laptop.jpg"' (27b0a520)
+2018-07-20T15:39:30.4187020+07:00 0HLFE3H3EU5FO:00000004 [INF] Request finished in 1223.9803ms 200 application/javascript (791a596a)
+2018-07-20T15:39:30.5213061+07:00 0HLFE3H3EU5FS:00000006 [INF] Request finished in 127.4543ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:30.6821930+07:00 0HLFE3H3EU5FM:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/sub1.jpg   (ca22a1cb)
+2018-07-20T15:39:30.7110178+07:00 0HLFE3H3EU5FS:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/blog-img1.jpg   (ca22a1cb)
+2018-07-20T15:39:30.7473173+07:00 0HLFE3H3EU5FS:00000007 [INF] Sending file. Request path: '"/client-side/images/blog-img1.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\blog-img1.jpg"' (27b0a520)
+2018-07-20T15:39:30.7682774+07:00 0HLFE3H3EU5FQ:00000006 [INF] Request finished in 230.8798ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:30.8769893+07:00 0HLFE3H3EU5FO:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/sub1a.jpg   (ca22a1cb)
+2018-07-20T15:39:30.9113619+07:00 0HLFE3H3EU5FM:00000005 [INF] Sending file. Request path: '"/client-side/images/sub1.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\sub1.jpg"' (27b0a520)
+2018-07-20T15:39:31.0386448+07:00 0HLFE3H3EU5FR:00000004 [INF] Request finished in 1003.7542ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:31.1070499+07:00 0HLFE3H3EU5FT:00000005 [INF] Request finished in 846.9131ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:31.1255947+07:00 0HLFE3H3EU5FS:00000007 [INF] Request finished in 293.7077ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:31.1858534+07:00 0HLFE3H3EU5FQ:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand1.png   (ca22a1cb)
+2018-07-20T15:39:31.2017781+07:00 0HLFE3H3EU5FM:00000005 [INF] Request finished in 688.9473ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:31.2428568+07:00 0HLFE3H3EU5FO:00000005 [INF] Sending file. Request path: '"/client-side/images/sub1a.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\sub1a.jpg"' (27b0a520)
+2018-07-20T15:39:31.2488750+07:00 0HLFE3H3EU5FR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand2.png   (ca22a1cb)
+2018-07-20T15:39:31.3543582+07:00 0HLFE3H3EU5FS:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand4.png   (ca22a1cb)
+2018-07-20T15:39:31.4492100+07:00 0HLFE3H3EU5FR:00000005 [INF] Sending file. Request path: '"/client-side/images/brand2.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand2.png"' (27b0a520)
+2018-07-20T15:39:31.5041223+07:00 0HLFE3H3EU5FS:00000008 [INF] Sending file. Request path: '"/client-side/images/brand4.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand4.png"' (27b0a520)
+2018-07-20T15:39:31.5154872+07:00 0HLFE3H3EU5FQ:00000007 [INF] Sending file. Request path: '"/client-side/images/brand1.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand1.png"' (27b0a520)
+2018-07-20T15:39:31.5601329+07:00 0HLFE3H3EU5FO:00000005 [INF] Request finished in 902.853ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:31.5759083+07:00 0HLFE3H3EU5FM:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand5.png   (ca22a1cb)
+2018-07-20T15:39:31.6030244+07:00 0HLFE3H3EU5FS:00000008 [INF] Request finished in 384.8771ms 200 image/png (791a596a)
+2018-07-20T15:39:31.6359356+07:00 0HLFE3H3EU5FM:00000006 [INF] Sending file. Request path: '"/client-side/images/brand5.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand5.png"' (27b0a520)
+2018-07-20T15:39:31.6450921+07:00 0HLFE3H3EU5FT:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand3.png   (ca22a1cb)
+2018-07-20T15:39:31.7693692+07:00 0HLFE3H3EU5FQ:00000007 [INF] Request finished in 753.0427ms 200 image/png (791a596a)
+2018-07-20T15:39:31.9092926+07:00 0HLFE3H3EU5FO:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand6.png   (ca22a1cb)
+2018-07-20T15:39:32.0366178+07:00 0HLFE3H3EU5FS:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand7.png   (ca22a1cb)
+2018-07-20T15:39:32.0592359+07:00 0HLFE3H3EU5FO:00000006 [INF] Sending file. Request path: '"/client-side/images/brand6.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand6.png"' (27b0a520)
+2018-07-20T15:39:32.1055536+07:00 0HLFE3H3EU5FM:00000006 [INF] Request finished in 554.803ms 200 image/png (791a596a)
+2018-07-20T15:39:32.1326922+07:00 0HLFE3H3EU5FT:00000006 [INF] Sending file. Request path: '"/client-side/images/brand3.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand3.png"' (27b0a520)
+2018-07-20T15:39:32.1524271+07:00 0HLFE3H3EU5FQ:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand8.png   (ca22a1cb)
+2018-07-20T15:39:32.2081350+07:00 0HLFE3H3EU5FS:00000009 [INF] Sending file. Request path: '"/client-side/images/brand7.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand7.png"' (27b0a520)
+2018-07-20T15:39:32.3110352+07:00 0HLFE3H3EU5FR:00000005 [INF] Request finished in 490.8128ms 200 image/png (791a596a)
+2018-07-20T15:39:32.5842549+07:00 0HLFE3H3EU5FQ:00000008 [INF] Sending file. Request path: '"/client-side/images/brand8.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand8.png"' (27b0a520)
+2018-07-20T15:39:32.6689183+07:00 0HLFE3H3EU5FM:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand10.png   (ca22a1cb)
+2018-07-20T15:39:32.6776344+07:00 0HLFE3H3EU5FS:00000009 [INF] Request finished in 758.6362ms 200 image/png (791a596a)
+2018-07-20T15:39:32.7115301+07:00 0HLFE3H3EU5FO:00000006 [INF] Request finished in 934.3108ms 200 image/png (791a596a)
+2018-07-20T15:39:32.7620896+07:00 0HLFE3H3EU5FQ:00000008 [INF] Request finished in 583.3315ms 200 image/png (791a596a)
+2018-07-20T15:39:32.7690596+07:00 0HLFE3H3EU5FT:00000006 [INF] Request finished in 1010.0588ms 200 image/png (791a596a)
+2018-07-20T15:39:32.8041920+07:00 0HLFE3H3EU5FM:00000007 [INF] Sending file. Request path: '"/client-side/images/brand10.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand10.png"' (27b0a520)
+2018-07-20T15:39:32.8425655+07:00 0HLFE3H3EU5FR:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand9.png   (ca22a1cb)
+2018-07-20T15:39:32.8610386+07:00 0HLFE3H3EU5FS:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/banner-sunglasses.jpg   (ca22a1cb)
+2018-07-20T15:39:32.8872031+07:00 0HLFE3H3EU5FO:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/banner-kids.jpg   (ca22a1cb)
+2018-07-20T15:39:32.9114384+07:00 0HLFE3H3EU5FQ:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/banner-women.jpg   (ca22a1cb)
+2018-07-20T15:39:32.9142707+07:00 0HLFE3H3EU5FR:00000006 [INF] Sending file. Request path: '"/client-side/images/brand9.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand9.png"' (27b0a520)
+2018-07-20T15:39:32.9322942+07:00 0HLFE3H3EU5FS:0000000A [INF] Sending file. Request path: '"/client-side/images/banner-sunglasses.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\banner-sunglasses.jpg"' (27b0a520)
+2018-07-20T15:39:32.9926157+07:00 0HLFE3H3EU5FQ:00000009 [INF] Sending file. Request path: '"/client-side/images/banner-women.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\banner-women.jpg"' (27b0a520)
+2018-07-20T15:39:33.0093072+07:00 0HLFE3H3EU5FM:00000007 [INF] Request finished in 573.8439ms 200 image/png (791a596a)
+2018-07-20T15:39:33.0292543+07:00 0HLFE3H3EU5FO:00000007 [INF] Sending file. Request path: '"/client-side/images/banner-kids.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\banner-kids.jpg"' (27b0a520)
+2018-07-20T15:39:33.0898229+07:00 0HLFE3H3EU5FR:00000006 [INF] Request finished in 433.6422ms 200 image/png (791a596a)
+2018-07-20T15:39:33.0998352+07:00 0HLFE3H3EU5FS:0000000A [INF] Request finished in 231.5217ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:33.1120994+07:00 0HLFE3H3EU5FQ:00000009 [INF] Request finished in 217.7933ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:33.1915225+07:00 0HLFE3H3EU5FO:00000007 [INF] Request finished in 299.5453ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:33.2153059+07:00 0HLFE3H3EU5FT:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/brand11.png   (ca22a1cb)
+2018-07-20T15:39:33.2670482+07:00 0HLFE3H3EU5FR:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/testimonials-img1.jpg   (ca22a1cb)
+2018-07-20T15:39:33.2840951+07:00 0HLFE3H3EU5FQ:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/testimonials-img2.jpg   (ca22a1cb)
+2018-07-20T15:39:33.3184270+07:00 0HLFE3H3EU5FS:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/testimonials-img3.jpg   (ca22a1cb)
+2018-07-20T15:39:33.3853143+07:00 0HLFE3H3EU5FO:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/testimonials-img4.jpg   (ca22a1cb)
+2018-07-20T15:39:33.4265997+07:00 0HLFE3H3EU5FR:00000007 [INF] Sending file. Request path: '"/client-side/images/testimonials-img1.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\testimonials-img1.jpg"' (27b0a520)
+2018-07-20T15:39:33.4368112+07:00 0HLFE3H3EU5FQ:0000000A [INF] Sending file. Request path: '"/client-side/images/testimonials-img2.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\testimonials-img2.jpg"' (27b0a520)
+2018-07-20T15:39:33.4436636+07:00 0HLFE3H3EU5FM:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/banner-arrival.jpg   (ca22a1cb)
+2018-07-20T15:39:33.4516612+07:00 0HLFE3H3EU5FS:0000000B [INF] Sending file. Request path: '"/client-side/images/testimonials-img3.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\testimonials-img3.jpg"' (27b0a520)
+2018-07-20T15:39:33.4976727+07:00 0HLFE3H3EU5FQ:0000000A [INF] Request finished in 277.868ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:33.5009570+07:00 0HLFE3H3EU5FO:00000008 [INF] Sending file. Request path: '"/client-side/images/testimonials-img4.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\testimonials-img4.jpg"' (27b0a520)
+2018-07-20T15:39:33.5120845+07:00 0HLFE3H3EU5FT:00000007 [INF] Sending file. Request path: '"/client-side/images/brand11.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\brand11.png"' (27b0a520)
+2018-07-20T15:39:33.5433909+07:00 0HLFE3H3EU5FM:00000008 [INF] Sending file. Request path: '"/client-side/images/banner-arrival.jpg"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\banner-arrival.jpg"' (27b0a520)
+2018-07-20T15:39:33.5854626+07:00 0HLFE3H3EU5FS:0000000B [INF] Request finished in 321.2919ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:33.6506309+07:00 0HLFE3H3EU5FO:00000008 [INF] Request finished in 279.3712ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:33.6920624+07:00 0HLFE3H3EU5FT:00000007 [INF] Request finished in 647.8357ms 200 image/png (791a596a)
+2018-07-20T15:39:33.7299339+07:00 0HLFE3H3EU5FR:00000007 [INF] Request finished in 464.9609ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:33.7422541+07:00 0HLFE3H3EU5FS:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/visa.png   (ca22a1cb)
+2018-07-20T15:39:33.7667508+07:00 0HLFE3H3EU5FM:00000008 [INF] Request finished in 470.0626ms 200 image/jpeg (791a596a)
+2018-07-20T15:39:33.7912402+07:00 0HLFE3H3EU5FQ:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/footer-logo.png   (ca22a1cb)
+2018-07-20T15:39:33.8040467+07:00 0HLFE3H3EU5FS:0000000C [INF] Sending file. Request path: '"/client-side/images/visa.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\visa.png"' (27b0a520)
+2018-07-20T15:39:33.8179166+07:00 0HLFE3H3EU5FO:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/discover.png   (ca22a1cb)
+2018-07-20T15:39:33.9124798+07:00 0HLFE3H3EU5FR:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-20T15:39:33.9171332+07:00 0HLFE3H3EU5FS:0000000C [INF] Request finished in 237.3444ms 200 image/png (791a596a)
+2018-07-20T15:39:33.9355271+07:00 0HLFE3H3EU5FO:00000009 [INF] Sending file. Request path: '"/client-side/images/discover.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\discover.png"' (27b0a520)
+2018-07-20T15:39:34.0004586+07:00 0HLFE3H3EU5FQ:0000000B [INF] Sending file. Request path: '"/client-side/images/footer-logo.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\footer-logo.png"' (27b0a520)
+2018-07-20T15:39:34.0560029+07:00 0HLFE3H3EU5FR:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-20T15:39:34.0801810+07:00 0HLFE3H3EU5FM:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/master-card.png   (ca22a1cb)
+2018-07-20T15:39:34.1006665+07:00 0HLFE3H3EU5FT:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/paypal.png   (ca22a1cb)
+2018-07-20T15:39:34.1116298+07:00 0HLFE3H3EU5FO:00000009 [INF] Request finished in 284.6645ms 200 image/png (791a596a)
+2018-07-20T15:39:34.1318955+07:00 0HLFE3H3EU5FR:00000008 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-20T15:39:34.1583902+07:00 0HLFE3H3EU5FQ:0000000B [INF] Request finished in 479.7862ms 200 image/png (791a596a)
+2018-07-20T15:39:34.1946494+07:00 0HLFE3H3EU5FR:00000008 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-20T15:39:34.1979833+07:00 0HLFE3H3EU5FT:00000008 [INF] Sending file. Request path: '"/client-side/images/paypal.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\paypal.png"' (27b0a520)
+2018-07-20T15:39:34.2296993+07:00 0HLFE3H3EU5FM:00000009 [INF] Sending file. Request path: '"/client-side/images/master-card.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\master-card.png"' (27b0a520)
+2018-07-20T15:39:34.3208628+07:00 0HLFE3H3EU5FR:00000008 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 172.1196ms (afa2e885)
+2018-07-20T15:39:34.5219108+07:00 0HLFE3H3EU5FT:00000008 [INF] Request finished in 428.7787ms 200 image/png (791a596a)
+2018-07-20T15:39:34.6734025+07:00 0HLFE3H3EU5FR:00000008 [INF] Request finished in 547.3463ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-20T15:39:34.6903104+07:00 0HLFE3H3EU5FM:00000009 [INF] Request finished in 389.5858ms 200 image/png (791a596a)
+2018-07-20T15:53:52.8956433+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-20T15:53:53.1250379+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:53:53.1494316+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:53:53.1717290+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-20T15:53:53.2001056+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-20T15:53:53.2061793+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-20T15:53:53.2120927+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-20T15:53:53.2183576+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-20T15:53:53.2258890+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-20T15:53:53.2313440+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-20T15:53:53.2411472+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:53:53.2487492+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:53:53.2568666+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:53:53.7435948+07:00 0HLFE3P8VIK82:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-20T15:53:53.8301688+07:00 0HLFE3P8VIK82:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-20T15:53:54.0361658+07:00 0HLFE3P8VIK82:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-20T15:53:59.0562681+07:00 0HLFE3P8VIK82:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-20T15:54:00.1568173+07:00 0HLFE3P8VIK84:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/robots.txt   (ca22a1cb)
+2018-07-20T15:54:00.1641727+07:00 0HLFE3P8VIK82:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 6135.8471ms (afa2e885)
+2018-07-20T15:54:00.1713317+07:00 0HLFE3P8VIK84:00000001 [INF] Request finished in 15.3397ms 404  (791a596a)
+2018-07-20T15:54:00.1902140+07:00 0HLFE3P8VIK82:00000001 [INF] Request finished in 6504.1384ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-20T15:54:00.2296082+07:00 0HLFE3P8VIK82:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/style.css   (ca22a1cb)
+2018-07-20T15:54:00.2316929+07:00 0HLFE3P8VIK82:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-20T15:54:00.2322557+07:00 0HLFE3P8VIK82:00000002 [INF] Request finished in 2.718ms 404  (791a596a)
+2018-07-20T15:54:01.8838183+07:00 0HLFE3P8VIK82:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-20T15:54:01.8847104+07:00 0HLFE3P8VIK82:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-20T15:54:01.8865072+07:00 0HLFE3P8VIK82:00000003 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-20T15:54:01.8874472+07:00 0HLFE3P8VIK82:00000003 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-20T15:54:01.8971981+07:00 0HLFE3P8VIK82:00000003 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 11.0368ms (afa2e885)
+2018-07-20T15:54:01.8979012+07:00 0HLFE3P8VIK82:00000003 [INF] Request finished in 14.0799ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-20T15:57:52.1405970+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MaiHienCoreApp.Data.EF " (9958f5bb)
+2018-07-20T15:57:52.3431867+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:57:52.3625393+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:57:52.3801451+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-20T15:57:52.4096434+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-20T15:57:52.4142811+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-20T15:57:52.4189543+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-20T15:57:52.4273501+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-20T15:57:52.4334893+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-20T15:57:52.4430730+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-20T15:57:52.4545487+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:57:52.4653328+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:57:52.4717178+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-20T15:57:52.8550255+07:00 0HLFE3RG86ROL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-20T15:57:52.9594658+07:00 0HLFE3RG86ROL:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-20T15:57:53.2233682+07:00 0HLFE3RG86ROL:00000001 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-20T15:57:58.1213364+07:00 0HLFE3RG86ROL:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-20T15:57:59.2896171+07:00 0HLFE3RG86ROL:00000001 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 6071.3125ms (afa2e885)
+2018-07-20T15:57:59.2968472+07:00 0HLFE3RG86ROL:00000001 [INF] Request finished in 6495.0747ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-20T15:57:59.3240379+07:00 0HLFE3RG86ROL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/style.css   (ca22a1cb)
+2018-07-20T15:57:59.3331188+07:00 0HLFE3RG86ROL:00000002 [INF] Sending file. Request path: '"/client-side/style.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\style.css"' (27b0a520)
+2018-07-20T15:57:59.3529034+07:00 0HLFE3RG86ROL:00000002 [INF] Request finished in 28.9992ms 200 text/css (791a596a)
+2018-07-20T15:57:59.6436925+07:00 0HLFE3RG86ROL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/bootstrap.min.css   (ca22a1cb)
+2018-07-20T15:57:59.6442805+07:00 0HLFE3RG86ROL:00000003 [INF] Sending file. Request path: '"/client-side/css/bootstrap.min.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\bootstrap.min.css"' (27b0a520)
+2018-07-20T15:57:59.6451169+07:00 0HLFE3RG86ROM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/animate.css   (ca22a1cb)
+2018-07-20T15:57:59.6459633+07:00 0HLFE3RG86ROM:00000001 [INF] Sending file. Request path: '"/client-side/css/animate.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\animate.css"' (27b0a520)
+2018-07-20T15:57:59.6611759+07:00 0HLFE3RG86ROM:00000001 [INF] Request finished in 15.4008ms 200 text/css (791a596a)
+2018-07-20T15:57:59.6660699+07:00 0HLFE3RG86ROL:00000003 [INF] Request finished in 21.5224ms 200 text/css (791a596a)
+2018-07-20T15:57:59.6849872+07:00 0HLFE3RG86ROM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/font-awesome.min.css   (ca22a1cb)
+2018-07-20T15:57:59.6853853+07:00 0HLFE3RG86ROM:00000002 [INF] Sending file. Request path: '"/client-side/css/font-awesome.min.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\font-awesome.min.css"' (27b0a520)
+2018-07-20T15:57:59.6978415+07:00 0HLFE3RG86ROM:00000002 [INF] Request finished in 12.2047ms 200 text/css (791a596a)
+2018-07-20T15:57:59.7020619+07:00 0HLFE3RG86ROL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/simple-line-icons.css   (ca22a1cb)
+2018-07-20T15:57:59.7026045+07:00 0HLFE3RG86ROL:00000004 [INF] Sending file. Request path: '"/client-side/css/simple-line-icons.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\simple-line-icons.css"' (27b0a520)
+2018-07-20T15:57:59.7139505+07:00 0HLFE3RG86ROL:00000004 [INF] Request finished in 12.1264ms 200 text/css (791a596a)
+2018-07-20T15:57:59.7140292+07:00 0HLFE3RG86ROM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/pe-icon-7-stroke.min.css   (ca22a1cb)
+2018-07-20T15:57:59.7143958+07:00 0HLFE3RG86ROM:00000003 [INF] Sending file. Request path: '"/client-side/css/pe-icon-7-stroke.min.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\pe-icon-7-stroke.min.css"' (27b0a520)
+2018-07-20T15:57:59.7292287+07:00 0HLFE3RG86ROM:00000003 [INF] Request finished in 13.6321ms 200 text/css (791a596a)
+2018-07-20T15:57:59.8002048+07:00 0HLFE3RG86ROM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/owl.carousel.css   (ca22a1cb)
+2018-07-20T15:57:59.8008826+07:00 0HLFE3RG86ROM:00000004 [INF] Sending file. Request path: '"/client-side/css/owl.carousel.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\owl.carousel.css"' (27b0a520)
+2018-07-20T15:57:59.8149753+07:00 0HLFE3RG86ROM:00000004 [INF] Request finished in 14.5922ms 200 text/css (791a596a)
+2018-07-20T15:57:59.8296997+07:00 0HLFE3RG86ROM:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/owl.transitions.css   (ca22a1cb)
+2018-07-20T15:57:59.8312241+07:00 0HLFE3RG86ROM:00000005 [INF] Sending file. Request path: '"/client-side/css/owl.transitions.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\owl.transitions.css"' (27b0a520)
+2018-07-20T15:57:59.8343484+07:00 0HLFE3RG86ROM:00000005 [INF] Request finished in 5.0533ms 200 text/css (791a596a)
+2018-07-20T15:57:59.8485306+07:00 0HLFE3RG86ROM:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/flexslider.css   (ca22a1cb)
+2018-07-20T15:57:59.8492183+07:00 0HLFE3RG86ROM:00000006 [INF] Sending file. Request path: '"/client-side/css/flexslider.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\flexslider.css"' (27b0a520)
+2018-07-20T15:57:59.8522421+07:00 0HLFE3RG86ROM:00000006 [INF] Request finished in 4.0129ms 200 text/css (791a596a)
+2018-07-20T15:57:59.8770137+07:00 0HLFE3RG86ROM:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/jquery-ui.css   (ca22a1cb)
+2018-07-20T15:57:59.8773721+07:00 0HLFE3RG86ROM:00000007 [INF] Sending file. Request path: '"/client-side/css/jquery-ui.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\jquery-ui.css"' (27b0a520)
+2018-07-20T15:57:59.8872069+07:00 0HLFE3RG86ROM:00000007 [INF] Request finished in 10.2311ms 200 text/css (791a596a)
+2018-07-20T15:57:59.9093259+07:00 0HLFE3RG86ROM:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/revolution-slider.css   (ca22a1cb)
+2018-07-20T15:57:59.9097129+07:00 0HLFE3RG86ROM:00000008 [INF] Sending file. Request path: '"/client-side/css/revolution-slider.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\revolution-slider.css"' (27b0a520)
+2018-07-20T15:57:59.9183785+07:00 0HLFE3RG86ROM:00000008 [INF] Request finished in 9.0252ms 200 text/css (791a596a)
+2018-07-20T15:57:59.9407174+07:00 0HLFE3RG86ROM:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/quick_view_popup.css   (ca22a1cb)
+2018-07-20T15:57:59.9411288+07:00 0HLFE3RG86ROM:00000009 [INF] Sending file. Request path: '"/client-side/css/quick_view_popup.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\quick_view_popup.css"' (27b0a520)
+2018-07-20T15:57:59.9439191+07:00 0HLFE3RG86ROL:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/blog.css   (ca22a1cb)
+2018-07-20T15:57:59.9443648+07:00 0HLFE3RG86ROL:00000005 [INF] Sending file. Request path: '"/client-side/css/blog.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\blog.css"' (27b0a520)
+2018-07-20T15:57:59.9590275+07:00 0HLFE3RG86ROL:00000005 [INF] Request finished in 14.3814ms 200 text/css (791a596a)
+2018-07-20T15:57:59.9590275+07:00 0HLFE3RG86ROM:00000009 [INF] Request finished in 12.9056ms 200 text/css (791a596a)
+2018-07-20T15:57:59.9683431+07:00 0HLFE3RG86ROL:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/shortcode.css   (ca22a1cb)
+2018-07-20T15:57:59.9688152+07:00 0HLFE3RG86ROL:00000006 [INF] Sending file. Request path: '"/client-side/css/shortcode.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\shortcode.css"' (27b0a520)
+2018-07-20T15:57:59.9722162+07:00 0HLFE3RG86ROM:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/shortcodes/shortcodes.css   (ca22a1cb)
+2018-07-20T15:57:59.9728285+07:00 0HLFE3RG86ROL:00000006 [INF] Request finished in 4.5273ms 200 text/css (791a596a)
+2018-07-20T15:57:59.9754436+07:00 0HLFE3RG86ROM:0000000A [INF] Sending file. Request path: '"/client-side/css/shortcodes/shortcodes.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\shortcodes\shortcodes.css"' (27b0a520)
+2018-07-20T15:57:59.9862589+07:00 0HLFE3RG86ROL:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/shortcodes/featured-box.css   (ca22a1cb)
+2018-07-20T15:57:59.9866605+07:00 0HLFE3RG86ROL:00000007 [INF] Sending file. Request path: '"/client-side/css/shortcodes/featured-box.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\shortcodes\featured-box.css"' (27b0a520)
+2018-07-20T15:57:59.9909933+07:00 0HLFE3RG86ROM:0000000A [INF] Request finished in 18.833ms 200 text/css (791a596a)
+2018-07-20T15:58:00.0023291+07:00 0HLFE3RG86ROL:00000007 [INF] Request finished in 16.1826ms 200 text/css (791a596a)
+2018-07-20T15:58:00.0023291+07:00 0HLFE3RG86ROM:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/shortcodes/pricing-table.css   (ca22a1cb)
+2018-07-20T15:58:00.0026883+07:00 0HLFE3RG86ROM:0000000B [INF] Sending file. Request path: '"/client-side/css/shortcodes/pricing-table.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\shortcodes\pricing-table.css"' (27b0a520)
+2018-07-20T15:58:00.0199164+07:00 0HLFE3RG86ROM:0000000B [INF] Request finished in 17.4975ms 200 text/css (791a596a)
+2018-07-20T15:58:00.0679918+07:00 0HLFE3RG86ROM:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/shortcodes/tooltip.css   (ca22a1cb)
+2018-07-20T15:58:00.0684015+07:00 0HLFE3RG86ROM:0000000C [INF] Sending file. Request path: '"/client-side/css/shortcodes/tooltip.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\shortcodes\tooltip.css"' (27b0a520)
+2018-07-20T15:58:00.0808020+07:00 0HLFE3RG86ROM:0000000C [INF] Request finished in 12.1551ms 200 text/css (791a596a)
+2018-07-20T15:58:00.1000935+07:00 0HLFE3RG86ROM:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/shortcodes/post.css   (ca22a1cb)
+2018-07-20T15:58:00.1005168+07:00 0HLFE3RG86ROM:0000000D [INF] Sending file. Request path: '"/client-side/css/shortcodes/post.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\shortcodes\post.css"' (27b0a520)
+2018-07-20T15:58:00.1039611+07:00 0HLFE3RG86ROL:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/style.css   (ca22a1cb)
+2018-07-20T15:58:00.1051730+07:00 0HLFE3RG86ROM:0000000D [INF] Request finished in 5.1867ms 200 text/css (791a596a)
+2018-07-20T15:58:00.1047475+07:00 0HLFE3RG86ROL:00000008 [INF] Sending file. Request path: '"/client-side/css/style.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\style.css"' (27b0a520)
+2018-07-20T15:58:00.1228091+07:00 0HLFE3RG86ROM:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/css/responsive.css   (ca22a1cb)
+2018-07-20T15:58:00.1232521+07:00 0HLFE3RG86ROM:0000000E [INF] Sending file. Request path: '"/client-side/css/responsive.css"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\css\responsive.css"' (27b0a520)
+2018-07-20T15:58:00.1268597+07:00 0HLFE3RG86ROL:00000008 [INF] Request finished in 22.2614ms 200 text/css (791a596a)
+2018-07-20T15:58:00.1378973+07:00 0HLFE3RG86ROM:0000000E [INF] Request finished in 15.1678ms 200 text/css (791a596a)
+2018-07-20T15:58:00.7852255+07:00 0HLFE3RG86ROM:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/bg_text_des.png   (ca22a1cb)
+2018-07-20T15:58:00.7856579+07:00 0HLFE3RG86ROM:0000000F [INF] Sending file. Request path: '"/client-side/images/bg_text_des.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\bg_text_des.png"' (27b0a520)
+2018-07-20T15:58:00.7882938+07:00 0HLFE3RG86ROM:0000000F [INF] Request finished in 3.1131ms 200 image/png (791a596a)
+2018-07-20T15:58:00.8515967+07:00 0HLFE3RG86ROM:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/images/select-arrow.png   (ca22a1cb)
+2018-07-20T15:58:00.8520145+07:00 0HLFE3RG86ROM:00000010 [INF] Sending file. Request path: '"/client-side/images/select-arrow.png"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\images\select-arrow.png"' (27b0a520)
+2018-07-20T15:58:00.8542853+07:00 0HLFE3RG86ROM:00000010 [INF] Request finished in 2.7095ms 200 image/png (791a596a)
+2018-07-20T15:58:00.8729216+07:00 0HLFE3RG86ROM:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-20T15:58:00.8733557+07:00 0HLFE3RG86ROM:00000011 [INF] Sending file. Request path: '"/client-side/fonts/font-awesome/fontawesome-webfont.woff2"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\fonts\font-awesome\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-20T15:58:00.8862858+07:00 0HLFE3RG86ROM:00000011 [INF] Request finished in 12.1307ms 200 font/woff2 (791a596a)
+2018-07-20T15:58:00.9161450+07:00 0HLFE3RG86ROM:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.4.0   (ca22a1cb)
+2018-07-20T15:58:00.9165705+07:00 0HLFE3RG86ROM:00000012 [INF] Sending file. Request path: '"/client-side/fonts/simple-line-icons/Simple-Line-Icons.woff2"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\fonts\simple-line-icons\Simple-Line-Icons.woff2"' (27b0a520)
+2018-07-20T15:58:00.9259331+07:00 0HLFE3RG86ROM:00000012 [INF] Request finished in 9.8142ms 200 font/woff2 (791a596a)
+2018-07-20T15:58:00.9427919+07:00 0HLFE3RG86ROM:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:44346/client-side/fonts/pe-icon-7-stroke/Pe-icon-7-stroke.woff?d7yf1v   (ca22a1cb)
+2018-07-20T15:58:00.9431759+07:00 0HLFE3RG86ROM:00000013 [INF] Sending file. Request path: '"/client-side/fonts/pe-icon-7-stroke/Pe-icon-7-stroke.woff"'. Physical path: '"E:\Development\NetCore\Source\MaiHienCoreApp\MaiHienCoreApp\wwwroot\client-side\fonts\pe-icon-7-stroke\Pe-icon-7-stroke.woff"' (27b0a520)
+2018-07-20T15:58:00.9543590+07:00 0HLFE3RG86ROM:00000013 [INF] Request finished in 11.4354ms 200 application/font-woff (791a596a)
+2018-07-20T15:58:02.0390018+07:00 0HLFE3RG86ROM:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:44346/   (ca22a1cb)
+2018-07-20T15:58:02.0407975+07:00 0HLFE3RG86ROM:00000014 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-07-20T15:58:02.0423824+07:00 0HLFE3RG86ROM:00000014 [INF] Executing action method "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-20T15:58:02.0432252+07:00 0HLFE3RG86ROM:00000014 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-20T15:58:02.0515791+07:00 0HLFE3RG86ROM:00000014 [INF] Executed action "MaiHienCoreApp.Controllers.HomeController.Index (MaiHienCoreApp)" in 9.5191ms (afa2e885)
+2018-07-20T15:58:02.0553431+07:00 0HLFE3RG86ROM:00000014 [INF] Request finished in 16.3468ms 200 text/html; charset=utf-8 (791a596a)
