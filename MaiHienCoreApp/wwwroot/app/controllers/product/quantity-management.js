@@ -80,7 +80,7 @@
                     });
                 });
                 $('#table-quantity-content').html(render);
-                resetFile();
+                //resetFile();
             }
         });
     }

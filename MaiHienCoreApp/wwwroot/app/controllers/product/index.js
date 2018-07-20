@@ -1,5 +1,6 @@
 ﻿var productController = function () {
     var quantityManagement = new QuantityManagement();
+    var imageManagement = new ImageManagement();
 
     this.initialize = function () {
         loadCategories();
@@ -7,6 +8,7 @@
         registerEvents();
         registerControls();
         quantityManagement.initialize();
+        imageManagement.initialize();
     }
 
     function registerEvents() {
@@ -258,7 +260,7 @@
         });
     }
 
-    function loadDetails(id) {
+    function loadDetails(that) {
         $.ajax({
             type: "GET",
             url: "/Admin/Product/GetById",

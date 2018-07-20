@@ -34,6 +34,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\uploaded\images\" />
+    <Folder Include="wwwroot\uploaded\images\20180720\" />
   </ItemGroup>
 
 </Project>
