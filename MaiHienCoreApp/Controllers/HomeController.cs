@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MaiHienCoreApp.Models;
 using Microsoft.AspNetCore.Authorization;
+using MaiHienCoreApp.Extensions;
 
 namespace MaiHienCoreApp.Controllers
 {
     public class HomeController : Controller
     {
-
         public IActionResult Index()
         {
+            var email = User.GetSpecificClaim("Email");
             return View();
         }
 
