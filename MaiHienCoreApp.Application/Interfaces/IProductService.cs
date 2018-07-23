@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MaiHienCoreApp.Application.ViewModels.Common;
 using MaiHienCoreApp.Application.ViewModels.Product;
 using MaiHienCoreApp.Utilities.Dtos;
 
@@ -40,5 +41,11 @@ namespace MaiHienCoreApp.Application.Interfaces
         List<ProductViewModel> GetLastest(int top);
 
         List<ProductViewModel> GetHotProduct(int top);
+        List<ProductViewModel> GetRelatedProducts(int id, int top);
+
+        List<ProductViewModel> GetUpsellProducts(int top);
+
+        List<TagViewModel> GetProductTags(int productId);
+
     }
 }

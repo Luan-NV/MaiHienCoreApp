@@ -26,6 +26,9 @@ namespace MaiHienCoreApp.Application.Interfaces
 
         List<ProductCategoryViewModel> GetHomeCategories(int top);
 
+
+
+
         void Save();
     }
 }
